@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.6
 
 //
 // This source file is part of the Apodini open source project
@@ -12,19 +12,21 @@ import PackageDescription
 
 
 let package = Package(
-    name: "ApodiniTemplate",
+    name: "OASToAPIDocumentConverter",
     platforms: [
-        .macOS(.v11)
+        .macOS(.v12)
     ],
     products: [
-        .library(name: "ApodiniTemplate", targets: ["ApodiniTemplate"])
+        .library(name: "OASToAPIDocumentConverter", targets: ["OASToAPIDocumentConverter"]),
+        .executable(name: "oas-to-api-document", targets: ["OASToAPIDocumentConverterCLI"])
     ],
     targets: [
-        .target(name: "ApodiniTemplate"),
+        .target(name: "OASToAPIDocumentConverter"),
+        .executableTarget(name: "OASToAPIDocumentConverterCLI"),
         .testTarget(
-            name: "ApodiniTemplateTests",
+            name: "OASToAPIDocumentConverterTests",
             dependencies: [
-                .target(name: "ApodiniTemplate")
+                .target(name: "OASToAPIDocumentConverter")
             ]
         )
     ]

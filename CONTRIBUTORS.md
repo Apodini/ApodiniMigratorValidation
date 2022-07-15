@@ -11,4 +11,5 @@ SPDX-License-Identifier: MIT
 Apodini contributors
 ====================
 
+* [Andreas Bauer](https://github.com/Supereg)
 * [Paul Schmiedmayer](https://github.com/PSchmiedmayer)

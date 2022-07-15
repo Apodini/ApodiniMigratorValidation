@@ -1,4 +1,4 @@
-# ``ApodiniTemplate``
+# ``OASToAPIDocumentConverter``
 
 A template for projects in the Apodini organization.
 
