@@ -18,11 +18,32 @@ let package = Package(
     ],
     products: [
         .library(name: "OASToAPIDocumentConverter", targets: ["OASToAPIDocumentConverter"]),
-        .executable(name: "oas-to-api-document", targets: ["OASToAPIDocumentConverterCLI"])
+        .executable(name: "OASToAPIDocumentConverterCLI", targets: ["OASToAPIDocumentConverterCLI"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/mattpolzin/OpenAPIKit.git", from: "3.0.0-alpha.4"),
+        .package(url: "https://github.com/Apodini/ApodiniMigrator", from: "0.3.0"),
+        
+        // we use <1.0.0 argument parser as migrator (and Apodini) aren't updated yet (there are some issues to resolve)!
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0")
     ],
     targets: [
-        .target(name: "OASToAPIDocumentConverter"),
-        .executableTarget(name: "OASToAPIDocumentConverterCLI"),
+        .target(
+            name: "OASToAPIDocumentConverter",
+            dependencies: [
+                .product(name: "OpenAPIKit", package: "OpenAPIKit"),
+                .product(name: "ApodiniMigratorCore", package: "ApodiniMigrator")
+            ]
+        ),
+        
+        .executableTarget(
+            name: "OASToAPIDocumentConverterCLI",
+            dependencies: [
+                .target(name: "OASToAPIDocumentConverter"),
+                .product(name: "ArgumentParser", package: "swift-argument-parser")
+            ]
+        ),
+        
         .testTarget(
             name: "OASToAPIDocumentConverterTests",
             dependencies: [

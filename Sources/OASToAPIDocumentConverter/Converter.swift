@@ -6,9 +6,10 @@
 // SPDX-License-Identifier: MIT
 //
 
-
 /// Contains a nice text to say hello
-public struct ApodiniTemplate {
+public struct Converter {
+    public init() {}
+    
     /// Generates a greeting from the Apodini Template
     /// - Parameter name: The name that should be greeted, the default value is `"Apodini Template"`
     /// - Returns: The greeting created by the Apodini Template
