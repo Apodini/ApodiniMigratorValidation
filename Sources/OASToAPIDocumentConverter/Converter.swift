@@ -6,7 +6,6 @@
 // SPDX-License-Identifier: MIT
 //
 
-/// Contains a nice text to say hello
 public struct Converter {
     public init() {}
     
