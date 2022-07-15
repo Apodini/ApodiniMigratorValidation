@@ -1,7 +1,7 @@
 //
 // This source file is part of the Apodini open source project
 // 
-// SPDX-FileCopyrightText: 2021 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
+// SPDX-FileCopyrightText: 2022 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
 //
 // SPDX-License-Identifier: MIT
 //
@@ -11,10 +11,12 @@ import XCTest
 
 
 final class ApodiniTemplateTests: XCTestCase {
+    /*
+     TODO remove
     // Unfortunately, Swift on Linux does not support async tests at the moment. Therefore we use the
     // workaround creating a Task and an expectation to wait for the completion of the async functions:
     func testExample() throws {
-        let template = Converter()
+        let template = OpenAPIDocumentConverter()
         
         let expectation = XCTestExpectation(description: "Async Task completion")
 
@@ -30,4 +32,7 @@ final class ApodiniTemplateTests: XCTestCase {
 
         wait(for: [expectation], timeout: 1.25)
     }
+    */
+    
+    // TODO e2e tests: generate OAS from Apodini WebService DSL -> convert using util -> check for equality!
 }
