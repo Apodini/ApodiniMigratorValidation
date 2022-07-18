@@ -14,6 +14,9 @@ import OpenAPIKit30
 @main
 public struct CLI {
     public static func main() async throws {
+        // TODO integrate "migrator stats" command from the generate APIDocument!
+        // TODO or make a validation utility out from this -> (convert, compare, stats)?
+        
         let inPath = Path("/Users/andi/Downloads/GR-OAS/swagger.v3.json")
         let outPath = Path("/Users/andi/Downloads/GR-OAS/api-document.json")
         precondition(inPath.exists)

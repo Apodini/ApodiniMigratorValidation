@@ -26,7 +26,7 @@ public struct RouteConverter {
         into apiDocument: inout APIDocument
     ) throws {
         guard let operation = operation else {
-            return;
+            return
         }
         
         let resolvedGlobalParameters: [OpenAPI.Parameter] = try route.pathItem.parameters.map(components.lookup)
@@ -36,6 +36,7 @@ public struct RouteConverter {
     
         // TODO e.g. getBanner (its optional though?)
         let operationId = operation.operationId ?? "DEFAULT" // TODO generate unique default of operation and path!
+        // TODO have a look at the Apodini extensions to derive original names???
         // TODO TRADEOFF: endpoint naming!
         
         let parameters = try operation.parameters.map(components.lookup) // TODO parameters
@@ -74,7 +75,7 @@ public struct RouteConverter {
                 schemaConverter = try JSONSchemaConverter(from: schema, with: components)
             }
             
-            let typeInfo = schemaConverter.convert()
+            let typeInfo = try schemaConverter.convert()
     
             mappedParameters.append(Parameter(name: name, typeInformation: typeInfo, parameterType: type, isRequired: isRequired))
         }
@@ -91,7 +92,7 @@ public struct RouteConverter {
             // TODO TRADEOFF: can only handle a single mimetype (application/json?) for the request body
             
             let schemaConverter = try JSONSchemaConverter(from: schema, with: components)
-            let typeInfo = schemaConverter.convert()
+            let typeInfo = try schemaConverter.convert()
             
             mappedParameters.append(Parameter(name: name, typeInformation: typeInfo, parameterType: .content, isRequired: requestBody.required))
         }
@@ -112,7 +113,7 @@ public struct RouteConverter {
         // TODO TRADEOFF: can only handle a single mimetype (application/json?) in the response!
         
         let responseSchemaConverter = try JSONSchemaConverter(from: responseSchema, with: components)
-        let responseTypeInfo = responseSchemaConverter.convert()
+        let responseTypeInfo = try responseSchemaConverter.convert()
         
         // TODO consider pulling out the errors for completeness (we just maintain error codes + description, nothing else)
         
@@ -124,7 +125,7 @@ public struct RouteConverter {
             absolutePath: path.rawValue, // TODO check if we need to handle anything here still?
             parameters: mappedParameters,
             response: responseTypeInfo,
-            errors: [] // TRADEOFF: no errors are documented!
+            errors: [] // TODO TRADEOFF: no errors are documented!
         )
         
         print("ADding endpoint for \(path.rawValue) + \(operationId)")
