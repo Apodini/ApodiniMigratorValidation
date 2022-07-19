@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import ApodiniMigratorValidationUtil
+import ApodiniMigratorValidation
 import PathKit
 import OpenAPIKit30
 import ArgumentParser
