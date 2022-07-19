@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ApodiniMigratorValidationUtil
+@testable import ApodiniMigratorValidation
 
 
 final class ApodiniTemplateTests: XCTestCase {
