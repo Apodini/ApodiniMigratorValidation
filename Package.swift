@@ -12,13 +12,13 @@ import PackageDescription
 
 
 let package = Package(
-    name: "OASToAPIDocumentConverter",
+    name: "ApodiniMigratorValidationUtil",
     platforms: [
         .macOS(.v12)
     ],
     products: [
-        .library(name: "OASToAPIDocumentConverter", targets: ["OASToAPIDocumentConverter"]),
-        .executable(name: "OASToAPIDocumentConverterCLI", targets: ["OASToAPIDocumentConverterCLI"])
+        .library(name: "ApodiniMigratorValidation", targets: ["ApodiniMigratorValidation"]),
+        .executable(name: "ApodiniMigratorValidationUtil", targets: ["ApodiniMigratorValidationUtil"])
     ],
     dependencies: [
         .package(url: "https://github.com/mattpolzin/OpenAPIKit.git", from: "3.0.0-alpha.4"),
@@ -31,7 +31,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "OASToAPIDocumentConverter",
+            name: "ApodiniMigratorValidation",
             dependencies: [
                 .product(name: "SemVer", package: "Swift-SemVer"),
                 .product(name: "OpenAPIKit30", package: "OpenAPIKit"),
@@ -41,18 +41,18 @@ let package = Package(
         ),
         
         .executableTarget(
-            name: "OASToAPIDocumentConverterCLI",
+            name: "ApodiniMigratorValidationUtil",
             dependencies: [
-                .target(name: "OASToAPIDocumentConverter"),
+                .target(name: "ApodiniMigratorValidation"),
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
                 .product(name: "Logging", package: "swift-log")
             ]
         ),
         
         .testTarget(
-            name: "OASToAPIDocumentConverterTests",
+            name: "ApodiniMigratorValidationTests",
             dependencies: [
-                .target(name: "OASToAPIDocumentConverter")
+                .target(name: "ApodiniMigratorValidation")
             ]
         )
     ]

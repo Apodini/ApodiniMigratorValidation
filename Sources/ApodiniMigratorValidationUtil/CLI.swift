@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import OASToAPIDocumentConverter
+import ApodiniMigratorValidationUtil
 import PathKit
 import OpenAPIKit30
 import ArgumentParser

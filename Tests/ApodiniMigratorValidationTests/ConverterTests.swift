@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import OASToAPIDocumentConverter
+@testable import ApodiniMigratorValidationUtil
 
 
 final class ApodiniTemplateTests: XCTestCase {
