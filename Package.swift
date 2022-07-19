@@ -26,7 +26,8 @@ let package = Package(
         .package(url: "https://github.com/RougeWare/Swift-SemVer", from: "3.0.0-Beta.5"),
         
         // we use <1.0.0 argument parser as migrator (and Apodini) aren't updated yet (there are some issues to resolve)!
-        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0")
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0"),
+        .package(url: "https://github.com/apple/swift-log.git", from: "1.4.2")
     ],
     targets: [
         .target(
@@ -34,7 +35,8 @@ let package = Package(
             dependencies: [
                 .product(name: "SemVer", package: "Swift-SemVer"),
                 .product(name: "OpenAPIKit30", package: "OpenAPIKit"),
-                .product(name: "ApodiniMigratorCore", package: "ApodiniMigrator")
+                .product(name: "ApodiniMigratorCore", package: "ApodiniMigrator"),
+                .product(name: "Logging", package: "swift-log")
             ]
         ),
         
@@ -42,7 +44,8 @@ let package = Package(
             name: "OASToAPIDocumentConverterCLI",
             dependencies: [
                 .target(name: "OASToAPIDocumentConverter"),
-                .product(name: "ArgumentParser", package: "swift-argument-parser")
+                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+                .product(name: "Logging", package: "swift-log")
             ]
         ),
         

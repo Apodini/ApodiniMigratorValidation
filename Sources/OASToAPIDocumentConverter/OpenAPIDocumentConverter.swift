@@ -9,10 +9,24 @@
 import OpenAPIKit30
 import ApodiniMigratorCore
 import SemVer
+import Logging
 
+private let logger = Logger(label: "document-converter")
+
+/// A utility that converts `OpenAPI Specification` documents to ApodiniMigrator `APIDocument`s.
+///
+/// Conversion is done best effort and primarily for the effort to use the resulting document
+/// as input for the ApodiniMigrator change comparison process.
+/// Those documents (typically) can't be used to generate client stubs!
+///
+/// TODO list tradeoffs?
+///
+/// TODO link to JSONSchemaConverter and its tradeoffs?
 public struct OpenAPIDocumentConverter {
     private let openAPIDocument: OpenAPI.Document
     
+    /// Initialize a new ``OpenAPIDocumentConverter`` to convert a OpenAPI document.
+    /// - Parameter document: The instance of the `OpenAPI.Document`.
     public init(from document: OpenAPI.Document) {
         self.openAPIDocument = document
     }
@@ -20,7 +34,6 @@ public struct OpenAPIDocumentConverter {
     private func convert() -> Version {
         // parse version field best effort, otherwise provide default "1.0.0"
         let semver = SemVer(openAPIDocument.info.version) ?? SemVer(major: 1, minor: 0, patch: 0)
-        // TODO TRADEOFF: semver parsing?
         return Version(major: semver.major, minor: semver.minor, patch: semver.patch)
     }
     
@@ -31,10 +44,10 @@ public struct OpenAPIDocumentConverter {
         
         let proto: HTTPProtocol = url.starts(with: "https") ? .https : .http
         
-        let hostname = url.components(separatedBy: "://")[1]
-        // TODO parse port?
+        let hostnameAndPort = url.components(separatedBy: "://")[1]
+        let hostnameSplit = hostnameAndPort.components(separatedBy: ":")
         
-        return HTTPInformation(protocol: proto, hostname: hostname, port: 80)
+        return HTTPInformation(protocol: proto, hostname: hostnameSplit[0], port: hostnameSplit.last.flatMap(Int.init) ?? 80)
     }
     
     private func convert() -> [_ExporterConfiguration] {
@@ -49,11 +62,13 @@ public struct OpenAPIDocumentConverter {
         )
     }
     
+    /// Converts the OpenAPI Specification document to an `APIDocument`.
+    /// - Returns: The resulting `APIDocument`
+    /// - Throws: Throws exception on any conversion errors (e.g. ill-formed OpenAPI documents).
     public func convert() throws -> APIDocument {
         var apiDocument = APIDocument(serviceInformation: convert())
         
         for route in openAPIDocument.routes {
-            print("Handling route \(route.path.rawValue)")
             let converter = RouteConverter(from: route, with: openAPIDocument.components)
             try converter.convert(into: &apiDocument)
         }
