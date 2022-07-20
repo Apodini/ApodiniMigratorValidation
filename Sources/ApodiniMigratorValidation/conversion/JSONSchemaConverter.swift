@@ -134,12 +134,17 @@ public class JSONSchemaConverter {
                         return .scalar(.int)
                     }
                 }
-            case let .string(coreContext, _):
+            case let .string(coreContext, stringContext):
                 // TODO TRADEOFF: string context missing
                 //  - `maxLength`
                 //  - `minLength`
                 //  - `pattern`
                 
+                print("-------------------------------------------------------")
+                if let `enum` = coreContext.allowedValues {
+                
+                }
+                let `enum` = coreContext.allowedValues // TODO log exitences of allowed values for other things!
                 // TODO parse enums!!
         
                 switch coreContext.format {

@@ -36,6 +36,7 @@ let package = Package(
                 .product(name: "SemVer", package: "Swift-SemVer"),
                 .product(name: "OpenAPIKit30", package: "OpenAPIKit"),
                 .product(name: "ApodiniMigratorCore", package: "ApodiniMigrator"),
+                .product(name: "ApodiniMigratorCompare", package: "ApodiniMigrator"),
                 .product(name: "Logging", package: "swift-log")
             ]
         ),
