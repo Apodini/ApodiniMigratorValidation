@@ -100,6 +100,8 @@ public class JSONSchemaConverter {
                 //  - `multipleOf`
                 //  - `minimum`
                 //  - `maximum`
+    
+                // TODO log enums of numbers
         
                 switch coreContext.format {
                 case .generic, .double:
@@ -115,6 +117,8 @@ public class JSONSchemaConverter {
                 //  - `multipleOf`
                 //  - `minimum`
                 //  - `maximum`
+                
+                // TODO log enums of integers
                 
                 switch coreContext.format {
                 case .int32:
@@ -140,12 +144,13 @@ public class JSONSchemaConverter {
                 //  - `minLength`
                 //  - `pattern`
                 
-                print("-------------------------------------------------------")
-                if let `enum` = coreContext.allowedValues {
-                
+                if let values = coreContext.allowedValues {
+                    let cases = values
+                        .map { $0.description } // we know those are strings, we can just map them to strings!
+                        .map { EnumCase($0) }
+                    
+                    return .enum(name: .init(rawValue: objectName), rawValueType: .scalar(.string), cases: cases)
                 }
-                let `enum` = coreContext.allowedValues // TODO log exitences of allowed values for other things!
-                // TODO parse enums!!
         
                 switch coreContext.format {
                 case .generic, .password: // password is just a UI hint
@@ -228,6 +233,7 @@ public class JSONSchemaConverter {
                 return .object(name: .init(rawValue: objectName), properties: combinedProperties)
             case let .one(of, _), let .any(of, _):
                 // TODO TRADEOFF: can't represent in APIDocument
+                // TODO log occurences of those!!
                 
                 // `oneOf` declares that the type matches >exactly< one sub-schema!
                 // `anyOf` declares that the type matches >one or more> sub-schemas!
