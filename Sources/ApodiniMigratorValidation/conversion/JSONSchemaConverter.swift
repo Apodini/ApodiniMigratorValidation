@@ -38,6 +38,7 @@ public class JSONSchemaConverter {
         self.components = references
     }
     
+    // swiftlint:disable:next function_body_length cyclomatic_complexity
     private func convert(schema potentiallyReferencedSchema: JSONSchema, fallbackNamingMaterial: String) throws -> TypeInformation {
         // refer to https://swagger.io/specification/#schema-object
         
@@ -49,7 +50,7 @@ public class JSONSchemaConverter {
         //  - `description`
         //  - `discriminator`
         //  - `externalDocs`
-        //  - `allowedValues`
+        //  - `allowedValues` (only for string!)
         //  - `defaultValue`
         //  - `example`
         
@@ -138,7 +139,7 @@ public class JSONSchemaConverter {
                         return .scalar(.int)
                     }
                 }
-            case let .string(coreContext, stringContext):
+            case let .string(coreContext, _):
                 // TODO TRADEOFF: string context missing
                 //  - `maxLength`
                 //  - `minLength`
@@ -168,6 +169,7 @@ public class JSONSchemaConverter {
                     case JSONTypeFormat.StringFormat.Extended.uuid.rawValue:
                         return .scalar(.uuid)
                     case JSONTypeFormat.StringFormat.Extended.uri.rawValue,
+                         JSONTypeFormat.StringFormat.Extended.uriReference.rawValue,
                          "uri-template": // used by github
                         return .scalar(.url)
                     case "timestamp": // used by github
@@ -175,8 +177,7 @@ public class JSONSchemaConverter {
                     case JSONTypeFormat.StringFormat.Extended.email.rawValue,
                          JSONTypeFormat.StringFormat.Extended.ipv4.rawValue,
                          JSONTypeFormat.StringFormat.Extended.ipv6.rawValue,
-                         JSONTypeFormat.StringFormat.Extended.hostname.rawValue,
-                         JSONTypeFormat.StringFormat.Extended.uriReference.rawValue:
+                         JSONTypeFormat.StringFormat.Extended.hostname.rawValue:
                         // we don't want to omit a warning for those known/common formats
                         return .scalar(.string)
                     default:
@@ -199,6 +200,8 @@ public class JSONSchemaConverter {
                 if properties.isEmpty {
                     return Self.emptyObject
                 }
+                
+                // TODO document .other format (also at other locations?)?
                 
                 return .object(name: .init(rawValue: objectName), properties: properties)
             case let .array(_, arrayContext):
@@ -224,7 +227,7 @@ public class JSONSchemaConverter {
                     .map { try self.convert(schema: $0, fallbackNamingMaterial: objectName) } // we throw away the object name anyways!
                     .flatMap { information -> [TypeProperty] in
                         guard case let .object(_, properties, _) = information else {
-                            preconditionFailure("Encountered `allOf` which contains schemas different to objects: \(schema)")
+                            preconditionFailure("Encountered `allOf` which contains schemas different to .object: \(schema)")
                         }
                         
                         return properties
@@ -233,7 +236,7 @@ public class JSONSchemaConverter {
                 return .object(name: .init(rawValue: objectName), properties: combinedProperties)
             case let .one(of, _), let .any(of, _):
                 // TODO TRADEOFF: can't represent in APIDocument
-                // TODO log occurences of those!!
+                // TODO log occurrences of those!!
                 
                 // `oneOf` declares that the type matches >exactly< one sub-schema!
                 // `anyOf` declares that the type matches >one or more> sub-schemas!

@@ -27,7 +27,10 @@ let package = Package(
         
         // we use <1.0.0 argument parser as migrator (and Apodini) aren't updated yet (there are some issues to resolve)!
         .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0"),
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.4.2")
+        .package(url: "https://github.com/apple/swift-log.git", from: "1.4.2"),
+    
+        // testing runtime crashes
+        .package(url: "https://github.com/norio-nomura/XCTAssertCrash.git", from: "0.2.0")
     ],
     targets: [
         .target(
@@ -53,7 +56,8 @@ let package = Package(
         .testTarget(
             name: "ApodiniMigratorValidationTests",
             dependencies: [
-                .target(name: "ApodiniMigratorValidation")
+                .target(name: "ApodiniMigratorValidation"),
+                .product(name: "XCTAssertCrash", package: "XCTAssertCrash", condition: .when(platforms: [.macOS]))
             ]
         )
     ]
