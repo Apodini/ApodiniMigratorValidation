@@ -27,7 +27,6 @@ extension OpenAPI.Response.Map {
             guard let responseEither = self[status: .init(integerLiteral: code)] else {
                 continue
             }
-            
             return responseEither
         }
         

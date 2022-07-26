@@ -66,6 +66,8 @@ public struct OpenAPIDocumentConverter {
     /// - Returns: The resulting `APIDocument`
     /// - Throws: Throws exception on any conversion errors (e.g. ill-formed OpenAPI documents).
     public func convert() throws -> APIDocument {
+        JSONSchemaConverter.stats = .init()
+        
         var apiDocument = APIDocument(serviceInformation: convert())
         
         for route in openAPIDocument.routes {

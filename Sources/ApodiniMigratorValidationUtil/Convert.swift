@@ -12,6 +12,7 @@ import OpenAPIKit30
 import PathKit
 import ArgumentParser
 import Logging
+import ApodiniTypeInformation
 
 private let logger = Logger(label: "main")
 
@@ -45,5 +46,33 @@ struct Convert: ParsableCommand {
         
         logger.info("Writing resulting APIDocument to \(outputPath)")
         try outputPath.write(result.json)
+        
+        let stats = JSONSchemaConverter.stats
+        
+        var typeCount = result.typeStore.count
+        
+        let ignoredTypes: [TypeInformation] = [JSONSchemaConverter.errorType, JSONSchemaConverter.recursiveTypeTerminator]
+        // swiftlint:disable:next force_unwrapping
+        for type in ignoredTypes where result.typeStore.keys.contains(type.asReference().referenceKey!) {
+            typeCount -= 1
+        }
+        
+        print("""
+              ---------------------------- STATS ----------------------------
+              - "not" encounters:                 \(stats.notEncounters)
+              - terminated cyclic references:     \(stats.terminatedCyclicReferences)
+
+              - "anyOf" count:                    \(stats.anyOfEncounters)
+              - "oneOf" count:                    \(stats.oneOfEncounters)
+              - total:                            \(stats.anyOfEncounters + stats.oneOfEncounters)
+
+              - missed "anyOf" sub-schemas:       \(stats.missedAnyOfSubSchemas)
+              - missed "oneOf" sub-schemas:       \(stats.missedOneOfSubSchemas)
+              - total missed sub-schemas:         \(stats.missedAnyOfSubSchemas + stats.missedOneOfSubSchemas)
+
+              - total type count:                 \(typeCount)
+              - total endpoint count:             \(result.endpoints.count)
+              ---------------------------------------------------------------
+              """)
     }
 }

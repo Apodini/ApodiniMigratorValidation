@@ -13,6 +13,6 @@ import ArgumentParser
 struct ValidationUtil: ParsableCommand {
     static var configuration = CommandConfiguration(
         abstract: "Utilities used for the validation of ApodiniMigrator.",
-        subcommands: [Convert.self, Stats.self]
+        subcommands: [Convert.self, Stats.self, E2E.self]
     )
 }

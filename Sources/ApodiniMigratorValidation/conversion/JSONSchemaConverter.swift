@@ -13,18 +13,85 @@ import Logging
 
 private let logger = Logger(label: "schema-converter")
 
+/// The JSONSchemaConverter is used to convert `JSONSchema` instances to the `TypeInformation` representation.
+///
+/// The aim is to convert to a `TypeInformation` which is comparable (meaning any conversion will always
+/// result in the same representation). Though, we don't guarantee that the resulting `TypeInformation` representation
+/// actually describes the same data model (e.g. when resolving recursive data structures).
+/// Any ignored properties and tradeoffs are describe below.
+///
+/// ## Ignored Schema Context properties
+/// The following properties of `JSONSchema` are ignored:
+/// ###`CoreContext`:
+/// - `nullable`
+/// - `permissions`
+/// - `deprecated`
+/// - `title`
+/// - `description`
+/// - `discriminator`
+/// - `externalDocs`
+/// - `allowedValues` (only considered for `string` types)
+/// - `defaultValue`
+/// - `example`
+///
+/// ###`NumericContext`:
+/// - `multipleOf`
+/// - `minimum`
+/// - `maximum`
+///
+/// ###`IntegerContext`:
+/// - `multipleOf`
+/// - `minimum`
+/// - `maximum`
+///
+/// ###`StringContext`:
+///  - `maxLength`
+///  - `minLength`
+///  - `pattern`
+///
+/// ###`ObjectContext`:
+/// - `additionalProperties`
+/// - `maxProperties`
+/// - `minProperties`
+///
+/// ###`ArrayContext`:
+/// - `maxItems`
+/// - `minItems`
+/// - `uniqueItems`
+///
+/// ## Other Tradeoffs
+/// JSONSchema has additional schema representations which can't be represented within the `TypeInformation` framework.{ s in  }
+///
+/// ### `not`:
+/// `not` schemas cannot be represented and the converter will exit with an error.
+///
+/// ### `oneOf` and `anyOf`:
+///
+/// ### Recursive References:
+///
 public class JSONSchemaConverter {
+    /// Predefined `TypeInformation` `object` named `"Empty"` to represent any objects without properties.
     public static let emptyObject: TypeInformation = .object(name: .init(rawValue: "Empty"), properties: [])
+    /// Predefined `TypeInformation` `object` named `"ApodiniRecursionTerminator"` to unwind recursive
+    /// reference in `JSONSchema` definitions.
     public static let recursiveTypeTerminator: TypeInformation = .object(name: .init(rawValue: "ApodiniRecursionTerminator"), properties: [])
+    /// Predefined `TypeInformation` `object` named `"ApodiniConversionError"` to represent JSONSchemas which can't be converted.
+    public static let errorType: TypeInformation = .object(name: .init(rawValue: "ApodiniConversionError"), properties: [])
     
     private let schema: JSONSchema
-    
     private let components: OpenAPI.Components
-    
     private var dereferencePath: [String] = []
     
-    public convenience init(from reference: Either<JSONReference<JSONSchema>, JSONSchema>, with components: OpenAPI.Components) {
-        switch reference {
+    /// Access the ``ConversionStats``. Stats will only be collected after ``convert(fallbackNamingMaterial:)`` has been called.
+    public static var stats = ConversionStats()
+    
+    /// Initializes a new ``JSONSchemaConverter``.
+    ///
+    /// - Parameters:
+    ///   - either: Either a ``JSONReference<JSONSchema>`` or a `JSONSchema` which is to be converted.
+    ///   - components: The ``OpenAPI.Components`` object which is used to lookup references.
+    public convenience init(from either: Either<JSONReference<JSONSchema>, JSONSchema>, with components: OpenAPI.Components) {
+        switch either {
         case let .a(reference):
             // we wrap it into a JSONSchema, we dereference on demand!
             self.init(from: JSONSchema.reference(reference), with: components)
@@ -33,16 +100,21 @@ public class JSONSchemaConverter {
         }
     }
     
-    public init(from schema: JSONSchema, with references: OpenAPI.Components) {
+    /// Initializes a new ``JSONSchemaConverter``.
+    ///
+    /// - Parameters:
+    ///   - schema: The `JSONSchema` which is to be converted.
+    ///   - components: The ``OpenAPI.Components`` object which is used to lookup references.
+    public init(from schema: JSONSchema, with components: OpenAPI.Components) {
         self.schema = schema
-        self.components = references
+        self.components = components
     }
     
     // swiftlint:disable:next function_body_length cyclomatic_complexity
     private func convert(schema potentiallyReferencedSchema: JSONSchema, fallbackNamingMaterial: String) throws -> TypeInformation {
         // refer to https://swagger.io/specification/#schema-object
         
-        // TODO TRADEOFF: (current) of the CoreContext
+        // TRADEOFF: Ignored properties of the `CoreContext`
         //  - `nullable`
         //  - `permissions` (readOnly, writeOnly, readWrite)
         //  - `deprecated`
@@ -50,7 +122,7 @@ public class JSONSchemaConverter {
         //  - `description`
         //  - `discriminator`
         //  - `externalDocs`
-        //  - `allowedValues` (only for string!)
+        //  - `allowedValues` (we use it only for strings to map enums!)
         //  - `defaultValue`
         //  - `example`
         
@@ -72,6 +144,7 @@ public class JSONSchemaConverter {
                                Encountered recursive type definition for '\(fallbackNamingMaterial)' with dereference path: \(dereferencePath). \
                                We break the recursive chain by replacing '\(objectName)' with a custom and empty type `ApodiniRecursionTerminator`.
                                """)
+                Self.stats.terminatedCyclicReferences += 1
                 return Self.recursiveTypeTerminator
             }
             
@@ -97,12 +170,10 @@ public class JSONSchemaConverter {
                 }
                 return .scalar(.bool)
             case let .number(coreContext, _):
-                // TODO TRADEOFF: numeric context missing
+                // TRADEOFF: Ignored properties of the `NumericContext`
                 //  - `multipleOf`
                 //  - `minimum`
                 //  - `maximum`
-    
-                // TODO log enums of numbers
         
                 switch coreContext.format {
                 case .generic, .double:
@@ -114,12 +185,10 @@ public class JSONSchemaConverter {
                     return .scalar(.double)
                 }
             case let .integer(coreContext, _):
-                // TODO TRADEOFF: integer context missing
+                // TRADEOFF: Ignored properties of the `IntegerContext`
                 //  - `multipleOf`
                 //  - `minimum`
                 //  - `maximum`
-                
-                // TODO log enums of integers
                 
                 switch coreContext.format {
                 case .int32:
@@ -140,7 +209,7 @@ public class JSONSchemaConverter {
                     }
                 }
             case let .string(coreContext, _):
-                // TODO TRADEOFF: string context missing
+                // TRADEOFF: Ignored properties of the `StringContext`
                 //  - `maxLength`
                 //  - `minLength`
                 //  - `pattern`
@@ -186,7 +255,7 @@ public class JSONSchemaConverter {
                     }
                 }
             case let .object(_, objectContext):
-                // TODO TRADEOFF: ignored objectContext properties
+                // TRADEOFF: Ignored properties of the `ObjectContext`
                 //  - `additionalProperties`
                 //  - `maxProperties`
                 //  - `minProperties`
@@ -196,16 +265,15 @@ public class JSONSchemaConverter {
                         let type = try self.convert(schema: schema, fallbackNamingMaterial: "\(objectName)#\(name)")
                         return TypeProperty(name: name, type: type)
                     }
+                    .filter { $0.type != Self.emptyObject } // TODO listed in required parameters but not in the list of properties?
                 
                 if properties.isEmpty {
                     return Self.emptyObject
                 }
                 
-                // TODO document .other format (also at other locations?)?
-                
                 return .object(name: .init(rawValue: objectName), properties: properties)
             case let .array(_, arrayContext):
-                // TODO TRADEOFF: ignored array context parameters
+                // TRADEOFF: Ignored properties of the `ArrayContext`
                 //  - `maxItems`
                 //  - `minItems`
                 //  - `uniqueItems`
@@ -229,17 +297,23 @@ public class JSONSchemaConverter {
                         guard case let .object(_, properties, _) = information else {
                             preconditionFailure("Encountered `allOf` which contains schemas different to .object: \(schema)")
                         }
-                        
+    
                         return properties
                     }
+                    .filter { $0.type != Self.emptyObject } // TODO listed in required parameters but not in the list of properties?
                 
                 return .object(name: .init(rawValue: objectName), properties: combinedProperties)
             case let .one(of, _), let .any(of, _):
-                // TODO TRADEOFF: can't represent in APIDocument
-                // TODO log occurrences of those!!
+                // TRADEOFF: "oneOf" or "anyOf" cannot be fully represented in an APIDocument.
                 
                 // `oneOf` declares that the type matches >exactly< one sub-schema!
                 // `anyOf` declares that the type matches >one or more> sub-schemas!
+                
+                if case .one = schema.value {
+                    Self.stats.oneOfEncountersArray.append(of.count)
+                } else {
+                    Self.stats.anyOfEncountersArray.append(of.count)
+                }
                 
                 // use to encode multiple different representations for the same value
                 // (e.g. bool encoded as bool or string; or a simple and a complex object type)
@@ -251,13 +325,15 @@ public class JSONSchemaConverter {
                     return try self.convert(schema: first, fallbackNamingMaterial: objectName)
                 }
                 
-                // TODO do we have different strategies (e.g. merge parameters?)
                 return try self.convert(schema: first, fallbackNamingMaterial: objectName)
             case .not:
-                // TODO TRADEOFF: can't encode in APIDocument!
+                // TRADEOFF: "not" cannot be represented in an APIDocument.
+    
+                Self.stats.notEncounters += 1
                 
                 // not is really not widely used!
-                fatalError("Encountered unsupported JSONSchema type (.all, .one, .any or .not) within \(objectName): \(schema)")
+                logger.error("Encountered unsupported JSONSchema type `.not` within \(objectName): \(schema)")
+                return Self.errorType
             case .reference:
                 preconditionFailure("Encountered JSONSchema .reference even after dereferencing within \(objectName): \(schema)")
             case .fragment:
@@ -267,17 +343,75 @@ public class JSONSchemaConverter {
     
         let typeInfo = try conversion()
         guard let context = schema.coreContext else {
-            preconditionFailure("Assumption broke. Encountered a .reference where we know that there can't be one: \(schema)")
+            preconditionFailure("Assumption broke. Encountered a `.reference` where we know that there can't be one: \(schema)")
         }
         
-        if !context.required {
+        if !context.required || context.nullable || context.defaultValue != nil {
             return .optional(wrappedValue: typeInfo)
         }
         
         return typeInfo
     }
     
-    public func convert(fallbackNamingMaterial: String) throws -> TypeInformation {
+    /// Convert the `JSONSchema` passed to the initializer to the `TypeInformation` representation.
+    ///
+    /// - Parameter fallbackNamingMaterial: A fallback name to uniquely name a object (if encountered any) in
+    ///     the case we can't automatically derive the name through resolved references.
+    /// - Returns: The converted `TypeInformation` representation.
+    /// - Throws: If we encounter a reference which cannot be resolved within the ``OpenAPI.Components`` object.
+    public func convert(fallbackNamingMaterial: String = "UNKNOWN") throws -> TypeInformation {
         try convert(schema: schema, fallbackNamingMaterial: fallbackNamingMaterial)
+    }
+}
+
+// MARK: ConversionStats
+extension JSONSchemaConverter {
+    /// Object capturing stats collected within the conversion algorithm.
+    /// Currently it only captures stats of conversions which either can't be represented within the `TypeInformation`
+    /// representation or can only be partly represented.
+    public struct ConversionStats {
+        /// Array capturing any encounters of `"anyOf"`.
+        /// An entry in this array represents a single `"anyOf"` encounter. The integer value represents the
+        /// sub-schemas present in the `"anyOf"` occurrence.
+        public fileprivate(set) var anyOfEncountersArray: [Int] = []
+        /// Array capturing any encounters of `"oneOf"`.
+        /// An entry in this array represents a single `"oneOf"` encounter. The integer value represents the
+        /// sub-schemas present in the `"oneOf"` occurrence.
+        public fileprivate(set) var oneOfEncountersArray: [Int] = []
+        /// Integer capturing encounters of "not" schemas.
+        public fileprivate(set) var notEncounters: Int = 0
+        /// The count of cyclic references that were terminated.
+        public fileprivate(set) var terminatedCyclicReferences: Int = 0
+    
+        /// Count of `"anyOf"` encounters
+        public var anyOfEncounters: Int {
+            anyOfEncountersArray.count
+        }
+    
+        /// Count of `"oneOf"` encounters
+        public var oneOfEncounters: Int {
+            oneOfEncountersArray.count
+        }
+        
+        /// The count of schemas occurring inside of `"anyOf"` definitions which we didn't convert.
+        /// This stat represents the amount of lost information due to the inability to fully map `"anyOf"`
+        public var missedAnyOfSubSchemas: Int {
+            anyOfEncountersArray.reduce(0) { partialResult, next in
+                precondition(next >= 1)
+                return partialResult + (next - 1) // we subtract 1, as we always convert the first schema
+            }
+        }
+    
+        /// The count of schemas occurring inside of `"oneOf"` definitions which we didn't convert.
+        /// This stat represents the amount of lost information due to the inability to fully map `"oneOf"`
+        public var missedOneOfSubSchemas: Int {
+            oneOfEncountersArray.reduce(0) { partialResult, next in
+                precondition(next >= 1)
+                return partialResult + (next - 1) // we subtract 1, as we always convert the first schema
+            }
+        }
+        
+        /// Initialize a new fresh stats object.
+        public init() {}
     }
 }

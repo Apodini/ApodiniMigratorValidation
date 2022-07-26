@@ -11,7 +11,7 @@ import XCTest
 import ApodiniTypeInformation
 import OpenAPIKit30
 
-func convert(
+private func convert(
     _ schema: JSONSchema,
     fallbackNamingMaterial: String = "test",
     with components: OpenAPI.Components = .init()
@@ -20,7 +20,7 @@ func convert(
     return try converter.convert(fallbackNamingMaterial: fallbackNamingMaterial)
 }
 
-func AMAssertConversion(
+private func AMAssertConversion(
     _ expression1: @autoclosure () throws -> JSONSchema,
     fallbackNamingMaterial: String = "test",
     with components: OpenAPI.Components = .init(),
@@ -31,14 +31,14 @@ func AMAssertConversion(
 ) throws {
     try XCTAssertEqual(
         convert(expression1(), fallbackNamingMaterial: fallbackNamingMaterial, with: components),
-        expression2(), message(),
+        expression2(),
+        message(),
         file: file,
         line: line
     )
 }
 
 final class JSONSchemaConverterTests: XCTestCase {
-    
     func testBoolConversion() throws {
         try AMAssertConversion(.boolean(format: .generic), .scalar(.bool))
         try AMAssertConversion(.boolean(format: .other("test-vector")), .scalar(.bool))
@@ -200,13 +200,16 @@ final class JSONSchemaConverterTests: XCTestCase {
         )
     }
     
-    func testUnsupportedConversions() throws {
-        try XCTAssertRuntimeFailure(convert(.not(.string)))
-    }
-    
     func testOneOfAndAnyOfBestEffortConversion() throws {
         try AMAssertConversion(.one(of: .string, .integer), .scalar(.string))
         try AMAssertConversion(.any(of: .string, .integer), .scalar(.string))
+        
+        let stats = JSONSchemaConverter.stats
+        XCTAssertEqual(stats.notEncounters, 0)
+        XCTAssertEqual(stats.oneOfEncounters, 1)
+        XCTAssertEqual(stats.anyOfEncounters, 1)
+        XCTAssertEqual(stats.missedOneOfSubSchemas, 1)
+        XCTAssertEqual(stats.missedAnyOfSubSchemas, 1)
         
         try XCTAssertRuntimeFailure(convert(.one(of: [])))
         try XCTAssertRuntimeFailure(convert(.any(of: [])))
@@ -242,6 +245,12 @@ final class JSONSchemaConverterTests: XCTestCase {
         )
     }
     
+    func testUnsupportedNotConversions() throws {
+        try AMAssertConversion(.not(.string), JSONSchemaConverter.errorType)
+    
+        XCTAssertEqual(JSONSchemaConverter.stats.notEncounters, 1)
+    }
+    
     func testUnwindingCyclicReferences() throws {
         let reference: JSONSchema = .reference(.internal(.component(name: "A")))
         let components = OpenAPI.Components(schemas: [
@@ -262,6 +271,8 @@ final class JSONSchemaConverterTests: XCTestCase {
                 ]
             )
         )
+        
+        XCTAssertEqual(JSONSchemaConverter.stats.terminatedCyclicReferences, 1)
     }
     
     func testEitherConvenienceInitializer() throws {

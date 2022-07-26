@@ -18,7 +18,7 @@ public struct RouteConverter {
     
     private let components: OpenAPI.Components
     
-    public init(from route: OpenAPI.Document.Route, with references: OpenAPI.Components) {
+    public init(from route: OpenAPI.Document.Route, with references: OpenAPI.Components = .init()) {
         self.route = route
         self.components = references
     }
@@ -35,16 +35,13 @@ public struct RouteConverter {
             let type: ParameterType
         
             switch parameter.context {
-            case let .query(required, _):
+            case let .query(required, _), let .header(required), let .cookie(required):
+                // TODO TRADEOFF: can't document header or cookie parameters
                 isRequired = required
                 type = .lightweight
             case .path:
                 isRequired = true
                 type = .path
-            case .header, .cookie:
-                // TODO TRADEOFF: can't document header or cookie parameters
-                logger.warning("Skipping parameter '\(name)' on \(operationId)! Can't be represented in APIDocument: \(parameter)")
-                continue
             }
             
             let typeInfo: TypeInformation
@@ -82,18 +79,31 @@ public struct RouteConverter {
         // TODO TRADEOFF: no parameter names for the request body parameter
         let name = "_requestBody"
     
-        let typeInfo: TypeInformation
+        var typeInfo: TypeInformation
+        let fallbackName = "\(operationId)#\(name)"
     
         // TODO TRADEOFF: can only handle a single mimetype (application/json?) for the request body
         if let schema = requestBody.content.jsonOrFirstContentSchema {
             let schemaConverter = JSONSchemaConverter(from: schema, with: components)
-            typeInfo = try schemaConverter.convert(fallbackNamingMaterial: "\(operationId)#\(name)")
+            typeInfo = try schemaConverter.convert(fallbackNamingMaterial: fallbackName)
         } else {
             logger.warning("Request body '\(name)' of \(operationId) doesn't define an appropriate content type. Using 'Empty' type as fallback.")
             typeInfo = JSONSchemaConverter.emptyObject
         }
-    
-        mappedParameters.append(Parameter(name: name, typeInformation: typeInfo, parameterType: .content, isRequired: requestBody.required))
+        
+        let optional = !requestBody.required || typeInfo.isOptional
+        
+        // TODO unwrap optional!
+        if typeInfo.isOptional {
+            typeInfo = typeInfo.unwrapped
+        }
+        
+        if typeInfo == JSONSchemaConverter.emptyObject {
+            // TODO why do we do this! explain !
+            typeInfo = .object(name: .init(rawValue: fallbackName), properties: [])
+        }
+        
+        mappedParameters.append(Parameter(name: name, typeInformation: typeInfo, parameterType: .content, isRequired: !optional))
     }
     
     private func convert(
@@ -133,7 +143,7 @@ public struct RouteConverter {
         let path = route.path
     
         // TODO TRADEOFF: endpoint naming!
-        let operationId = operation.operationId ?? path.identifier
+        let operationId = operation.operationId ?? "\(path.identifier)_\(operationType.httpMethod.lowercased())"
         
         let parameters = try operation.parameters.map(components.lookup)
         var mappedParameters = try convert(parameters: resolvedGlobalParameters + parameters, of: operationId)
@@ -163,8 +173,8 @@ public struct RouteConverter {
         let item = route.pathItem
         
         try convert(item.get, of: .read, into: &apiDocument)
-        try convert(item.post, of: .create, into: &apiDocument)
         try convert(item.put, of: .update, into: &apiDocument)
+        try convert(item.post, of: .create, into: &apiDocument)
         try convert(item.delete, of: .delete, into: &apiDocument)
         
         informAboutUnsupported(item.options, name: "OPTIONS")
@@ -174,8 +184,8 @@ public struct RouteConverter {
     }
     
     private func informAboutUnsupported(_ operation: OpenAPI.Operation?, name: String) {
-        if operation != nil {
-            let operationId = operation?.operationId ?? "UNKNOWN"
+        if let operation = operation {
+            let operationId = operation.operationId ?? "UNKNOWN"
             logger.warning("Ignoring operation \(name) \(route.path.rawValue)#\(operationId) as it can't be represented in the APIDocument!")
         }
     }
