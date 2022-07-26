@@ -8,11 +8,10 @@
 
 import Foundation
 import ArgumentParser
+import PathKit
 
-@main
-struct ValidationUtil: ParsableCommand {
-    static var configuration = CommandConfiguration(
-        abstract: "Utilities used for the validation of ApodiniMigrator.",
-        subcommands: [Convert.self, Stats.self, E2E.OneShot.self, E2E.Bulk.self]
-    )
+extension Path: ExpressibleByArgument {
+    public init(argument: String) {
+        self = Path(argument)
+    }
 }
