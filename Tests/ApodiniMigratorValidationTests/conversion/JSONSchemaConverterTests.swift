@@ -24,12 +24,18 @@ func convert(
 func AMAssertConversion(
     _ expression1: @autoclosure () throws -> JSONSchema,
     fallbackNamingMaterial: String = "test",
+    with components: OpenAPI.Components = .init(),
     _ expression2: @autoclosure () throws -> TypeInformation,
     _ message: @autoclosure () -> String = "",
     file: StaticString = #filePath,
     line: UInt = #line
 ) throws {
-    try XCTAssertEqual(convert(expression1(), fallbackNamingMaterial: fallbackNamingMaterial), expression2(), message(), file: file, line: line)
+    try XCTAssertEqual(
+        convert(expression1(), fallbackNamingMaterial: fallbackNamingMaterial, with: components),
+        expression2(), message(),
+        file: file,
+        line: line
+    )
 }
 
 final class JSONSchemaConverterTests: XCTestCase {
@@ -199,9 +205,73 @@ final class JSONSchemaConverterTests: XCTestCase {
         XCTAssertCrash(try! convert(.not(.string))) // swiftlint:disable:this force_try
     }
     
-    // TODO test oneOf and anyOf
+    func testOneOfAndAnyOfBestEffortConversion() throws {
+        try AMAssertConversion(.one(of: .string, .integer), .scalar(.string))
+        try AMAssertConversion(.any(of: .string, .integer), .scalar(.string))
+        
+        XCTAssertCrash(try! convert(.one(of: []))) // swiftlint:disable:this force_try
+        XCTAssertCrash(try! convert(.any(of: []))) // swiftlint:disable:this force_try
+    }
     
-    // TODO test cyclic references!
+    func testOneOfAndAnyOfConversionWithRetainingReferenceName() throws {
+        let components = OpenAPI.Components(schemas: [
+            "Person": .object(properties: [
+                "name": .string,
+                "age": .integer
+            ])
+        ])
+        
+        // this tests ensures that the conversion algorithm pulls out the object name
+        // from the reference name if we have a allOf with a single item
+        
+        let result: TypeInformation = .object(
+            name: TypeName(rawValue: "Person"),
+            properties: [
+                TypeProperty(name: "name", type: .scalar(.string)),
+                TypeProperty(name: "age", type: .scalar(.int))
+            ]
+        )
+        
+        XCTAssertEqual(
+            try convert(.any(of: .reference(.internal(.component(name: "Person")))), with: components),
+            result
+        )
     
-    // TODO test convenience initializer
+        XCTAssertEqual(
+            try convert(.one(of: .reference(.internal(.component(name: "Person")))), with: components),
+            result
+        )
+    }
+    
+    func testUnwindingCyclicReferences() throws {
+        let reference: JSONSchema = .reference(.internal(.component(name: "A")))
+        let components = OpenAPI.Components(schemas: [
+            "A": .object(properties: [
+                "string": .string,
+                "a": reference
+            ])
+        ])
+        
+        try AMAssertConversion(
+            reference,
+            with: components,
+            .object(
+                name: TypeName(rawValue: "A"),
+                properties: [
+                    TypeProperty(name: "string", type: .scalar(.string)),
+                    TypeProperty(name: "a", type: JSONSchemaConverter.recursiveTypeTerminator)
+                ]
+            )
+        )
+    }
+    
+    func testEitherConvenienceInitializer() throws {
+        let components = OpenAPI.Components(schemas: [ "A": .string ])
+        
+        let converter0 = JSONSchemaConverter(from: .a(.internal(.path("A"))), with: components)
+        try XCTAssertEqual(converter0.convert(fallbackNamingMaterial: "test-vector"), .scalar(.string))
+        
+        let converter1 = JSONSchemaConverter(from: .b(.string), with: components)
+        try XCTAssertEqual(converter1.convert(fallbackNamingMaterial: "test-vector"), .scalar(.string))
+    }
 }
