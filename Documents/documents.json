@@ -1,0 +1,7 @@
+[
+  {
+    "name": "GitHub Enterprise",
+    "lhs": "ghes-3.5.json",
+    "rhs": "ghes-3.6.json"
+  }
+]

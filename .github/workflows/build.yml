@@ -1,7 +1,7 @@
 #
 # This source file is part of the Apodini open source project
 #
-# SPDX-FileCopyrightText: 2021 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
+# SPDX-FileCopyrightText: 2022 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
 #
 # SPDX-License-Identifier: MIT
 #
@@ -19,4 +19,4 @@ jobs:
     name: Build and Test
     uses: Apodini/.github/.github/workflows/build-and-test.yml@v1
     with:
-      packagename: OASToAPIDocumentConverter
+      packagename: ApodiniMigratorValidationUtil

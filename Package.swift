@@ -3,7 +3,7 @@
 //
 // This source file is part of the Apodini open source project
 // 
-// SPDX-FileCopyrightText: 2021 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
+// SPDX-FileCopyrightText: 2022 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
 //
 // SPDX-License-Identifier: MIT
 //
@@ -12,42 +12,52 @@ import PackageDescription
 
 
 let package = Package(
-    name: "OASToAPIDocumentConverter",
+    name: "ApodiniMigratorValidationUtil",
     platforms: [
         .macOS(.v12)
     ],
     products: [
-        .library(name: "OASToAPIDocumentConverter", targets: ["OASToAPIDocumentConverter"]),
-        .executable(name: "OASToAPIDocumentConverterCLI", targets: ["OASToAPIDocumentConverterCLI"])
+        .library(name: "ApodiniMigratorValidation", targets: ["ApodiniMigratorValidation"]),
+        .executable(name: "ApodiniMigratorValidationUtil", targets: ["ApodiniMigratorValidationUtil"])
     ],
     dependencies: [
         .package(url: "https://github.com/mattpolzin/OpenAPIKit.git", from: "3.0.0-alpha.4"),
         .package(url: "https://github.com/Apodini/ApodiniMigrator", from: "0.3.0"),
+        .package(url: "https://github.com/RougeWare/Swift-SemVer", from: "3.0.0-Beta.5"),
         
         // we use <1.0.0 argument parser as migrator (and Apodini) aren't updated yet (there are some issues to resolve)!
-        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0")
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0"),
+        .package(url: "https://github.com/apple/swift-log.git", from: "1.4.2"),
+    
+        // testing runtime crashes
+        .package(url: "https://github.com/norio-nomura/XCTAssertCrash.git", from: "0.2.0")
     ],
     targets: [
         .target(
-            name: "OASToAPIDocumentConverter",
+            name: "ApodiniMigratorValidation",
             dependencies: [
-                .product(name: "OpenAPIKit", package: "OpenAPIKit"),
-                .product(name: "ApodiniMigratorCore", package: "ApodiniMigrator")
+                .product(name: "SemVer", package: "Swift-SemVer"),
+                .product(name: "OpenAPIKit30", package: "OpenAPIKit"),
+                .product(name: "ApodiniMigratorCore", package: "ApodiniMigrator"),
+                .product(name: "ApodiniMigratorCompare", package: "ApodiniMigrator"),
+                .product(name: "Logging", package: "swift-log")
             ]
         ),
         
         .executableTarget(
-            name: "OASToAPIDocumentConverterCLI",
+            name: "ApodiniMigratorValidationUtil",
             dependencies: [
-                .target(name: "OASToAPIDocumentConverter"),
-                .product(name: "ArgumentParser", package: "swift-argument-parser")
+                .target(name: "ApodiniMigratorValidation"),
+                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+                .product(name: "Logging", package: "swift-log")
             ]
         ),
         
         .testTarget(
-            name: "OASToAPIDocumentConverterTests",
+            name: "ApodiniMigratorValidationTests",
             dependencies: [
-                .target(name: "OASToAPIDocumentConverter")
+                .target(name: "ApodiniMigratorValidation"),
+                .product(name: "XCTAssertCrash", package: "XCTAssertCrash", condition: .when(platforms: [.macOS]))
             ]
         )
     ]
