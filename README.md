@@ -8,8 +8,6 @@ SPDX-License-Identifier: MIT
 
 -->
 
-### ⬆️ Remove everything up to here ⬆️
-
 # ApodiniMigratorValidationUtil
 
 [![Build](https://github.com/Apodini/ApodiniMigratorValidationUtil/actions/workflows/build.yml/badge.svg)](https://github.com/Apodini/ApodiniMigratorValidationUtil/actions/workflows/build.yml)
