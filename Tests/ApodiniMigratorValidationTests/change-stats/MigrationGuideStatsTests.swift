@@ -11,6 +11,7 @@ import XCTest
 @testable import ApodiniMigratorCompare
 
 final class MigrationGuideStatsTests: XCTestCase {
+    // swiftlint:disable:next function_body_length
     func testMigrationGuideTests() {
         let context = ChangeComparisonContext()
         

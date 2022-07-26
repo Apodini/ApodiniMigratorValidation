@@ -9,13 +9,19 @@
 import Foundation
 import ApodiniMigratorCompare
 
+/// This structure captures stats about a `MigrationGuide`.
 public struct MigrationGuideStats {
-    private var serviceChangeStats: ChangeStats<ServiceInformation>
-    private var endpointChangeStats: ChangeStats<Endpoint>
-    private var modelChangeStats: ChangeStats<TypeInformation>
+    /// Change stats for service information changes.
+    public private(set) var serviceChangeStats: ChangeStats<ServiceInformation>
+    /// Change stats for endpoint changes.
+    public private(set) var endpointChangeStats: ChangeStats<Endpoint>
+    /// Change stats for model changes.
+    public private(set) var modelChangeStats: ChangeStats<TypeInformation>
     
-    private var scriptStats: ScriptStats
+    /// Change stats for script changes.
+    public private(set) var scriptStats: ScriptStats
     
+    /// Initializes a new fresh ``MigrationGuideStats`` instance.
     public init() {
         self.serviceChangeStats = ChangeStats()
         self.endpointChangeStats = ChangeStats()
@@ -24,6 +30,8 @@ public struct MigrationGuideStats {
         self.scriptStats = ScriptStats()
     }
     
+    /// Count stats of the provided `MigrationGuide`.
+    /// - Parameter document: The `MigrationGuide` document we want to analyze.
     public mutating func analyze(document: MigrationGuide) {
         serviceChangeStats.record(changes: document.serviceChanges)
         endpointChangeStats.record(changes: document.endpointChanges)
@@ -35,6 +43,7 @@ public struct MigrationGuideStats {
 
 // MARK: Formatted Output
 extension MigrationGuideStats {
+    /// Formatted string representation of the stats.
     public var formattedOutput: String {
         """
         --------------------------- SUMMARY ---------------------------

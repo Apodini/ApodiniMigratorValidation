@@ -28,9 +28,6 @@ struct Convert: ParsableCommand {
     var output: String
     
     mutating func run() throws {
-        // TODO integrate "migrator stats" command from the generate APIDocument!
-        // TODO or make a validation utility out from this -> (convert, compare, stats)?
-        
         let inputPath = Path(input).absolute()
         let outputPath = Path(output).absolute()
         

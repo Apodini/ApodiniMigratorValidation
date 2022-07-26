@@ -1,7 +1,7 @@
 //
 // This source file is part of the Apodini open source project
 //
-// SPDX-FileCopyrightText: 2021 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
+// SPDX-FileCopyrightText: 2022 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
 //
 // SPDX-License-Identifier: MIT
 //
@@ -19,7 +19,7 @@ private let logger = Logger(label: "main")
 struct E2E: ParsableCommand {
     static var configuration = CommandConfiguration(
         commandName: "e2e",
-        abstract: "Print stats about a ApodiniMigrator MigrationGuide." // TODO describe!
+        abstract: "Convert two OAS documents, generate the MigrationGuide and output the latex table contents for the paper."
     )
     
     @Option(name: .long, help: "The OpenAPI Specification document used as the input.", completion: .file(extensions: ["json", "yaml"]))
@@ -28,9 +28,9 @@ struct E2E: ParsableCommand {
     @Option(name: .long, help: "The OpenAPI Specification document used as the input.", completion: .file(extensions: ["json", "yaml"]))
     var current: String
     
-    func convert(_ document: OpenAPI.Document) throws -> APIDocument {
+    func convert(_ document: OpenAPI.Document) throws -> (APIDocument, JSONSchemaConverter.ConversionStats) {
         let converter = OpenAPIDocumentConverter(from: document)
-        return try converter.convert() // TODO how to capture stats!
+        return (try converter.convert(), JSONSchemaConverter.stats)
     }
     
     mutating func run() throws {
@@ -51,57 +51,50 @@ struct E2E: ParsableCommand {
         let currentOAS = try OpenAPI.Document.decode(from: currentPath)
         
         logger.info("Converting `previous` document...")
-        let previousDocument = try convert(previousOAS)
-        let stats0 = JSONSchemaConverter.stats
+        let (previousDocument, previousStats) = try convert(previousOAS)
         logger.info("Converting `current` document...")
-        let currentDocument = try convert(currentOAS)
-        
-        // TODO what stats to use!
+        let (currentDocument, currentStats) = try convert(currentOAS)
         
         let migrationGuide = MigrationGuide(for: previousDocument, rhs: currentDocument)
     
         var changeStats = MigrationGuideStats()
         changeStats.analyze(document: migrationGuide)
-        
-        print(changeStats.formattedOutput)
-        
-        // TODO print(migrationGuide.json)
     
-        let stats = JSONSchemaConverter.stats
-    
-        var typeCount0 = previousDocument.typeStore.count
-        var typeCount = currentDocument.typeStore.count
+        var previousTypeCount = previousDocument.typeStore.count
+        var currentTypeCount = currentDocument.typeStore.count
     
         let ignoredTypes: [TypeInformation] = [JSONSchemaConverter.errorType, JSONSchemaConverter.recursiveTypeTerminator]
         for type in ignoredTypes {
             // swiftlint:disable:next force_unwrapping
             if currentDocument.typeStore.keys.contains(type.asReference().referenceKey!) {
-                typeCount -= 1
+                currentTypeCount -= 1
             }
             // swiftlint:disable:next force_unwrapping
             if previousDocument.typeStore.keys.contains(type.asReference().referenceKey!) {
-                typeCount0 -= 1
+                previousTypeCount -= 1
             }
         }
     
+        let endpoint = changeStats.endpointChangeStats
+        let model = changeStats.modelChangeStats
+        let scripts = changeStats.scriptStats
+        
         print("""
-              ---------------------------- STATS ----------------------------
-              - "not" encounters:                 \(stats.notEncounters)
-              - terminated cyclic references:     \(stats.terminatedCyclicReferences)
-              
-              - "anyOf" count:                    \(stats.anyOfEncounters)
-              - "oneOf" count:                    \(stats.oneOfEncounters)
-              - total:                            \(stats.anyOfEncounters + stats.oneOfEncounters)
-              
-              - missed "anyOf" sub-schemas:       \(stats.missedAnyOfSubSchemas)
-              - missed "oneOf" sub-schemas:       \(stats.missedOneOfSubSchemas)
-              - total missed sub-schemas:         \(stats.missedAnyOfSubSchemas + stats.missedOneOfSubSchemas)
-              - total missed sub-schemas0:        \(stats0.missedAnyOfSubSchemas + stats0.missedOneOfSubSchemas)
-              
-              - total type count:                 \(typeCount)
-              - total type count0:                \(typeCount0)
-              - total endpoint count:             \(currentDocument.endpoints.count)
-              ---------------------------------------------------------------
+              NAME & \(endpoint.additionStats.changeCount) & \(endpoint.removalStats.changeCount) \
+              & \(endpoint.updateStats.changeCount + endpoint.idChangeStats.changeCount) & \(model.additionStats.changeCount) \
+              & \(model.removalStats.changeCount) & \(model.updateStats.changeCount + model.idChangeStats.changeCount) \
+              & \(scripts.scripts) & \(scripts.jsonValues) \\\\
+              """)
+        print("")
+        
+        let endpointStats = endpoint.allStats
+        let modelStats = model.allStats
+        
+        print("""
+              NAME & \(endpointStats.total(of: \.breaking)) & \(endpointStats.total(of: \.unsolvable)) \
+              & \(modelStats.total(of: \.breaking)) & \(modelStats.total(of: \.unsolvable)) \
+              & \(currentStats.missedAnyOfSubSchemas + currentStats.missedOneOfSubSchemas) (\(previousStats.missedAnyOfSubSchemas + previousStats.missedOneOfSubSchemas)) \
+              & \(currentTypeCount) (\(previousTypeCount)) \\\\
               """)
     }
 }

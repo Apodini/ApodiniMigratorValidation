@@ -9,12 +9,24 @@
 import Foundation
 import ApodiniMigratorCompare
 
+/// This structure captures stats about a particular `ChangeableElement`.
 public struct ChangeStats<Element: ChangeableElement> {
-    private(set) var additionStats: ChangeTypeStats
-    private(set) var removalStats: ChangeTypeStats
-    private(set) var updateStats: ChangeTypeStats
-    private(set) var idChangeStats: ChangeTypeStats
+    /// The stats of `.addition` changes.
+    public private(set) var additionStats: ChangeTypeStats
+    /// The stats of `.removal` changes.
+    public private(set) var removalStats: ChangeTypeStats
+    /// The stats of `.update` changes.
+    public private(set) var updateStats: ChangeTypeStats
+    /// The stats of `.idChange` changes.
+    public private(set) var idChangeStats: ChangeTypeStats
     
+    /// Array of all the above stats instances.
+    /// Useful in combination with `Array#total(of:)` extension.
+    public var allStats: [ChangeTypeStats] {
+        [additionStats, removalStats, updateStats, idChangeStats]
+    }
+    
+    /// Initializes a new fresh ``ChangeStats`` instance.
     public init() {
         self.additionStats = ChangeTypeStats(type: .addition)
         self.removalStats = ChangeTypeStats(type: .removal)
@@ -22,12 +34,16 @@ public struct ChangeStats<Element: ChangeableElement> {
         self.idChangeStats = ChangeTypeStats(type: .idChange)
     }
     
+    /// Count script stats of the provided `Change` array.
+    /// - Parameter changes: The array of changes.
     public mutating func record(changes: [Change<Element>]) {
         for change in changes {
             record(change: change)
         }
     }
     
+    /// Count script stats of the provided `Change`.
+    /// - Parameter change: The `Change`.
     public mutating func record(change: Change<Element>) {
         switch change.type {
         case .addition:
@@ -44,8 +60,9 @@ public struct ChangeStats<Element: ChangeableElement> {
 
 // MARK: Formatted Output
 extension ChangeStats {
+    /// Formatted string representation of the change stats.
     public var formattedOutput: String {
-        let elements = [additionStats, removalStats, updateStats, idChangeStats]
+        let elements = allStats
         
         return """
                \(additionStats.formattedOutput)

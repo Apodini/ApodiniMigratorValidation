@@ -60,15 +60,19 @@ private let logger = Logger(label: "schema-converter")
 /// - `uniqueItems`
 ///
 /// ## Other Tradeoffs
-/// JSONSchema has additional schema representations which can't be represented within the `TypeInformation` framework.{ s in  }
+/// JSONSchema has additional schema representations which can't be represented within the `TypeInformation` framework.
+/// For better oversight, those occurrences are counted in the global ``ConversionStats`` object in the ``stats`` property.
 ///
 /// ### `not`:
-/// `not` schemas cannot be represented and the converter will exit with an error.
+/// `not` schemas cannot be represented and the converter will return the predefined ``errorType`` type.
 ///
 /// ### `oneOf` and `anyOf`:
+/// Both of those schemas can't be represented within the `TypeInformation` framework.
+/// To be able to map at least some information, we will always take the first sub-schema.
 ///
 /// ### Recursive References:
-///
+/// The `TypeStore` doesn't support describing recursive models. Therefore, we break recursive JSONSchema definitions
+/// by inserting the common `recursiveTypeTerminator` type once we encounter a cyclic reference.
 public class JSONSchemaConverter {
     /// Predefined `TypeInformation` `object` named `"Empty"` to represent any objects without properties.
     public static let emptyObject: TypeInformation = .object(name: .init(rawValue: "Empty"), properties: [])
@@ -89,7 +93,7 @@ public class JSONSchemaConverter {
     ///
     /// - Parameters:
     ///   - either: Either a ``JSONReference<JSONSchema>`` or a `JSONSchema` which is to be converted.
-    ///   - components: The ``OpenAPI.Components`` object which is used to lookup references.
+    ///   - components: The `OpenAPI.Components` object which is used to lookup references.
     public convenience init(from either: Either<JSONReference<JSONSchema>, JSONSchema>, with components: OpenAPI.Components) {
         switch either {
         case let .a(reference):
@@ -265,7 +269,10 @@ public class JSONSchemaConverter {
                         let type = try self.convert(schema: schema, fallbackNamingMaterial: "\(objectName)#\(name)")
                         return TypeProperty(name: name, type: type)
                     }
-                    .filter { $0.type != Self.emptyObject } // TODO listed in required parameters but not in the list of properties?
+                    // There is a case where github lists a parameter name in the list of required parameters
+                    // but doesn't specify the parameter schema. In then appeared as a schema fragment.
+                    // We want to filter those occurrences to properly model any changes.
+                    .filter { $0.type != Self.emptyObject }
                 
                 if properties.isEmpty {
                     return Self.emptyObject
@@ -300,7 +307,7 @@ public class JSONSchemaConverter {
     
                         return properties
                     }
-                    .filter { $0.type != Self.emptyObject } // TODO listed in required parameters but not in the list of properties?
+                    .filter { $0.type != Self.emptyObject }
                 
                 return .object(name: .init(rawValue: objectName), properties: combinedProperties)
             case let .one(of, _), let .any(of, _):

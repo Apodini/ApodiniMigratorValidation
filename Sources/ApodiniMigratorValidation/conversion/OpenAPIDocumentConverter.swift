@@ -19,9 +19,9 @@ private let logger = Logger(label: "document-converter")
 /// as input for the ApodiniMigrator change comparison process.
 /// Those documents (typically) can't be used to generate client stubs!
 ///
-/// TODO list tradeoffs?
+/// Tradeoffs are document within the source code inside `// TRADEOFF: ...` comments.
 ///
-/// TODO link to JSONSchemaConverter and its tradeoffs?
+/// See also ``RouteConverter`` and ``JSONSchemaConverter``.
 public struct OpenAPIDocumentConverter {
     private let openAPIDocument: OpenAPI.Document
     
