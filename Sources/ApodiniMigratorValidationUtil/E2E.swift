@@ -93,7 +93,8 @@ struct E2E: ParsableCommand {
         print("""
               NAME & \(endpointStats.total(of: \.breaking)) & \(endpointStats.total(of: \.unsolvable)) \
               & \(modelStats.total(of: \.breaking)) & \(modelStats.total(of: \.unsolvable)) \
-              & \(currentStats.missedAnyOfSubSchemas + currentStats.missedOneOfSubSchemas) (\(previousStats.missedAnyOfSubSchemas + previousStats.missedOneOfSubSchemas)) \
+              & \(currentStats.missedAnyOfSubSchemas + currentStats.missedOneOfSubSchemas) \
+              (\(previousStats.missedAnyOfSubSchemas + previousStats.missedOneOfSubSchemas)) \
               & \(currentTypeCount) (\(previousTypeCount)) \\\\
               """)
     }
