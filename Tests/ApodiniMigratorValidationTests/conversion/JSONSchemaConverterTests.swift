@@ -10,7 +10,6 @@ import XCTest
 @testable import ApodiniMigratorValidation
 import ApodiniTypeInformation
 import OpenAPIKit30
-import XCTAssertCrash
 
 func convert(
     _ schema: JSONSchema,
@@ -149,7 +148,7 @@ final class JSONSchemaConverterTests: XCTestCase {
     
     func testArrayConversion() throws {
         try AMAssertConversion(.array(items: .string()), .repeated(element: .scalar(.string)))
-        XCTAssertCrash(try! convert(.array())) // swiftlint:disable:this force_try
+        try XCTAssertRuntimeFailure(convert(.array()))
     }
     
     func testAllOfConversion() throws {
@@ -174,8 +173,8 @@ final class JSONSchemaConverterTests: XCTestCase {
             )
         )
         
-        XCTAssertCrash(try! convert(.all(of: []))) // swiftlint:disable:this force_try
-        XCTAssertCrash(try! convert(.all(of: .string, .integer))) // swiftlint:disable:this force_try
+        try XCTAssertRuntimeFailure(convert(.all(of: [])))
+        try XCTAssertRuntimeFailure(convert(.all(of: .string, .integer)))
     }
     
     func testAllOfConversionWithRetainingReferenceName() throws {
@@ -202,15 +201,15 @@ final class JSONSchemaConverterTests: XCTestCase {
     }
     
     func testUnsupportedConversions() throws {
-        XCTAssertCrash(try! convert(.not(.string))) // swiftlint:disable:this force_try
+        try XCTAssertRuntimeFailure(convert(.not(.string)))
     }
     
     func testOneOfAndAnyOfBestEffortConversion() throws {
         try AMAssertConversion(.one(of: .string, .integer), .scalar(.string))
         try AMAssertConversion(.any(of: .string, .integer), .scalar(.string))
         
-        XCTAssertCrash(try! convert(.one(of: []))) // swiftlint:disable:this force_try
-        XCTAssertCrash(try! convert(.any(of: []))) // swiftlint:disable:this force_try
+        try XCTAssertRuntimeFailure(convert(.one(of: [])))
+        try XCTAssertRuntimeFailure(convert(.any(of: [])))
     }
     
     func testOneOfAndAnyOfConversionWithRetainingReferenceName() throws {
