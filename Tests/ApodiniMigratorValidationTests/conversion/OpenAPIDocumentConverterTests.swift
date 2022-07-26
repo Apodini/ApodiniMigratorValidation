@@ -222,7 +222,10 @@ final class OpenAPIDocumentConverterTests: XCTestCase {
         
         AMAssertEqual(
             try converter.convert(),
-            APIDocument(serviceInformation: ServiceInformation(version: Version(), http: HTTPInformation(protocol: .http, hostname: "example.com", port: 80)))
+            APIDocument(serviceInformation: ServiceInformation(
+                version: Version(),
+                http: HTTPInformation(protocol: .http, hostname: "example.com", port: 80)
+            ))
         )
     }
 }
