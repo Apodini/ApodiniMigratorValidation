@@ -13,7 +13,7 @@ public struct ChangeStats<Element: ChangeableElement> {
     private(set) var additionStats: ChangeTypeStats
     private(set) var removalStats: ChangeTypeStats
     private(set) var updateStats: ChangeTypeStats
-    private(set) var idChangeStats: ChangeTypeStats // TODO flag to combine those!
+    private(set) var idChangeStats: ChangeTypeStats
     
     public init() {
         self.additionStats = ChangeTypeStats(type: .addition)
