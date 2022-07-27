@@ -200,6 +200,11 @@ final class JSONSchemaConverterTests: XCTestCase {
         )
     }
     
+    func testAllOfWithScalarAndFragment() throws {
+        try AMAssertConversion(.all(of: .string, .fragment), .scalar(.string))
+        try AMAssertConversion(.all(of: .fragment), JSONSchemaConverter.emptyObject)
+    }
+    
     func testOneOfAndAnyOfBestEffortConversion() throws {
         try AMAssertConversion(.one(of: .string, .integer), .scalar(.string))
         try AMAssertConversion(.any(of: .string, .integer), .scalar(.string))
