@@ -137,7 +137,6 @@ struct E2E {
         var outputMigrationGuides = false
         
         fileprivate struct BulkEntry: Decodable {
-            // TODO support parsing MigrationGuides (expense example!)!
             let name: String
             let lhs: String
             let lhsVersion: String?
