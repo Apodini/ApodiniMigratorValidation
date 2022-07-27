@@ -171,7 +171,7 @@ public struct RouteConverter {
             errors: [] // TRADEOFF: errors aren't documented.
         )
         
-        logger.info("Operation \(operationType.httpMethod) \(path.rawValue)#\(operationId) was converted to an APIDocument endpoint.")
+        logger.debug("Operation \(operationType.httpMethod) \(path.rawValue)#\(operationId) was converted to an APIDocument endpoint.")
         apiDocument.add(endpoint: endpoint)
     }
     
@@ -195,7 +195,7 @@ public struct RouteConverter {
     private func informAboutUnsupported(_ operation: OpenAPI.Operation?, name: String) {
         if let operation = operation {
             let operationId = operation.operationId ?? "UNKNOWN"
-            logger.warning("Ignoring operation \(name) \(route.path.rawValue)#\(operationId) as it can't be represented in the APIDocument!")
+            logger.debug("Ignoring operation \(name) \(route.path.rawValue)#\(operationId) as it can't be represented in the APIDocument!")
         }
     }
 }

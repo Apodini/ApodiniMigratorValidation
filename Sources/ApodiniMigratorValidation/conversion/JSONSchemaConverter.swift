@@ -285,24 +285,29 @@ public class JSONSchemaConverter {
                 //  - `minItems`
                 //  - `uniqueItems`
                 guard let items = try arrayContext.items.map({ try self.convert(schema: $0, fallbackNamingMaterial: objectName) }) else {
-                    fatalError("Encountered array schema without a description for the item type: \(schema)")
+                    fatalError("Encountered array schema without a description for the item type: \(schema) (in: \(objectName))")
                 }
     
                 return .repeated(element: items)
             case let .all(of, _):
-                guard let first = of.first else {
+                guard !of.isEmpty else {
                     preconditionFailure("`allOf` didn't contain anything: \(schema)")
                 }
                 
-                if of.count == 1 {
-                    return try self.convert(schema: first, fallbackNamingMaterial: objectName)
+                let convertedSchemas = try of
+                    .map { try self.convert(schema: $0, fallbackNamingMaterial: objectName) }
+                    .filter { $0 != Self.emptyObject }
+                
+                if convertedSchemas.isEmpty { // there were only empty schemas, we filtered them above!
+                    return Self.emptyObject
+                } else if convertedSchemas.count == 1 {
+                    return convertedSchemas[0]
                 }
                 
-                let combinedProperties = try of
-                    .map { try self.convert(schema: $0, fallbackNamingMaterial: objectName) } // we throw away the object name anyways!
+                let combinedProperties = convertedSchemas
                     .flatMap { information -> [TypeProperty] in
                         guard case let .object(_, properties, _) = information else {
-                            preconditionFailure("Encountered `allOf` which contains schemas different to .object: \(schema)")
+                            preconditionFailure("Encountered `allOf` which contains schemas different to .object: \(schema) (in: \(objectName))")
                         }
     
                         return properties

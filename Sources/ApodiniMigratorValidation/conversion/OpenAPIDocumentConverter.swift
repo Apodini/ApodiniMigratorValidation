@@ -42,6 +42,10 @@ public struct OpenAPIDocumentConverter {
             return HTTPInformation(protocol: .http, hostname: "example.com", port: 80)
         }
         
+        if url.starts(with: "/") { // special case for unix domain sockets
+            return HTTPInformation(protocol: .http, hostname: url, port: 80)
+        }
+        
         let proto: HTTPProtocol = url.starts(with: "https") ? .https : .http
         
         let hostnameAndPort = url.components(separatedBy: "://")[1]

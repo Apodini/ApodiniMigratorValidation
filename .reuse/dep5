@@ -1,0 +1,24 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ApodiniMigratorValidation
+Upstream-Contact: Paul Schmiedmayer <https://github.com/PSchmiedmayer>
+Source: https://github.com/Apodini/ApodiniMigratorValidation
+
+Files: Documents/migration-guides-output/*
+Copyright: 2022 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
+License: MIT
+
+Files: Documents/documents.json
+Copyright: 2022 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
+License: MIT
+
+Files: Documents/qonectiq_migration_guide.json
+Copyright: 2022 Paul Schmiedmayer and the project authors (see CONTRIBUTORS.md) <paul.schmiedmayer@tum.de>
+License: MIT
+
+Files: Documents/ghes*
+Copyright: 2020 GitHub
+License: MIT
+
+Files: Documents/*
+Copyright: 2022 APIs Guru Authors
+License: CC0-1.0

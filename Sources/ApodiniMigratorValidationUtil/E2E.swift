@@ -17,10 +17,17 @@ import Logging
 private let logger = Logger(label: "main")
 
 struct E2E {
+    private var migrationGuideOutputBasePath: Path?
+    
     fileprivate var changeTableLines: [String] = []
     fileprivate var breakingSolvableTableLines: [String] = []
     
-    mutating func analyze(lhs: Path, rhs: Path, name: String = "NAME") throws {
+    init(migrationGuideOutputBasePath: Path? = nil) {
+        self.migrationGuideOutputBasePath = migrationGuideOutputBasePath
+    }
+    
+    // swiftlint:disable:next function_body_length
+    fileprivate mutating func analyze(lhs: Path, rhs: Path, entry: Bulk.BulkEntry? = nil) throws {
         guard lhs.exists else {
             throw ArgumentParser.ValidationError("The provided `lhs` file doesn't exists: \(lhs)")
         }
@@ -63,7 +70,8 @@ struct E2E {
         let scripts = changeStats.scriptStats
         
         changeTableLines.append("""
-                                \(name) & \(endpoint.additionStats.changeCount) & \(endpoint.removalStats.changeCount) \
+                                \(entry?.name ?? "NAME") (\(entry?.lhsVersion ?? previousOAS.info.version)\\textrightarrow \(entry?.rhsVersion ?? currentOAS.info.version)) \
+                                & \(endpoint.additionStats.changeCount) & \(endpoint.removalStats.changeCount) \
                                 & \(endpoint.updateStats.changeCount + endpoint.idChangeStats.changeCount) & \(model.additionStats.changeCount) \
                                 & \(model.removalStats.changeCount) & \(model.updateStats.changeCount + model.idChangeStats.changeCount) \
                                 & \(scripts.scripts) & \(scripts.jsonValues) \\\\
@@ -73,26 +81,37 @@ struct E2E {
         let modelStats = model.allStats
     
         breakingSolvableTableLines.append("""
-                                          \(name) & \(endpointStats.total(of: \.breaking)) & \(endpointStats.total(of: \.unsolvable)) \
+                                          \(entry?.name ?? "NAME") \
+                                          & \(endpointStats.total(of: \.breaking)) & \(endpointStats.total(of: \.unsolvable)) \
+                                          & \(endpointStats.total(of: \.changeCount)) \
                                           & \(modelStats.total(of: \.breaking)) & \(modelStats.total(of: \.unsolvable)) \
+                                          & \(modelStats.total(of: \.changeCount)) \
                                           & \(currentStats.missedAnyOfSubSchemas + currentStats.missedOneOfSubSchemas) \
                                           (\(previousStats.missedAnyOfSubSchemas + previousStats.missedOneOfSubSchemas)) \
                                           & \(currentTypeCount) (\(previousTypeCount)) \\\\
                                           """)
+        
+        if let migrationGuideOutputBasePath = migrationGuideOutputBasePath {
+            let name: String
+            if let entryName = entry?.name {
+                name = "migration-guide_\(entryName.replacingOccurrences(of: " ", with: "_")).json".lowercased()
+            } else {
+                name = "migration-guide.json"
+            }
+            
+            let outputPath = migrationGuideOutputBasePath + Path(name)
+            try outputPath.write(migrationGuide.json)
+        }
     }
     
     func printTableEntries() {
         print("")
         print("")
         print("Change Table:")
-        for entry in changeTableLines {
-            print(entry)
-        }
+        print(changeTableLines.joined(separator: "\n\\hline\n"))
         print("")
         print("Breaking/Solvable Table:")
-        for entry in breakingSolvableTableLines {
-            print(entry)
-        }
+        print(breakingSolvableTableLines.joined(separator: "\n\\hline\n"))
     }
     
     private func convert(_ document: OpenAPI.Document) throws -> (APIDocument, JSONSchemaConverter.ConversionStats) {
@@ -114,10 +133,19 @@ struct E2E {
         )
         var documents = Path("./Documents")
         
-        private struct BulkEntry: Decodable {
+        @Flag(name: .shortAndLong, help: "When specified, MigrationGuides will be written to the `migration-guides-output` directory.")
+        var outputMigrationGuides = false
+        
+        fileprivate struct BulkEntry: Decodable {
             let name: String
             let lhs: String
+            let lhsVersion: String?
+            let lhsSource: String
             let rhs: String
+            let rhsVersion: String?
+            let rhsSource: String
+    
+            var skip: Bool? // swiftlint:disable:this discouraged_optional_boolean
         }
     
         mutating func run() throws {
@@ -131,12 +159,26 @@ struct E2E {
                 throw ArgumentParser.ValidationError("The provided `documents` directory must contain the index file `documents.json`!")
             }
             
-            var e2e = E2E()
-            let entries = try [BulkEntry].decode(from: jsonFilePath)
+            let migrationGuideOutput: Path?
+            if outputMigrationGuides {
+                let path = absoluteDocuments + "migration-guides-output"
+                migrationGuideOutput = path
+                if !path.exists {
+                    try path.mkdir()
+                }
+            } else {
+                migrationGuideOutput = nil
+            }
+            
+            var e2e = E2E(migrationGuideOutputBasePath: migrationGuideOutput)
+            let entries = try [BulkEntry]
+                .decode(from: jsonFilePath)
+                .filter { $0.skip != true }
+                .sorted(by: \.name)
             
             for entry in entries {
                 logger.info("Parsing bulk entry: `\(entry.name)`")
-                try e2e.analyze(lhs: documents + Path(entry.lhs), rhs: documents + Path(entry.rhs), name: entry.name)
+                try e2e.analyze(lhs: documents + Path(entry.lhs), rhs: documents + Path(entry.rhs), entry: entry)
             }
             
             e2e.printTableEntries()

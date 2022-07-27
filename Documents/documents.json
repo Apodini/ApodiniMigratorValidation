@@ -1,7 +1,159 @@
 [
   {
-    "name": "GitHub Enterprise",
+    "note": "ghes-2.22.json was malformed (missing array items and duplicate operationId) and corrected accordingly.",
+    "name": "GitHub Enterprise v2",
+    "lhs": "ghes-2.22.json",
+    "lhsVersion": "2.22",
+    "lhsSource": "https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/ghes-2.22/ghes-2.22.json",
+    "rhs": "ghes-3.0.json",
+    "rhsVersion": "3.0",
+    "rhsSource": "https://raw.githubusercontent.com/github/rest-api-description/main/descriptions/ghes-3.0/ghes-3.0.json"
+  },
+  {
+    "name": "GitHub Enterprise v3",
     "lhs": "ghes-3.5.json",
-    "rhs": "ghes-3.6.json"
+    "lhsVersion": "3.5",
+    "lhsSource": "https://github.com/github/rest-api-description/blob/main/descriptions/ghes-3.5/ghes-3.5.json",
+    "rhs": "ghes-3.6.json",
+    "rhsVersion": "3.6",
+    "rhsSource": "https://github.com/github/rest-api-description/blob/main/descriptions/ghes-3.6/ghes-3.6.json"
+  },
+  {
+    "name": "AppStore Connect",
+    "lhs": "appstore-connect-1.2.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/d668541ddeb79c00eca97d5098f2bb5bb7eb4b25/APIs/apple.com/app-store-connect/1.2/openapi.yaml",
+    "rhs": "appstore-connect-1.4.1.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/apple.com/app-store-connect/1.4.1/openapi.yaml"
+  },
+  {
+    "name": "Google Drive",
+    "lhs": "google-drive-v2.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/drive/v2/openapi.yaml",
+    "rhs": "google-drive-v3.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/drive/v3/openapi.yaml"
+  },
+  {
+    "name": "Google Translate",
+    "lhs": "google-translate-v2.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/translate/v2/openapi.yaml",
+    "rhs": "google-translate-v3.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/translate/v3/openapi.yaml"
+  },
+  {
+    "name": "Google AdSense",
+    "lhs": "google-adsense-v1.4.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/adsense/v1.4/openapi.yaml",
+    "rhs": "google-adsense-v2.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/adsense/v2/openapi.yaml"
+  },
+  {
+    "name": "Google OAuth2",
+    "lhs": "google-oauth2-v1.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/oauth2/v1/openapi.yaml",
+    "rhs": "google-oauth2-v2.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/oauth2/v2/openapi.yaml"
+  },
+  {
+    "name": "Google Content",
+    "lhs": "google-content-v2.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/content/v2/openapi.yaml",
+    "rhs": "google-content-v2.1.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/googleapis.com/content/v2.1/openapi.yaml"
+  },
+  {
+    "skip": true,
+    "skipReason": "Both documents describe the API back from 2015-11-28.",
+    "name": "Instagram",
+    "lhs": "instagram-1.json",
+    "lhsVersion": "2017-04",
+    "lhsSource": "https://converter.swagger.io/api/convert?url=https://raw.githubusercontent.com/APIs-guru/openapi-directory/b33d8da4ba9179dc407818c6a0b0655182af17a7/APIs/instagram.com/1.0.0/swagger.yaml",
+    "rhs": "instagram-2.json",
+    "rhsVersion": "2021-07",
+    "rhsSource": "https://converter.swagger.io/api/convert?url=https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/instagram.com/1.0.0/swagger.yaml"
+  },
+  {
+    "skip": true,
+    "skipReason": "No changes!",
+    "name": "Lufthansa",
+    "lhs": "lufthansa-1.yaml",
+    "lhsVersion": "2020-07",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/e6976107c8f76e6f5a593882f16348fccc9dd72b/APIs/lufthansa.com/public/1.0/openapi.yaml",
+    "rhs": "lufthansa-2.yaml",
+    "rhsVersion": "2021-07",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/lufthansa.com/public/1.0/openapi.yaml"
+  },
+  {
+    "skip": true,
+    "name": "Twitter",
+    "lhs": "twitter-v1.json",
+    "lhsSource": "https://converter.swagger.io/api/convert?url=https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/twitter.com/legacy/1.1/swagger.yaml",
+    "rhs": "twitter-v2.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/twitter.com/current/2.21/openapi.yaml"
+  },
+  {
+    "name": "Kubernetes",
+    "lhs": "kubernetes-1.23.9.json",
+    "lhsVersion": "1.23.9",
+    "lhsSource": "https://converter.swagger.io/api/convert?url=https://raw.githubusercontent.com/kubernetes/kubernetes/c1de2d70269039fe55efb98e737d9a29f9155246/api/openapi-spec/swagger.json",
+    "rhs": "kubernetes-1.24.3.json",
+    "rhsVersion": "1.24.3",
+    "rhsSource": "https://converter.swagger.io/api/convert?url=https://raw.githubusercontent.com/kubernetes/kubernetes/aef86a93758dc3cb2c658dd9657ab4ad4afc21cb/api/openapi-spec/swagger.json"
+  },
+  {
+    "name": "AWS App Mesh",
+    "lhs": "aws-app-mesh-1.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/amazonaws.com/appmesh/2018-10-01/openapi.yaml",
+    "rhs": "aws-app-mesh-2.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/amazonaws.com/appmesh/2019-01-25/openapi.yaml"
+  },
+  {
+    "skip": true,
+    "skipReason": "Parsing OpenAPI 3.1 not supported yet!",
+    "name": "Adyen Payment API",
+    "lhs": "adyen-payment-25.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/adyen.com/PaymentService/25/openapi.yaml",
+    "rhs": "adyen-payment-68.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/adyen.com/PaymentService/68/openapi.yaml"
+  },
+  {
+    "name": "Mercedes Car Configurator",
+    "lhs": "mercedes_car_configurator_api-1.yaml",
+    "lhsVersion": "2018-08",
+    "lhsSource": "https://converter.swagger.io/api/convert?url=https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/mercedes-benz.com/configurator/1.0/swagger.yaml",
+    "rhs": "mercedes_car_configurator_api-2.yaml",
+    "rhsVersion": "2022-07",
+    "rhsSource": "https://developer.mercedes-benz.com/docs-and-specs/published/products/car_configurator/swagger/swagger_external.yaml"
+  },
+  {
+    "name": "Zoom",
+    "lhs": "zoom-1.json",
+    "lhsVersion": "2021",
+    "lhsSource": "https://converter.swagger.io/api/convert?url=https://raw.githubusercontent.com/zoom/api/master/openapi.v2.json",
+    "rhs": "zoom-2.yaml",
+    "rhsVersion": "2022",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/zoom.us/2.0.0/openapi.yaml"
+  },
+  {
+    "skip": true,
+    "name": "1Password Local",
+    "lhs": "1password-1.2.0.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/e170310125cb09614deab7405703c1b85bec5852/APIs/1password.local/1.2.0/openapi.yaml",
+    "rhs": "1password-1.3.0.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/1password.local/connect/1.3.0/openapi.yaml"
+  },
+  {
+    "name": "1Password Local",
+    "lhs": "1password-1.1.1.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/43a91d7c4ce4930de872dfc8b2fd7c6aa3ac9594/APIs/1password.local/1.1.1/openapi.yaml",
+    "rhs": "1password-1.2.0.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/e170310125cb09614deab7405703c1b85bec5852/APIs/1password.local/1.2.0/openapi.yaml"
+  },
+  {
+    "skip": true,
+    "name": "1Password Local",
+    "lhs": "1password-0.5.0.yaml",
+    "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/2c02dc6a5a480600dca1b2e72070075340fcfd71/APIs/1password.local/0.5.0/openapi.yaml",
+    "rhs": "1password-1.1.1.yaml",
+    "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/43a91d7c4ce4930de872dfc8b2fd7c6aa3ac9594/APIs/1password.local/1.1.1/openapi.yaml"
   }
 ]
