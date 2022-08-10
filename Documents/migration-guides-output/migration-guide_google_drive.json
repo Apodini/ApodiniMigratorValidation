@@ -1,6 +1,6 @@
 {
     "summary": "A summary of what changed between versions",
-    "document-id": "4F716633-0A2C-4DDF-9DCD-6594205ED823",
+    "document-id": "B5637E22-EFFD-4282-832D-BF230C8374C6",
     "version": "2.1.0",
     "from": "v_1.0.0",
     "to": "v_1.0.0",
@@ -37,7 +37,31 @@
     "modelChanges": [
         {
             "type": "removal",
-            "id": "filesupdate#alt",
+            "id": "About#additionalRoleInfo",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "appsget#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "About#importFormats",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "Comment#context",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "ChildList",
             "breaking": false,
             "solvable": false
         },
@@ -49,19 +73,67 @@
         },
         {
             "type": "removal",
-            "id": "permissionsgetIdForEmail#alt",
+            "id": "File#labels",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "filescopy#visibility",
+            "id": "App#icons",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "User#picture",
+            "id": "appslist#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "propertiesdelete#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "childrenlist#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "File#thumbnail",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "permissionsinsert#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "fileslist#projection",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "parentslist#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "permissionsupdate#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "Property",
             "breaking": false,
             "solvable": false
         },
@@ -73,31 +145,121 @@
         },
         {
             "type": "removal",
+            "id": "propertiesinsert#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "drivesinsert#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "fileswatch#projection",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "childrenget#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
             "id": "filestrash#alt",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "PropertyList",
+            "id": "commentsinsert#alt",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "About#maxUploadSizes",
+            "id": "permissionsgetIdForEmail#alt",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "PermissionId",
+            "id": "repliesupdate#alt",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "fileslist#projection",
+            "id": "filestouch#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "CommentReplyList",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "childrendelete#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "teamdrivesupdate#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "propertieslist#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "User#picture",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "File#indexableText",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "filesupdate#modifiedDateBehavior",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "filesinsert#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "revisionsupdate#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "parentsinsert#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "teamdrivesinsert#alt",
             "breaking": false,
             "solvable": false
         },
@@ -115,205 +277,13 @@
         },
         {
             "type": "removal",
-            "id": "repliesinsert#alt",
+            "id": "CommentReply",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "teamdrivesinsert#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "File#thumbnail",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "filestouch#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "commentsinsert#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "revisionsupdate#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "ParentList",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "propertiesinsert#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "App#icons",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "commentsupdate#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "filesinsert#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "About#importFormats",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "About#quotaBytesByService",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "parentsinsert#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "childrenlist#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "drivesinsert#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "AppList",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "drivesupdate#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "childrendelete#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "filesinsert#visibility",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "parentsdelete#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "fileswatch#projection",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "propertiesdelete#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "About#additionalRoleInfo",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "filesuntrash#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "Property",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "filesupdate#modifiedDateBehavior",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "permissionsupdate#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "propertieslist#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "parentslist#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "File#indexableText",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "repliesupdate#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "parentsget#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "About#features",
+            "id": "filescopy#visibility",
             "breaking": false,
             "solvable": false
         },
@@ -325,7 +295,19 @@
         },
         {
             "type": "removal",
-            "id": "appsget#alt",
+            "id": "About#quotaBytesByService",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "About#additionalRoleInfo#roleSets",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "filesinsert#visibility",
             "breaking": false,
             "solvable": false
         },
@@ -337,37 +319,13 @@
         },
         {
             "type": "removal",
-            "id": "About#exportFormats",
+            "id": "parentsget#alt",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "childreninsert#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "childrenget#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "ChildList",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "CommentReply",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "File#labels",
+            "id": "About#maxUploadSizes",
             "breaking": false,
             "solvable": false
         },
@@ -379,103 +337,81 @@
         },
         {
             "type": "removal",
-            "id": "permissionsinsert#alt",
+            "id": "ParentList",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "teamdrivesupdate#alt",
+            "id": "PropertyList",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "CommentReplyList",
+            "id": "repliesinsert#alt",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "appslist#alt",
+            "id": "About#exportFormats",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "Comment#context",
+            "id": "commentsupdate#alt",
             "breaking": false,
             "solvable": false
         },
         {
             "type": "removal",
-            "id": "About#additionalRoleInfo#roleSets",
+            "id": "AppList",
             "breaking": false,
             "solvable": false
         },
         {
-            "type": "addition",
-            "id": "commentscreate#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "drive",
-                        "rootComponent": {
-                            "name": "create#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "comments"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
+            "type": "removal",
+            "id": "PermissionId",
             "breaking": false,
-            "solvable": true
+            "solvable": false
         },
         {
-            "type": "addition",
-            "id": "filescreate#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "drive",
-                        "rootComponent": {
-                            "name": "create#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "files"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
+            "type": "removal",
+            "id": "About#features",
             "breaking": false,
-            "solvable": true
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "childreninsert#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "filesupdate#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "parentsdelete#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "filesuntrash#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "drivesupdate#alt",
+            "breaking": false,
+            "solvable": false
         },
         {
             "type": "addition",
@@ -547,17 +483,17 @@
         },
         {
             "type": "addition",
-            "id": "File#contentHints",
+            "id": "Comment#quotedFileContent",
             "added": {
                 "object": {
                     "typeName": {
                         "rootComponent": {
-                            "name": "File#contentHints"
+                            "name": "Comment#quotedFileContent"
                         }
                     },
                     "properties": [
                         {
-                            "name": "indexableText",
+                            "name": "mimeType",
                             "type": {
                                 "optional": {
                                     "scalar": "String"
@@ -566,12 +502,76 @@
                             "context": {}
                         },
                         {
-                            "name": "thumbnail",
+                            "name": "value",
                             "type": {
                                 "optional": {
-                                    "reference": "File#contentHints#thumbnail"
+                                    "scalar": "String"
                                 }
                             },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "commentscreate#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "drive",
+                        "rootComponent": {
+                            "name": "create#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "comments"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "teamdrivescreate#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "drive",
+                        "rootComponent": {
+                            "name": "create#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "teamdrives"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
                             "context": {}
                         }
                     ],
@@ -615,17 +615,17 @@
         },
         {
             "type": "addition",
-            "id": "Comment#quotedFileContent",
+            "id": "File#contentHints",
             "added": {
                 "object": {
                     "typeName": {
                         "rootComponent": {
-                            "name": "Comment#quotedFileContent"
+                            "name": "File#contentHints"
                         }
                     },
                     "properties": [
                         {
-                            "name": "mimeType",
+                            "name": "indexableText",
                             "type": {
                                 "optional": {
                                     "scalar": "String"
@@ -634,10 +634,10 @@
                             "context": {}
                         },
                         {
-                            "name": "value",
+                            "name": "thumbnail",
                             "type": {
                                 "optional": {
-                                    "scalar": "String"
+                                    "reference": "File#contentHints#thumbnail"
                                 }
                             },
                             "context": {}
@@ -651,54 +651,7 @@
         },
         {
             "type": "addition",
-            "id": "ReplyList",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "ReplyList"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "kind",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "nextPageToken",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "replies",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "reference": "Reply"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "teamdrivescreate#alt",
+            "id": "repliescreate#alt",
             "added": {
                 "enum": {
                     "typeName": {
@@ -708,7 +661,7 @@
                         },
                         "nestedComponents": [
                             {
-                                "name": "teamdrives"
+                                "name": "replies"
                             }
                         ]
                     },
@@ -827,38 +780,6 @@
         },
         {
             "type": "addition",
-            "id": "repliescreate#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "drive",
-                        "rootComponent": {
-                            "name": "create#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "replies"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
             "id": "About#storageQuota",
             "added": {
                 "object": {
@@ -912,346 +833,83 @@
             "solvable": true
         },
         {
-            "type": "update",
-            "id": "LabelList",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "items",
-                    "to": "labels",
-                    "similarity": 0.577778,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "fileslist#corpus",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "removal",
-                    "id": "DEFAULT",
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "fileslist#corpus",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "removal",
-                    "id": "DOMAIN",
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "fileslist#corpus",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "addition",
-                    "id": "domain",
-                    "added": {
-                        "name": "domain",
-                        "rawValue": "domain",
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "fileslist#corpus",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "addition",
-                    "id": "user",
-                    "added": {
-                        "name": "user",
-                        "rawValue": "user",
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "FileList",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "items",
-                    "to": "files",
-                    "similarity": 0.733333,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "FileList",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "etag",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "FileList",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "nextLink",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "FileList",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "selfLink",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "TeamDrive",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "createdDate",
-                    "to": "createdTime",
-                    "similarity": 0.923636,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Revision",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "downloadUrl",
-                    "to": "keepForever",
-                    "similarity": 0.515152,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Revision",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "downloadUrl",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "scalar": "String"
-                            }
+            "type": "addition",
+            "id": "filescreate#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "drive",
+                        "rootComponent": {
+                            "name": "create#alt"
                         },
-                        "to": {
-                            "optional": {
-                                "scalar": "Bool"
+                        "nestedComponents": [
+                            {
+                                "name": "files"
                             }
-                        },
-                        "forwardMigration": 0,
-                        "backwardMigration": 1,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                        ]
                     },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Revision",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "fileSize",
-                    "to": "size",
-                    "similarity": 0.583333,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Revision",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "lastModifyingUserName",
-                    "to": "modifiedTime",
-                    "similarity": 0.669841,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Revision",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "lastModifyingUserName",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "scalar": "String"
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "scalar": "Date"
-                            }
-                        },
-                        "forwardMigration": 2,
-                        "backwardMigration": 3,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    "rawValueType": {
+                        "scalar": "String"
                     },
-                    "breaking": true,
-                    "solvable": true
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
                 }
-            }
+            },
+            "breaking": false,
+            "solvable": true
         },
         {
-            "type": "update",
-            "id": "Revision",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "etag",
-                    "breaking": false,
-                    "solvable": true
+            "type": "addition",
+            "id": "ReplyList",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "ReplyList"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "kind",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "nextPageToken",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "replies",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "reference": "Reply"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
                 }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Revision",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "modifiedDate",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Revision",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "pinned",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Revision",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "selfLink",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "RevisionList",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "items",
-                    "to": "revisions",
-                    "similarity": 0.533333,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "RevisionList",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "etag",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "RevisionList",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "selfLink",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
+            },
+            "breaking": false,
+            "solvable": true
         },
         {
             "type": "update",
@@ -1296,14 +954,14 @@
         },
         {
             "type": "update",
-            "id": "DriveList",
+            "id": "Drive",
             "updated": {
                 "type": "property",
                 "property": {
                     "type": "idChange",
-                    "from": "items",
-                    "to": "drives",
-                    "similarity": 0.700000,
+                    "from": "createdDate",
+                    "to": "createdTime",
+                    "similarity": 0.923636,
                     "breaking": true,
                     "solvable": true
                 }
@@ -1311,13 +969,15 @@
         },
         {
             "type": "update",
-            "id": "Permission#teamDrivePermissionDetails",
+            "id": "TeamDriveList",
             "updated": {
                 "type": "property",
                 "property": {
-                    "type": "removal",
-                    "id": "additionalRoles",
-                    "breaking": false,
+                    "type": "idChange",
+                    "from": "items",
+                    "to": "teamDrives",
+                    "similarity": 0.633333,
+                    "breaking": true,
                     "solvable": true
                 }
             }
@@ -1365,14 +1025,14 @@
         },
         {
             "type": "update",
-            "id": "User",
+            "id": "DriveList",
             "updated": {
                 "type": "property",
                 "property": {
                     "type": "idChange",
-                    "from": "isAuthenticatedUser",
-                    "to": "me",
-                    "similarity": 0.517544,
+                    "from": "items",
+                    "to": "drives",
+                    "similarity": 0.700000,
                     "breaking": true,
                     "solvable": true
                 }
@@ -1380,14 +1040,14 @@
         },
         {
             "type": "update",
-            "id": "User",
+            "id": "Change",
             "updated": {
                 "type": "property",
                 "property": {
                     "type": "idChange",
-                    "from": "picture",
-                    "to": "photoLink",
-                    "similarity": 0.552381,
+                    "from": "deleted",
+                    "to": "removed",
+                    "similarity": 0.714286,
                     "breaking": true,
                     "solvable": true
                 }
@@ -1395,26 +1055,41 @@
         },
         {
             "type": "update",
-            "id": "User",
+            "id": "Change",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "id",
+                    "to": "time",
+                    "similarity": 0.583333,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Change",
             "updated": {
                 "type": "property",
                 "property": {
                     "type": "update",
-                    "id": "picture",
+                    "id": "id",
                     "updated": {
                         "type": "type",
                         "from": {
                             "optional": {
-                                "reference": "User#picture"
+                                "scalar": "String"
                             }
                         },
                         "to": {
                             "optional": {
-                                "scalar": "String"
+                                "scalar": "Date"
                             }
                         },
-                        "forwardMigration": 4,
-                        "backwardMigration": 5,
+                        "forwardMigration": 0,
+                        "backwardMigration": 1,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1424,15 +1099,26 @@
         },
         {
             "type": "update",
-            "id": "Drive",
+            "id": "Change",
             "updated": {
                 "type": "property",
                 "property": {
-                    "type": "idChange",
-                    "from": "createdDate",
-                    "to": "createdTime",
-                    "similarity": 0.923636,
-                    "breaking": true,
+                    "type": "removal",
+                    "id": "modificationDate",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Change",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "selfLink",
+                    "breaking": false,
                     "solvable": true
                 }
             }
@@ -1472,8 +1158,8 @@
                                 "reference": "File#contentHints"
                             }
                         },
-                        "forwardMigration": 6,
-                        "backwardMigration": 7,
+                        "forwardMigration": 2,
+                        "backwardMigration": 3,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1516,8 +1202,8 @@
                                 "reference": "Empty"
                             }
                         },
-                        "forwardMigration": 8,
-                        "backwardMigration": 9,
+                        "forwardMigration": 4,
+                        "backwardMigration": 5,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1560,8 +1246,8 @@
                                 "scalar": "String"
                             }
                         },
-                        "forwardMigration": 10,
-                        "backwardMigration": 11,
+                        "forwardMigration": 6,
+                        "backwardMigration": 7,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1604,8 +1290,8 @@
                                 "scalar": "Date"
                             }
                         },
-                        "forwardMigration": 12,
-                        "backwardMigration": 13,
+                        "forwardMigration": 8,
+                        "backwardMigration": 9,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1678,8 +1364,8 @@
                                 "scalar": "Date"
                             }
                         },
-                        "forwardMigration": 14,
-                        "backwardMigration": 15,
+                        "forwardMigration": 10,
+                        "backwardMigration": 11,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1737,8 +1423,8 @@
                                 "scalar": "Date"
                             }
                         },
-                        "forwardMigration": 16,
-                        "backwardMigration": 17,
+                        "forwardMigration": 12,
+                        "backwardMigration": 13,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1781,8 +1467,8 @@
                                 "scalar": "Bool"
                             }
                         },
-                        "forwardMigration": 18,
-                        "backwardMigration": 19,
+                        "forwardMigration": 14,
+                        "backwardMigration": 15,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1840,8 +1526,8 @@
                                 "scalar": "Date"
                             }
                         },
-                        "forwardMigration": 20,
-                        "backwardMigration": 21,
+                        "forwardMigration": 16,
+                        "backwardMigration": 17,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1884,8 +1570,8 @@
                                 "scalar": "Bool"
                             }
                         },
-                        "forwardMigration": 22,
-                        "backwardMigration": 23,
+                        "forwardMigration": 18,
+                        "backwardMigration": 19,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -1928,8 +1614,8 @@
                                 "scalar": "Bool"
                             }
                         },
-                        "forwardMigration": 24,
-                        "backwardMigration": 25,
+                        "forwardMigration": 20,
+                        "backwardMigration": 21,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -2144,8 +1830,8 @@
                                 "reference": "Empty"
                             }
                         },
-                        "forwardMigration": 26,
-                        "backwardMigration": 27,
+                        "forwardMigration": 22,
+                        "backwardMigration": 23,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -2177,40 +1863,10 @@
                                 }
                             }
                         },
-                        "forwardMigration": 28,
-                        "backwardMigration": 29,
+                        "forwardMigration": 24,
+                        "backwardMigration": 25,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "ContentRestriction",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "restrictionDate",
-                    "to": "restrictionTime",
-                    "similarity": 0.900513,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "TeamDriveList",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "items",
-                    "to": "teamDrives",
-                    "similarity": 0.633333,
                     "breaking": true,
                     "solvable": true
                 }
@@ -2253,8 +1909,8 @@
                                 }
                             }
                         },
-                        "forwardMigration": 30,
-                        "backwardMigration": 31,
+                        "forwardMigration": 26,
+                        "backwardMigration": 27,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -2316,584 +1972,7 @@
         },
         {
             "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "commentId",
-                    "to": "createdTime",
-                    "similarity": 0.642424,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "commentId",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "scalar": "String"
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "scalar": "Date"
-                            }
-                        },
-                        "forwardMigration": 32,
-                        "backwardMigration": 33,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "context",
-                    "to": "quotedFileContent",
-                    "similarity": 0.518908,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "context",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "reference": "Comment#context"
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "reference": "Comment#quotedFileContent"
-                            }
-                        },
-                        "forwardMigration": 34,
-                        "backwardMigration": 35,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "createdDate",
-                    "to": "resolved",
-                    "similarity": 0.621212,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "createdDate",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "scalar": "Date"
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "scalar": "Bool"
-                            }
-                        },
-                        "forwardMigration": 36,
-                        "backwardMigration": 37,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "fileId",
-                    "to": "id",
-                    "similarity": 0.555556,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "fileTitle",
-                    "to": "modifiedTime",
-                    "similarity": 0.611111,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "fileTitle",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "scalar": "String"
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "scalar": "Date"
-                            }
-                        },
-                        "forwardMigration": 38,
-                        "backwardMigration": 39,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "modifiedDate",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "selfLink",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "status",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Comment",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "replies",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "repeated": {
-                                    "reference": "CommentReply"
-                                }
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "repeated": {
-                                    "reference": "Reply"
-                                }
-                            }
-                        },
-                        "forwardMigration": 40,
-                        "backwardMigration": 41,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Change",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "deleted",
-                    "to": "removed",
-                    "similarity": 0.714286,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Change",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "id",
-                    "to": "time",
-                    "similarity": 0.583333,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Change",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "id",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "scalar": "String"
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "scalar": "Date"
-                            }
-                        },
-                        "forwardMigration": 42,
-                        "backwardMigration": 43,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Change",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "modificationDate",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Change",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "selfLink",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "File#capabilities",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "canChangeRestrictedDownload",
-                    "to": "canChangeViewersCanCopyContent",
-                    "similarity": 0.845993,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "File#imageMediaMetadata",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "date",
-                    "to": "time",
-                    "similarity": 0.666667,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "additionalRoles",
-                    "to": "allowFileDiscovery",
-                    "similarity": 0.706667,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "additionalRoles",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "repeated": {
-                                    "scalar": "String"
-                                }
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "scalar": "Bool"
-                            }
-                        },
-                        "forwardMigration": 44,
-                        "backwardMigration": 45,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "etag",
-                    "to": "expirationTime",
-                    "similarity": 0.589286,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "etag",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "scalar": "String"
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "scalar": "Date"
-                            }
-                        },
-                        "forwardMigration": 46,
-                        "backwardMigration": 47,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "idChange",
-                    "from": "expirationDate",
-                    "to": "displayName",
-                    "similarity": 0.537229,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "expirationDate",
-                    "updated": {
-                        "type": "type",
-                        "from": {
-                            "optional": {
-                                "scalar": "Date"
-                            }
-                        },
-                        "to": {
-                            "optional": {
-                                "scalar": "String"
-                            }
-                        },
-                        "forwardMigration": 48,
-                        "backwardMigration": 49,
-                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "authKey",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "name",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "selfLink",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "value",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "withLink",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "Permission#permissionDetails",
+            "id": "Permission#teamDrivePermissionDetails",
             "updated": {
                 "type": "property",
                 "property": {
@@ -2941,8 +2020,8 @@
                                 "scalar": "Bool"
                             }
                         },
-                        "forwardMigration": 50,
-                        "backwardMigration": 51,
+                        "forwardMigration": 28,
+                        "backwardMigration": 29,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -2985,8 +2064,8 @@
                                 "reference": "About#storageQuota"
                             }
                         },
-                        "forwardMigration": 52,
-                        "backwardMigration": 53,
+                        "forwardMigration": 30,
+                        "backwardMigration": 31,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -3031,8 +2110,8 @@
                                 "reference": "Empty"
                             }
                         },
-                        "forwardMigration": 54,
-                        "backwardMigration": 55,
+                        "forwardMigration": 32,
+                        "backwardMigration": 33,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -3272,8 +2351,8 @@
                                 "reference": "Empty"
                             }
                         },
-                        "forwardMigration": 56,
-                        "backwardMigration": 57,
+                        "forwardMigration": 34,
+                        "backwardMigration": 35,
                         "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
                     },
                     "breaking": true,
@@ -3301,6 +2380,927 @@
                         "to": {
                             "optional": {
                                 "reference": "Empty"
+                            }
+                        },
+                        "forwardMigration": 36,
+                        "backwardMigration": 37,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "User",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "isAuthenticatedUser",
+                    "to": "me",
+                    "similarity": 0.517544,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "User",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "picture",
+                    "to": "photoLink",
+                    "similarity": 0.552381,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "User",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "picture",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "reference": "User#picture"
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "forwardMigration": 38,
+                        "backwardMigration": 39,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "additionalRoles",
+                    "to": "allowFileDiscovery",
+                    "similarity": 0.706667,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "additionalRoles",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "repeated": {
+                                    "scalar": "String"
+                                }
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "forwardMigration": 40,
+                        "backwardMigration": 41,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "etag",
+                    "to": "expirationTime",
+                    "similarity": 0.589286,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "etag",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "scalar": "Date"
+                            }
+                        },
+                        "forwardMigration": 42,
+                        "backwardMigration": 43,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "expirationDate",
+                    "to": "displayName",
+                    "similarity": 0.537229,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "expirationDate",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "scalar": "Date"
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "forwardMigration": 44,
+                        "backwardMigration": 45,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "authKey",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "name",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "selfLink",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "value",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "withLink",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "TeamDrive",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "createdDate",
+                    "to": "createdTime",
+                    "similarity": 0.923636,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "RevisionList",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "items",
+                    "to": "revisions",
+                    "similarity": 0.533333,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "RevisionList",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "etag",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "RevisionList",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "selfLink",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "ContentRestriction",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "restrictionDate",
+                    "to": "restrictionTime",
+                    "similarity": 0.900513,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "File#capabilities",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "canChangeRestrictedDownload",
+                    "to": "canChangeViewersCanCopyContent",
+                    "similarity": 0.845993,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "File#imageMediaMetadata",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "date",
+                    "to": "time",
+                    "similarity": 0.666667,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Permission#permissionDetails",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "additionalRoles",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "fileslist#corpus",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "removal",
+                    "id": "DEFAULT",
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "fileslist#corpus",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "removal",
+                    "id": "DOMAIN",
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "fileslist#corpus",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "addition",
+                    "id": "domain",
+                    "added": {
+                        "name": "domain",
+                        "rawValue": "domain",
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "fileslist#corpus",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "addition",
+                    "id": "user",
+                    "added": {
+                        "name": "user",
+                        "rawValue": "user",
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Revision",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "downloadUrl",
+                    "to": "keepForever",
+                    "similarity": 0.515152,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Revision",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "downloadUrl",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "forwardMigration": 46,
+                        "backwardMigration": 47,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Revision",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "fileSize",
+                    "to": "size",
+                    "similarity": 0.583333,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Revision",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "lastModifyingUserName",
+                    "to": "modifiedTime",
+                    "similarity": 0.669841,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Revision",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "lastModifyingUserName",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "scalar": "Date"
+                            }
+                        },
+                        "forwardMigration": 48,
+                        "backwardMigration": 49,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Revision",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "etag",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Revision",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "modifiedDate",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Revision",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "pinned",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Revision",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "selfLink",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "LabelList",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "items",
+                    "to": "labels",
+                    "similarity": 0.577778,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "FileList",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "items",
+                    "to": "files",
+                    "similarity": 0.733333,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "FileList",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "etag",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "FileList",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "nextLink",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "FileList",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "selfLink",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "commentId",
+                    "to": "createdTime",
+                    "similarity": 0.642424,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "commentId",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "scalar": "Date"
+                            }
+                        },
+                        "forwardMigration": 50,
+                        "backwardMigration": 51,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "context",
+                    "to": "quotedFileContent",
+                    "similarity": 0.518908,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "context",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "reference": "Comment#context"
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "reference": "Comment#quotedFileContent"
+                            }
+                        },
+                        "forwardMigration": 52,
+                        "backwardMigration": 53,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "createdDate",
+                    "to": "resolved",
+                    "similarity": 0.621212,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "createdDate",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "scalar": "Date"
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "forwardMigration": 54,
+                        "backwardMigration": 55,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "fileId",
+                    "to": "id",
+                    "similarity": 0.555556,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "fileTitle",
+                    "to": "modifiedTime",
+                    "similarity": 0.611111,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "fileTitle",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "scalar": "Date"
+                            }
+                        },
+                        "forwardMigration": 56,
+                        "backwardMigration": 57,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "modifiedDate",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "selfLink",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "status",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "Comment",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "replies",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "repeated": {
+                                    "reference": "CommentReply"
+                                }
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "repeated": {
+                                    "reference": "Reply"
+                                }
                             }
                         },
                         "forwardMigration": 58,
@@ -4208,6 +4208,161 @@
         },
         {
             "type": "update",
+            "id": "drive.files.get",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "removal",
+                    "id": "projection",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.files.get",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "removal",
+                    "id": "revisionId",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.files.get",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "removal",
+                    "id": "updateViewedDate",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.changes.list",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "idChange",
+                    "from": "includeDeleted",
+                    "to": "includeRemoved",
+                    "similarity": 0.926190,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.changes.list",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "idChange",
+                    "from": "includeSubscribed",
+                    "to": "restrictToMyDrive",
+                    "similarity": 0.563725,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.changes.list",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "idChange",
+                    "from": "maxResults",
+                    "to": "pageSize",
+                    "similarity": 0.558333,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.changes.list",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "removal",
+                    "id": "startChangeId",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.changes.list",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "update",
+                    "id": "pageToken",
+                    "updated": {
+                        "type": "necessity",
+                        "from": "optional",
+                        "to": "required",
+                        "necessityMigration": 1
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.files.watch",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "removal",
+                    "id": "projection",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.files.watch",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "removal",
+                    "id": "revisionId",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.files.watch",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "removal",
+                    "id": "updateViewedDate",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
             "id": "drive.files.copy",
             "updated": {
                 "type": "parameter",
@@ -4305,6 +4460,100 @@
         },
         {
             "type": "update",
+            "id": "drive.files.generateIds",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "idChange",
+                    "from": "maxResults",
+                    "to": "count",
+                    "similarity": 0.533333,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.files.list",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "idChange",
+                    "from": "maxResults",
+                    "to": "pageSize",
+                    "similarity": 0.558333,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.files.list",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "removal",
+                    "id": "projection",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.teamdrives.list",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "idChange",
+                    "from": "maxResults",
+                    "to": "pageSize",
+                    "similarity": 0.558333,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.revisions.get",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "addition",
+                    "id": "acknowledgeAbuse",
+                    "added": {
+                        "name": "acknowledgeAbuse",
+                        "type": {
+                            "scalar": "Bool"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "drive.revisions.list",
+            "updated": {
+                "type": "parameter",
+                "parameter": {
+                    "type": "idChange",
+                    "from": "maxResults",
+                    "to": "pageSize",
+                    "similarity": 0.558333,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
             "id": "drive.replies.list",
             "updated": {
                 "type": "parameter",
@@ -4336,83 +4585,7 @@
         },
         {
             "type": "update",
-            "id": "drive.revisions.get",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "addition",
-                    "id": "acknowledgeAbuse",
-                    "added": {
-                        "name": "acknowledgeAbuse",
-                        "type": {
-                            "scalar": "Bool"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.replies.get",
-            "updated": {
-                "type": "response",
-                "from": {
-                    "reference": "CommentReply"
-                },
-                "to": {
-                    "reference": "Reply"
-                },
-                "backwardsMigration": 61
-            },
-            "breaking": true,
-            "solvable": true
-        },
-        {
-            "type": "update",
-            "id": "drive.files.get",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "removal",
-                    "id": "projection",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.files.get",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "removal",
-                    "id": "revisionId",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.files.get",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "removal",
-                    "id": "updateViewedDate",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.teamdrives.list",
+            "id": "drive.drives.list",
             "updated": {
                 "type": "parameter",
                 "parameter": {
@@ -4427,46 +4600,7 @@
         },
         {
             "type": "update",
-            "id": "drive.files.watch",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "removal",
-                    "id": "projection",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.files.watch",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "removal",
-                    "id": "revisionId",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.files.watch",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "removal",
-                    "id": "updateViewedDate",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.files.list",
+            "id": "drive.comments.list",
             "updated": {
                 "type": "parameter",
                 "parameter": {
@@ -4481,13 +4615,15 @@
         },
         {
             "type": "update",
-            "id": "drive.files.list",
+            "id": "drive.comments.list",
             "updated": {
                 "type": "parameter",
                 "parameter": {
-                    "type": "removal",
-                    "id": "projection",
-                    "breaking": false,
+                    "type": "idChange",
+                    "from": "updatedMin",
+                    "to": "startModifiedTime",
+                    "similarity": 0.513445,
+                    "breaking": true,
                     "solvable": true
                 }
             }
@@ -4562,7 +4698,7 @@
                         "type": "necessity",
                         "from": "optional",
                         "to": "required",
-                        "necessityMigration": 1
+                        "necessityMigration": 2
                     },
                     "breaking": true,
                     "solvable": true
@@ -4610,246 +4746,110 @@
         },
         {
             "type": "update",
-            "id": "drive.files.generateIds",
+            "id": "drive.replies.get",
             "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "idChange",
-                    "from": "maxResults",
-                    "to": "count",
-                    "similarity": 0.533333,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.comments.list",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "idChange",
-                    "from": "maxResults",
-                    "to": "pageSize",
-                    "similarity": 0.558333,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.comments.list",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "idChange",
-                    "from": "updatedMin",
-                    "to": "startModifiedTime",
-                    "similarity": 0.513445,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.changes.list",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "idChange",
-                    "from": "includeDeleted",
-                    "to": "includeRemoved",
-                    "similarity": 0.926190,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.changes.list",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "idChange",
-                    "from": "includeSubscribed",
-                    "to": "restrictToMyDrive",
-                    "similarity": 0.563725,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.changes.list",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "idChange",
-                    "from": "maxResults",
-                    "to": "pageSize",
-                    "similarity": 0.558333,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.changes.list",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "removal",
-                    "id": "startChangeId",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.changes.list",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "update",
-                    "id": "pageToken",
-                    "updated": {
-                        "type": "necessity",
-                        "from": "optional",
-                        "to": "required",
-                        "necessityMigration": 2
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.drives.list",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "idChange",
-                    "from": "maxResults",
-                    "to": "pageSize",
-                    "similarity": 0.558333,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "drive.revisions.list",
-            "updated": {
-                "type": "parameter",
-                "parameter": {
-                    "type": "idChange",
-                    "from": "maxResults",
-                    "to": "pageSize",
-                    "similarity": 0.558333,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
+                "type": "response",
+                "from": {
+                    "reference": "CommentReply"
+                },
+                "to": {
+                    "reference": "Reply"
+                },
+                "backwardsMigration": 61
+            },
+            "breaking": true,
+            "solvable": true
         }
     ],
     "scripts": {
-        "39": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "19": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "35": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "2": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "7": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "59": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "20": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "6": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "41": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "33": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "8": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "37": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "51": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "58": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "14": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "49": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "1": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "25": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "28": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "53": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "21": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "54": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "13": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "24": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "57": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "50": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "38": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
         "3": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "61": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'author': parsedTo.author, 'content': parsedTo.content, 'createdDate': parsedTo.createdTime, 'deleted': parsedTo.deleted, 'htmlContent': parsedTo.htmlContent, 'kind': parsedTo.kind, 'modifiedDate': parsedTo.modifiedTime, 'replyId': null, 'verb': null})\n}",
-        "23": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "42": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "30": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "55": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "43": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "12": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "48": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "47": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "56": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
         "17": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "29": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "22": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "27": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "46": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "34": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "5": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
         "16": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "9": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "32": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "0": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "44": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "4": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "36": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "52": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
-        "10": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "25": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "43": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "23": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "48": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
         "31": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "15": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "0": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "13": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "2": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "53": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "20": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "8": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "9": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "49": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "57": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "41": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "55": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "27": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "12": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "5": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "54": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "42": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "1": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "4": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "10": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
         "18": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "38": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "58": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "61": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'author': parsedTo.author, 'content': parsedTo.content, 'createdDate': parsedTo.createdTime, 'deleted': parsedTo.deleted, 'htmlContent': parsedTo.htmlContent, 'kind': parsedTo.kind, 'modifiedDate': parsedTo.modifiedTime, 'replyId': null, 'verb': null})\n}",
+        "6": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "36": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "7": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "22": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "39": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "34": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "15": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "14": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "28": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "29": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "50": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "21": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "46": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "33": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
         "26": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "30": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
         "11": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "51": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "59": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "24": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "35": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "37": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "47": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "32": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "44": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
         "60": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'items': null, 'kind': parsedTo.kind, 'nextLink': null, 'nextPageToken': parsedTo.nextPageToken, 'selfLink': null})\n}",
+        "52": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "40": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "19": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
         "45": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
-        "40": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}"
+        "56": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}"
     },
     "json-values": {
-        "2": "\"\"",
         "1": "\"\"",
-        "0": "{\n\"additionalRoles\" : null,\n\"authKey\" : null,\n\"deleted\" : null,\n\"domain\" : null,\n\"emailAddress\" : null,\n\"etag\" : null,\n\"expirationDate\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"name\" : null,\n\"pendingOwner\" : null,\n\"permissionDetails\" : null,\n\"photoLink\" : null,\n\"role\" : null,\n\"selfLink\" : null,\n\"teamDrivePermissionDetails\" : null,\n\"type\" : null,\n\"value\" : null,\n\"view\" : null,\n\"withLink\" : null\n}"
+        "0": "{\n\"additionalRoles\" : null,\n\"authKey\" : null,\n\"deleted\" : null,\n\"domain\" : null,\n\"emailAddress\" : null,\n\"etag\" : null,\n\"expirationDate\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"name\" : null,\n\"pendingOwner\" : null,\n\"permissionDetails\" : null,\n\"photoLink\" : null,\n\"role\" : null,\n\"selfLink\" : null,\n\"teamDrivePermissionDetails\" : null,\n\"type\" : null,\n\"value\" : null,\n\"view\" : null,\n\"withLink\" : null\n}",
+        "2": "\"\""
     },
     "updated-json-representations": {
+        "TeamDrive": "{\n\"backgroundImageFile\" : null,\n\"backgroundImageLink\" : null,\n\"capabilities\" : null,\n\"colorRgb\" : null,\n\"createdTime\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"name\" : null,\n\"orgUnitId\" : null,\n\"restrictions\" : null,\n\"themeId\" : null\n}",
+        "File#imageMediaMetadata": "{\n\"aperture\" : null,\n\"cameraMake\" : null,\n\"cameraModel\" : null,\n\"colorSpace\" : null,\n\"exposureBias\" : null,\n\"exposureMode\" : null,\n\"exposureTime\" : null,\n\"flashUsed\" : null,\n\"focalLength\" : null,\n\"height\" : null,\n\"isoSpeed\" : null,\n\"lens\" : null,\n\"location\" : null,\n\"maxApertureValue\" : null,\n\"meteringMode\" : null,\n\"rotation\" : null,\n\"sensor\" : null,\n\"subjectDistance\" : null,\n\"time\" : null,\n\"whiteBalance\" : null,\n\"width\" : null\n}",
+        "File#capabilities": "{\n\"canAcceptOwnership\" : null,\n\"canAddChildren\" : null,\n\"canAddFolderFromAnotherDrive\" : null,\n\"canAddMyDriveParent\" : null,\n\"canChangeCopyRequiresWriterPermission\" : null,\n\"canChangeSecurityUpdateEnabled\" : null,\n\"canChangeViewersCanCopyContent\" : null,\n\"canComment\" : null,\n\"canCopy\" : null,\n\"canDelete\" : null,\n\"canDeleteChildren\" : null,\n\"canDownload\" : null,\n\"canEdit\" : null,\n\"canListChildren\" : null,\n\"canModifyContent\" : null,\n\"canModifyContentRestriction\" : null,\n\"canModifyLabels\" : null,\n\"canMoveChildrenOutOfDrive\" : null,\n\"canMoveChildrenOutOfTeamDrive\" : null,\n\"canMoveChildrenWithinDrive\" : null,\n\"canMoveChildrenWithinTeamDrive\" : null,\n\"canMoveItemIntoTeamDrive\" : null,\n\"canMoveItemOutOfDrive\" : null,\n\"canMoveItemOutOfTeamDrive\" : null,\n\"canMoveItemWithinDrive\" : null,\n\"canMoveItemWithinTeamDrive\" : null,\n\"canMoveTeamDriveItem\" : null,\n\"canReadDrive\" : null,\n\"canReadLabels\" : null,\n\"canReadRevisions\" : null,\n\"canReadTeamDrive\" : null,\n\"canRemoveChildren\" : null,\n\"canRemoveMyDriveParent\" : null,\n\"canRename\" : null,\n\"canShare\" : null,\n\"canTrash\" : null,\n\"canTrashChildren\" : null,\n\"canUntrash\" : null\n}",
+        "Revision": "{\n\"exportLinks\" : null,\n\"id\" : null,\n\"keepForever\" : null,\n\"kind\" : null,\n\"lastModifyingUser\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"md5Checksum\" : null,\n\"mimeType\" : null,\n\"modifiedTime\" : null,\n\"originalFilename\" : null,\n\"publishAuto\" : null,\n\"published\" : null,\n\"publishedLink\" : null,\n\"publishedOutsideDomain\" : null,\n\"size\" : null\n}",
         "LabelList": "{\n\"kind\" : null,\n\"labels\" : null,\n\"nextPageToken\" : null\n}",
+        "ChangeList": "{\n\"changes\" : null,\n\"kind\" : null,\n\"newStartPageToken\" : null,\n\"nextPageToken\" : null\n}",
+        "CommentList": "{\n\"comments\" : null,\n\"kind\" : null,\n\"nextPageToken\" : null\n}",
+        "FileList": "{\n\"files\" : null,\n\"incompleteSearch\" : null,\n\"kind\" : null,\n\"nextPageToken\" : null\n}",
+        "User": "{\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n}",
         "ContentRestriction": "{\n\"readOnly\" : null,\n\"reason\" : null,\n\"restrictingUser\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"restrictionTime\" : null,\n\"type\" : null\n}",
         "TeamDriveList": "{\n\"kind\" : null,\n\"nextPageToken\" : null,\n\"teamDrives\" : null\n}",
         "PermissionList": "{\n\"kind\" : null,\n\"nextPageToken\" : null,\n\"permissions\" : null\n}",
-        "ChangeList": "{\n\"changes\" : null,\n\"kind\" : null,\n\"newStartPageToken\" : null,\n\"nextPageToken\" : null\n}",
-        "Comment": "{\n\"anchor\" : null,\n\"author\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"content\" : null,\n\"createdTime\" : null,\n\"deleted\" : null,\n\"htmlContent\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"modifiedTime\" : null,\n\"quotedFileContent\" : null,\n\"replies\" : null,\n\"resolved\" : null\n}",
+        "Permission": "{\n\"allowFileDiscovery\" : null,\n\"deleted\" : null,\n\"displayName\" : null,\n\"domain\" : null,\n\"emailAddress\" : null,\n\"expirationTime\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"pendingOwner\" : null,\n\"permissionDetails\" : null,\n\"photoLink\" : null,\n\"role\" : null,\n\"teamDrivePermissionDetails\" : null,\n\"type\" : null,\n\"view\" : null\n}",
         "DriveList": "{\n\"drives\" : null,\n\"kind\" : null,\n\"nextPageToken\" : null\n}",
         "Change": "{\n\"changeType\" : null,\n\"drive\" : {\n\"backgroundImageFile\" : null,\n\"backgroundImageLink\" : null,\n\"capabilities\" : null,\n\"colorRgb\" : null,\n\"createdTime\" : null,\n\"hidden\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"name\" : null,\n\"orgUnitId\" : null,\n\"restrictions\" : null,\n\"themeId\" : null\n},\n\"driveId\" : null,\n\"file\" : {\n\"appProperties\" : null,\n\"capabilities\" : null,\n\"contentHints\" : null,\n\"contentRestrictions\" : null,\n\"copyRequiresWriterPermission\" : null,\n\"createdTime\" : null,\n\"description\" : null,\n\"driveId\" : null,\n\"explicitlyTrashed\" : null,\n\"exportLinks\" : null,\n\"fileExtension\" : null,\n\"folderColorRgb\" : null,\n\"fullFileExtension\" : null,\n\"hasAugmentedPermissions\" : null,\n\"hasThumbnail\" : null,\n\"headRevisionId\" : null,\n\"iconLink\" : null,\n\"id\" : null,\n\"imageMediaMetadata\" : null,\n\"isAppAuthorized\" : null,\n\"kind\" : null,\n\"labelInfo\" : null,\n\"lastModifyingUser\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"linkShareMetadata\" : null,\n\"md5Checksum\" : null,\n\"mimeType\" : null,\n\"modifiedByMe\" : null,\n\"modifiedByMeTime\" : null,\n\"modifiedTime\" : null,\n\"name\" : null,\n\"originalFilename\" : null,\n\"ownedByMe\" : null,\n\"owners\" : null,\n\"parents\" : null,\n\"permissionIds\" : null,\n\"permissions\" : null,\n\"properties\" : null,\n\"quotaBytesUsed\" : null,\n\"resourceKey\" : null,\n\"shared\" : null,\n\"sharedWithMeTime\" : null,\n\"sharingUser\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"shortcutDetails\" : null,\n\"size\" : null,\n\"spaces\" : null,\n\"starred\" : null,\n\"teamDriveId\" : null,\n\"thumbnailLink\" : null,\n\"thumbnailVersion\" : null,\n\"trashed\" : null,\n\"trashedTime\" : null,\n\"trashingUser\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"version\" : null,\n\"videoMediaMetadata\" : null,\n\"viewedByMe\" : null,\n\"viewedByMeTime\" : null,\n\"viewersCanCopyContent\" : null,\n\"webContentLink\" : null,\n\"webViewLink\" : null,\n\"writersCanShare\" : null\n},\n\"fileId\" : null,\n\"kind\" : null,\n\"removed\" : null,\n\"teamDrive\" : {\n\"backgroundImageFile\" : null,\n\"backgroundImageLink\" : null,\n\"capabilities\" : null,\n\"colorRgb\" : null,\n\"createdTime\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"name\" : null,\n\"orgUnitId\" : null,\n\"restrictions\" : null,\n\"themeId\" : null\n},\n\"teamDriveId\" : null,\n\"time\" : null,\n\"type\" : null\n}",
-        "File#capabilities": "{\n\"canAcceptOwnership\" : null,\n\"canAddChildren\" : null,\n\"canAddFolderFromAnotherDrive\" : null,\n\"canAddMyDriveParent\" : null,\n\"canChangeCopyRequiresWriterPermission\" : null,\n\"canChangeSecurityUpdateEnabled\" : null,\n\"canChangeViewersCanCopyContent\" : null,\n\"canComment\" : null,\n\"canCopy\" : null,\n\"canDelete\" : null,\n\"canDeleteChildren\" : null,\n\"canDownload\" : null,\n\"canEdit\" : null,\n\"canListChildren\" : null,\n\"canModifyContent\" : null,\n\"canModifyContentRestriction\" : null,\n\"canModifyLabels\" : null,\n\"canMoveChildrenOutOfDrive\" : null,\n\"canMoveChildrenOutOfTeamDrive\" : null,\n\"canMoveChildrenWithinDrive\" : null,\n\"canMoveChildrenWithinTeamDrive\" : null,\n\"canMoveItemIntoTeamDrive\" : null,\n\"canMoveItemOutOfDrive\" : null,\n\"canMoveItemOutOfTeamDrive\" : null,\n\"canMoveItemWithinDrive\" : null,\n\"canMoveItemWithinTeamDrive\" : null,\n\"canMoveTeamDriveItem\" : null,\n\"canReadDrive\" : null,\n\"canReadLabels\" : null,\n\"canReadRevisions\" : null,\n\"canReadTeamDrive\" : null,\n\"canRemoveChildren\" : null,\n\"canRemoveMyDriveParent\" : null,\n\"canRename\" : null,\n\"canShare\" : null,\n\"canTrash\" : null,\n\"canTrashChildren\" : null,\n\"canUntrash\" : null\n}",
-        "File#imageMediaMetadata": "{\n\"aperture\" : null,\n\"cameraMake\" : null,\n\"cameraModel\" : null,\n\"colorSpace\" : null,\n\"exposureBias\" : null,\n\"exposureMode\" : null,\n\"exposureTime\" : null,\n\"flashUsed\" : null,\n\"focalLength\" : null,\n\"height\" : null,\n\"isoSpeed\" : null,\n\"lens\" : null,\n\"location\" : null,\n\"maxApertureValue\" : null,\n\"meteringMode\" : null,\n\"rotation\" : null,\n\"sensor\" : null,\n\"subjectDistance\" : null,\n\"time\" : null,\n\"whiteBalance\" : null,\n\"width\" : null\n}",
-        "FileList": "{\n\"files\" : null,\n\"incompleteSearch\" : null,\n\"kind\" : null,\n\"nextPageToken\" : null\n}",
-        "Permission": "{\n\"allowFileDiscovery\" : null,\n\"deleted\" : null,\n\"displayName\" : null,\n\"domain\" : null,\n\"emailAddress\" : null,\n\"expirationTime\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"pendingOwner\" : null,\n\"permissionDetails\" : null,\n\"photoLink\" : null,\n\"role\" : null,\n\"teamDrivePermissionDetails\" : null,\n\"type\" : null,\n\"view\" : null\n}",
-        "TeamDrive": "{\n\"backgroundImageFile\" : null,\n\"backgroundImageLink\" : null,\n\"capabilities\" : null,\n\"colorRgb\" : null,\n\"createdTime\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"name\" : null,\n\"orgUnitId\" : null,\n\"restrictions\" : null,\n\"themeId\" : null\n}",
-        "Revision": "{\n\"exportLinks\" : null,\n\"id\" : null,\n\"keepForever\" : null,\n\"kind\" : null,\n\"lastModifyingUser\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"md5Checksum\" : null,\n\"mimeType\" : null,\n\"modifiedTime\" : null,\n\"originalFilename\" : null,\n\"publishAuto\" : null,\n\"published\" : null,\n\"publishedLink\" : null,\n\"publishedOutsideDomain\" : null,\n\"size\" : null\n}",
-        "User": "{\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n}",
-        "CommentList": "{\n\"comments\" : null,\n\"kind\" : null,\n\"nextPageToken\" : null\n}",
         "File": "{\n\"appProperties\" : null,\n\"capabilities\" : null,\n\"contentHints\" : null,\n\"contentRestrictions\" : null,\n\"copyRequiresWriterPermission\" : null,\n\"createdTime\" : null,\n\"description\" : null,\n\"driveId\" : null,\n\"explicitlyTrashed\" : null,\n\"exportLinks\" : null,\n\"fileExtension\" : null,\n\"folderColorRgb\" : null,\n\"fullFileExtension\" : null,\n\"hasAugmentedPermissions\" : null,\n\"hasThumbnail\" : null,\n\"headRevisionId\" : null,\n\"iconLink\" : null,\n\"id\" : null,\n\"imageMediaMetadata\" : null,\n\"isAppAuthorized\" : null,\n\"kind\" : null,\n\"labelInfo\" : null,\n\"lastModifyingUser\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"linkShareMetadata\" : null,\n\"md5Checksum\" : null,\n\"mimeType\" : null,\n\"modifiedByMe\" : null,\n\"modifiedByMeTime\" : null,\n\"modifiedTime\" : null,\n\"name\" : null,\n\"originalFilename\" : null,\n\"ownedByMe\" : null,\n\"owners\" : null,\n\"parents\" : null,\n\"permissionIds\" : null,\n\"permissions\" : null,\n\"properties\" : null,\n\"quotaBytesUsed\" : null,\n\"resourceKey\" : null,\n\"shared\" : null,\n\"sharedWithMeTime\" : null,\n\"sharingUser\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"shortcutDetails\" : null,\n\"size\" : null,\n\"spaces\" : null,\n\"starred\" : null,\n\"teamDriveId\" : null,\n\"thumbnailLink\" : null,\n\"thumbnailVersion\" : null,\n\"trashed\" : null,\n\"trashedTime\" : null,\n\"trashingUser\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"version\" : null,\n\"videoMediaMetadata\" : null,\n\"viewedByMe\" : null,\n\"viewedByMeTime\" : null,\n\"viewersCanCopyContent\" : null,\n\"webContentLink\" : null,\n\"webViewLink\" : null,\n\"writersCanShare\" : null\n}",
-        "RevisionList": "{\n\"kind\" : null,\n\"nextPageToken\" : null,\n\"revisions\" : null\n}",
         "Drive": "{\n\"backgroundImageFile\" : null,\n\"backgroundImageLink\" : null,\n\"capabilities\" : null,\n\"colorRgb\" : null,\n\"createdTime\" : null,\n\"hidden\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"name\" : null,\n\"orgUnitId\" : null,\n\"restrictions\" : null,\n\"themeId\" : null\n}",
-        "About": "{\n\"appInstalled\" : null,\n\"canCreateDrives\" : null,\n\"canCreateTeamDrives\" : null,\n\"driveThemes\" : null,\n\"exportFormats\" : null,\n\"folderColorPalette\" : null,\n\"importFormats\" : null,\n\"kind\" : null,\n\"maxImportSizes\" : null,\n\"maxUploadSize\" : null,\n\"storageQuota\" : null,\n\"teamDriveThemes\" : null,\n\"user\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n}\n}"
+        "About": "{\n\"appInstalled\" : null,\n\"canCreateDrives\" : null,\n\"canCreateTeamDrives\" : null,\n\"driveThemes\" : null,\n\"exportFormats\" : null,\n\"folderColorPalette\" : null,\n\"importFormats\" : null,\n\"kind\" : null,\n\"maxImportSizes\" : null,\n\"maxUploadSize\" : null,\n\"storageQuota\" : null,\n\"teamDriveThemes\" : null,\n\"user\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n}\n}",
+        "RevisionList": "{\n\"kind\" : null,\n\"nextPageToken\" : null,\n\"revisions\" : null\n}",
+        "Comment": "{\n\"anchor\" : null,\n\"author\" : {\n\"displayName\" : null,\n\"emailAddress\" : null,\n\"kind\" : null,\n\"me\" : null,\n\"permissionId\" : null,\n\"photoLink\" : null\n},\n\"content\" : null,\n\"createdTime\" : null,\n\"deleted\" : null,\n\"htmlContent\" : null,\n\"id\" : null,\n\"kind\" : null,\n\"modifiedTime\" : null,\n\"quotedFileContent\" : null,\n\"replies\" : null,\n\"resolved\" : null\n}"
     }
 }

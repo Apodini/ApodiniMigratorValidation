@@ -134,7 +134,7 @@
     "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/zoom.us/2.0.0/openapi.yaml"
   },
   {
-    "skip": true,
+    "skip": false,
     "name": "1Password Local",
     "lhs": "1password-1.2.0.yaml",
     "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/e170310125cb09614deab7405703c1b85bec5852/APIs/1password.local/1.2.0/openapi.yaml",
@@ -142,6 +142,8 @@
     "rhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/main/APIs/1password.local/connect/1.3.0/openapi.yaml"
   },
   {
+    "skip": true,
+    "notes": "rhs introduces references for previously nested types, resulting in ill-classifications due to the inability to match those changes.",
     "name": "1Password Local",
     "lhs": "1password-1.1.1.yaml",
     "lhsSource": "https://raw.githubusercontent.com/APIs-guru/openapi-directory/43a91d7c4ce4930de872dfc8b2fd7c6aa3ac9594/APIs/1password.local/1.1.1/openapi.yaml",

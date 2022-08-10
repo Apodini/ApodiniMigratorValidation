@@ -1,6 +1,6 @@
 {
     "summary": "A summary of what changed between versions",
-    "document-id": "A2D1823D-C546-44AD-A0EC-5876E34706A8",
+    "document-id": "F83A2283-309D-4818-A1B1-CB66F85E075D",
     "version": "2.1.0",
     "from": "v_1.0.0",
     "to": "v_1.0.0",
@@ -37,7 +37,49 @@
     "modelChanges": [
         {
             "type": "removal",
+            "id": "translationslist#$xgafv",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "DetectionsListResponse",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "TranslationsResource",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "languageslist#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "languageslist#$xgafv",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
             "id": "detectionsdetect#alt",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "TranslationsListResponse",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "DetectionsResource",
             "breaking": false,
             "solvable": false
         },
@@ -55,36 +97,6 @@
         },
         {
             "type": "removal",
-            "id": "TranslationsResource",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "LanguagesResource",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "TranslationsListResponse",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "languageslist#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "detectionslist#alt",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
             "id": "translationstranslate#$xgafv",
             "breaking": false,
             "solvable": false
@@ -97,7 +109,7 @@
         },
         {
             "type": "removal",
-            "id": "languageslist#$xgafv",
+            "id": "detectionslist#alt",
             "breaking": false,
             "solvable": false
         },
@@ -109,25 +121,7 @@
         },
         {
             "type": "removal",
-            "id": "DetectionsResource",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "DetectionsListResponse",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
             "id": "detectionslist#$xgafv",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "translationslist#$xgafv",
             "breaking": false,
             "solvable": false
         },
@@ -138,66 +132,76 @@
             "solvable": false
         },
         {
-            "type": "addition",
-            "id": "projectslocationsoperationsget#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "operations"
-                            },
-                            {
-                                "name": "get#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
+            "type": "removal",
+            "id": "LanguagesResource",
             "breaking": false,
-            "solvable": true
+            "solvable": false
         },
         {
             "type": "addition",
-            "id": "GlossaryInputConfig",
+            "id": "Glossary",
             "added": {
                 "object": {
                     "typeName": {
                         "rootComponent": {
-                            "name": "GlossaryInputConfig"
+                            "name": "Glossary"
                         }
                     },
                     "properties": [
                         {
-                            "name": "gcsSource",
+                            "name": "endTime",
                             "type": {
-                                "reference": "GcsSource"
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "entryCount",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Int32"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "inputConfig",
+                            "type": {
+                                "reference": "GlossaryInputConfig"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "languageCodesSet",
+                            "type": {
+                                "reference": "LanguageCodesSet"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "languagePair",
+                            "type": {
+                                "reference": "LanguageCodePair"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "name",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "submitTime",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
                             },
                             "context": {}
                         }
@@ -210,64 +214,21 @@
         },
         {
             "type": "addition",
-            "id": "projectslocationsdetectLanguage#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "detectLanguage#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "ListLocationsResponse",
+            "id": "ListGlossariesResponse",
             "added": {
                 "object": {
                     "typeName": {
                         "rootComponent": {
-                            "name": "ListLocationsResponse"
+                            "name": "ListGlossariesResponse"
                         }
                     },
                     "properties": [
                         {
-                            "name": "locations",
+                            "name": "glossaries",
                             "type": {
                                 "optional": {
                                     "repeated": {
-                                        "reference": "Location"
+                                        "reference": "Glossary"
                                     }
                                 }
                             },
@@ -354,13 +315,13 @@
         },
         {
             "type": "addition",
-            "id": "projectslocationsbatchTranslateDocument#alt",
+            "id": "projectslocationsoperationslist#$xgafv",
             "added": {
                 "enum": {
                     "typeName": {
                         "defined-in": "translate",
                         "rootComponent": {
-                            "name": "batchTranslateDocument#alt"
+                            "name": "xgafv"
                         },
                         "nestedComponents": [
                             {
@@ -368,6 +329,638 @@
                             },
                             {
                                 "name": "locations"
+                            },
+                            {
+                                "name": "operations"
+                            },
+                            {
+                                "name": "list#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "Operation",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "Operation"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "done",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Bool"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "error",
+                            "type": {
+                                "reference": "Status"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "metadata",
+                            "type": {
+                                "optional": {
+                                    "reference": "Empty"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "name",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "response",
+                            "type": {
+                                "optional": {
+                                    "reference": "Empty"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsoperationscancel#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "cancel#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "operations"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "DetectLanguageResponse",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "DetectLanguageResponse"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "languages",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "reference": "DetectedLanguage"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "DocumentTranslation",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "DocumentTranslation"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "byteStreamOutputs",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "scalar": "Data"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "detectedLanguageCode",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "mimeType",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationstranslateDocument#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "translateDocument#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "DocumentInputConfig",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "DocumentInputConfig"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "content",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Data"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "gcsSource",
+                            "type": {
+                                "reference": "GcsSource"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "mimeType",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "LanguageCodePair",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "LanguageCodePair"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "sourceLanguageCode",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "targetLanguageCode",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationstranslateText#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "translateText#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "Translation",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "Translation"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "detectedLanguageCode",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "glossaryConfig",
+                            "type": {
+                                "reference": "TranslateTextGlossaryConfig"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "model",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "translatedText",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsdetectLanguage#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "detectLanguage#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsbatchTranslateDocument#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "batchTranslateDocument#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsbatchTranslateText#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "batchTranslateText#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsoperationslist#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "list#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "operations"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsglossarieslist#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "list#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "glossaries"
                             }
                         ]
                     },
@@ -444,190 +1037,54 @@
         },
         {
             "type": "addition",
-            "id": "projectslocationsglossariescreate#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "create#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "glossaries"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "TranslateTextResponse",
+            "id": "WaitOperationRequest",
             "added": {
                 "object": {
                     "typeName": {
                         "rootComponent": {
-                            "name": "TranslateTextResponse"
+                            "name": "WaitOperationRequest"
                         }
                     },
                     "properties": [
                         {
-                            "name": "glossaryTranslations",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "reference": "Translation"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "translations",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "reference": "Translation"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsoperationscancel#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "cancel#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "operations"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "Operation",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "Operation"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "done",
-                            "type": {
-                                "optional": {
-                                    "scalar": "Bool"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "error",
-                            "type": {
-                                "reference": "Status"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "metadata",
-                            "type": {
-                                "optional": {
-                                    "reference": "Empty"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "name",
+                            "name": "timeout",
                             "type": {
                                 "optional": {
                                     "scalar": "String"
                                 }
                             },
                             "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "DocumentOutputConfig",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "DocumentOutputConfig"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "gcsDestination",
+                            "type": {
+                                "reference": "GcsDestination"
+                            },
+                            "context": {}
                         },
                         {
-                            "name": "response",
+                            "name": "mimeType",
                             "type": {
                                 "optional": {
-                                    "reference": "Empty"
+                                    "scalar": "String"
                                 }
                             },
                             "context": {}
@@ -641,7 +1098,7 @@
         },
         {
             "type": "addition",
-            "id": "projectslocationsglossariescreate#$xgafv",
+            "id": "projectslocationsoperationsget#$xgafv",
             "added": {
                 "enum": {
                     "typeName": {
@@ -657,10 +1114,10 @@
                                 "name": "locations"
                             },
                             {
-                                "name": "glossaries"
+                                "name": "operations"
                             },
                             {
-                                "name": "create#$"
+                                "name": "get#$"
                             }
                         ]
                     },
@@ -676,208 +1133,6 @@
                         {
                             "name": "2",
                             "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "TranslateDocumentResponse",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "TranslateDocumentResponse"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "documentTranslation",
-                            "type": {
-                                "reference": "DocumentTranslation"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "glossaryConfig",
-                            "type": {
-                                "reference": "TranslateTextGlossaryConfig"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "glossaryDocumentTranslation",
-                            "type": {
-                                "reference": "DocumentTranslation"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "model",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "LanguageCodePair",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "LanguageCodePair"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "sourceLanguageCode",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "targetLanguageCode",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "BatchDocumentInputConfig",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "BatchDocumentInputConfig"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "gcsSource",
-                            "type": {
-                                "reference": "GcsSource"
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "OutputConfig",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "OutputConfig"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "gcsDestination",
-                            "type": {
-                                "reference": "GcsDestination"
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "BatchDocumentOutputConfig",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "BatchDocumentOutputConfig"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "gcsDestination",
-                            "type": {
-                                "reference": "GcsDestination"
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "DocumentInputConfig",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "DocumentInputConfig"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "content",
-                            "type": {
-                                "optional": {
-                                    "scalar": "Data"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "gcsSource",
-                            "type": {
-                                "reference": "GcsSource"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "mimeType",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
                             "context": {}
                         }
                     ],
@@ -937,185 +1192,7 @@
         },
         {
             "type": "addition",
-            "id": "projectslocationstranslateDocument#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "translateDocument#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationstranslateText#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "translateText#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "TranslateTextGlossaryConfig",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "TranslateTextGlossaryConfig"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "glossary",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "ignoreCase",
-                            "type": {
-                                "optional": {
-                                    "scalar": "Bool"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "Translation",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "Translation"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "detectedLanguageCode",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "glossaryConfig",
-                            "type": {
-                                "reference": "TranslateTextGlossaryConfig"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "model",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "translatedText",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationstranslateText#$xgafv",
+            "id": "projectslocationsgetSupportedLanguages#$xgafv",
             "added": {
                 "enum": {
                     "typeName": {
@@ -1131,514 +1208,7 @@
                                 "name": "locations"
                             },
                             {
-                                "name": "translateText#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationslist#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "list#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsglossarieslist#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "glossaries"
-                            },
-                            {
-                                "name": "list#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "BatchTranslateDocumentRequest",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "BatchTranslateDocumentRequest"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "formatConversions",
-                            "type": {
-                                "optional": {
-                                    "reference": "Empty"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "glossaries",
-                            "type": {
-                                "optional": {
-                                    "reference": "Empty"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "inputConfigs",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "reference": "BatchDocumentInputConfig"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "models",
-                            "type": {
-                                "optional": {
-                                    "reference": "Empty"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "outputConfig",
-                            "type": {
-                                "reference": "BatchDocumentOutputConfig"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "sourceLanguageCode",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "targetLanguageCodes",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "scalar": "String"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsbatchTranslateText#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "batchTranslateText#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "DetectedLanguage",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "DetectedLanguage"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "confidence",
-                            "type": {
-                                "optional": {
-                                    "scalar": "Float"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "languageCode",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "DocumentTranslation",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "DocumentTranslation"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "byteStreamOutputs",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "scalar": "Data"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "detectedLanguageCode",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "mimeType",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsbatchTranslateText#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "batchTranslateText#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "BatchTranslateTextRequest",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "BatchTranslateTextRequest"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "glossaries",
-                            "type": {
-                                "optional": {
-                                    "reference": "Empty"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "inputConfigs",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "reference": "InputConfig"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "labels",
-                            "type": {
-                                "optional": {
-                                    "reference": "Empty"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "models",
-                            "type": {
-                                "optional": {
-                                    "reference": "Empty"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "outputConfig",
-                            "type": {
-                                "reference": "OutputConfig"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "sourceLanguageCode",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "targetLanguageCodes",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "scalar": "String"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "ListGlossariesResponse",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "ListGlossariesResponse"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "glossaries",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "reference": "Glossary"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "nextPageToken",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationstranslateDocument#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "translateDocument#$"
+                                "name": "getSupportedLanguages#$"
                             }
                         ]
                     },
@@ -1740,6 +1310,194 @@
         },
         {
             "type": "addition",
+            "id": "SupportedLanguage",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "SupportedLanguage"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "displayName",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "languageCode",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "supportSource",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Bool"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "supportTarget",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Bool"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationstranslateText#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "translateText#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsgetSupportedLanguages#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "getSupportedLanguages#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsglossariescreate#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "glossaries"
+                            },
+                            {
+                                "name": "create#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
             "id": "ListOperationsResponse",
             "added": {
                 "object": {
@@ -1765,6 +1523,1118 @@
                                     "repeated": {
                                         "reference": "Operation"
                                     }
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "ListLocationsResponse",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "ListLocationsResponse"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "locations",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "reference": "Location"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "nextPageToken",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "Empty",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "Empty"
+                        }
+                    },
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "LanguageCodesSet",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "LanguageCodesSet"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "languageCodes",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "scalar": "String"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsglossariescreate#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "create#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "glossaries"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "GcsSource",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "GcsSource"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "inputUri",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsoperationsdelete#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "delete#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "operations"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "GcsDestination",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "GcsDestination"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "outputUriPrefix",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "BatchDocumentOutputConfig",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "BatchDocumentOutputConfig"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "gcsDestination",
+                            "type": {
+                                "reference": "GcsDestination"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsoperationswait#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "wait#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "operations"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "SupportedLanguages",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "SupportedLanguages"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "languages",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "reference": "SupportedLanguage"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "GlossaryInputConfig",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "GlossaryInputConfig"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "gcsSource",
+                            "type": {
+                                "reference": "GcsSource"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "TranslateDocumentResponse",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "TranslateDocumentResponse"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "documentTranslation",
+                            "type": {
+                                "reference": "DocumentTranslation"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "glossaryConfig",
+                            "type": {
+                                "reference": "TranslateTextGlossaryConfig"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "glossaryDocumentTranslation",
+                            "type": {
+                                "reference": "DocumentTranslation"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "model",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsoperationscancel#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "operations"
+                            },
+                            {
+                                "name": "cancel#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsglossarieslist#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "glossaries"
+                            },
+                            {
+                                "name": "list#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsoperationswait#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "operations"
+                            },
+                            {
+                                "name": "wait#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsoperationscancel#_requestBody",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "cancel#_requestBody"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "operations"
+                            }
+                        ]
+                    },
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "DetectedLanguage",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "DetectedLanguage"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "confidence",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Float"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "languageCode",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "BatchDocumentInputConfig",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "BatchDocumentInputConfig"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "gcsSource",
+                            "type": {
+                                "reference": "GcsSource"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsbatchTranslateText#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "batchTranslateText#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsdetectLanguage#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "detectLanguage#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationslist#$xgafv",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "xgafv"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            },
+                            {
+                                "name": "list#$"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "1",
+                            "rawValue": "1",
+                            "context": {}
+                        },
+                        {
+                            "name": "2",
+                            "rawValue": "2",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "TranslateTextResponse",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "TranslateTextResponse"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "glossaryTranslations",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "reference": "Translation"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "translations",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "reference": "Translation"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "OutputConfig",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "OutputConfig"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "gcsDestination",
+                            "type": {
+                                "reference": "GcsDestination"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "BatchTranslateTextRequest",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "BatchTranslateTextRequest"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "glossaries",
+                            "type": {
+                                "optional": {
+                                    "reference": "Empty"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "inputConfigs",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "reference": "InputConfig"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "labels",
+                            "type": {
+                                "optional": {
+                                    "reference": "Empty"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "models",
+                            "type": {
+                                "optional": {
+                                    "reference": "Empty"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "outputConfig",
+                            "type": {
+                                "reference": "OutputConfig"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "sourceLanguageCode",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "targetLanguageCodes",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "scalar": "String"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "BatchTranslateDocumentRequest",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "BatchTranslateDocumentRequest"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "formatConversions",
+                            "type": {
+                                "optional": {
+                                    "reference": "Empty"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "glossaries",
+                            "type": {
+                                "optional": {
+                                    "reference": "Empty"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "inputConfigs",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "reference": "BatchDocumentInputConfig"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "models",
+                            "type": {
+                                "optional": {
+                                    "reference": "Empty"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "outputConfig",
+                            "type": {
+                                "reference": "BatchDocumentOutputConfig"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "sourceLanguageCode",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "targetLanguageCodes",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "scalar": "String"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "projectslocationsbatchTranslateDocument#alt",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "defined-in": "translate",
+                        "rootComponent": {
+                            "name": "batchTranslateDocument#alt"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "projects"
+                            },
+                            {
+                                "name": "locations"
+                            }
+                        ]
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "json",
+                            "rawValue": "json",
+                            "context": {}
+                        },
+                        {
+                            "name": "media",
+                            "rawValue": "media",
+                            "context": {}
+                        },
+                        {
+                            "name": "proto",
+                            "rawValue": "proto",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "InputConfig",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "InputConfig"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "gcsSource",
+                            "type": {
+                                "reference": "GcsSource"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "mimeType",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "TranslateTextGlossaryConfig",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "TranslateTextGlossaryConfig"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "glossary",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "ignoreCase",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Bool"
                                 }
                             },
                             "context": {}
@@ -1825,175 +2695,6 @@
         },
         {
             "type": "addition",
-            "id": "Glossary",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "Glossary"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "endTime",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "entryCount",
-                            "type": {
-                                "optional": {
-                                    "scalar": "Int32"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "inputConfig",
-                            "type": {
-                                "reference": "GlossaryInputConfig"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "languageCodesSet",
-                            "type": {
-                                "reference": "LanguageCodesSet"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "languagePair",
-                            "type": {
-                                "reference": "LanguageCodePair"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "name",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "submitTime",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsoperationswait#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "operations"
-                            },
-                            {
-                                "name": "wait#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsoperationswait#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "wait#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "operations"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
             "id": "projectslocationsoperationsdelete#$xgafv",
             "added": {
                 "enum": {
@@ -2040,462 +2741,13 @@
         },
         {
             "type": "addition",
-            "id": "projectslocationsglossarieslist#alt",
+            "id": "projectslocationstranslateDocument#alt",
             "added": {
                 "enum": {
                     "typeName": {
                         "defined-in": "translate",
                         "rootComponent": {
-                            "name": "list#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "glossaries"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsoperationslist#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "operations"
-                            },
-                            {
-                                "name": "list#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "SupportedLanguages",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "SupportedLanguages"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "languages",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "reference": "SupportedLanguage"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "LanguageCodesSet",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "LanguageCodesSet"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "languageCodes",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "scalar": "String"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "GcsSource",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "GcsSource"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "inputUri",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsbatchTranslateDocument#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "batchTranslateDocument#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsoperationsdelete#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "delete#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "operations"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "SupportedLanguage",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "SupportedLanguage"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "displayName",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "languageCode",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "supportSource",
-                            "type": {
-                                "optional": {
-                                    "scalar": "Bool"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "supportTarget",
-                            "type": {
-                                "optional": {
-                                    "scalar": "Bool"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsgetSupportedLanguages#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "getSupportedLanguages#$"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
-                        },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "DocumentOutputConfig",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "DocumentOutputConfig"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "gcsDestination",
-                            "type": {
-                                "reference": "GcsDestination"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "mimeType",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsoperationslist#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "list#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "operations"
-                            }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
-                        },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsgetSupportedLanguages#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "getSupportedLanguages#alt"
+                            "name": "translateDocument#alt"
                         },
                         "nestedComponents": [
                             {
@@ -2533,256 +2785,105 @@
             "solvable": true
         },
         {
-            "type": "addition",
-            "id": "projectslocationsoperationscancel#$xgafv",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "xgafv"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "operations"
-                            },
-                            {
-                                "name": "cancel#$"
+            "type": "update",
+            "id": "DetectLanguageRequest",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "q",
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "DetectLanguageRequest",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "content",
+                    "added": {
+                        "name": "content",
+                        "type": {
+                            "optional": {
+                                "scalar": "String"
                             }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "1",
-                            "rawValue": "1",
-                            "context": {}
                         },
-                        {
-                            "name": "2",
-                            "rawValue": "2",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
                 }
-            },
-            "breaking": false,
-            "solvable": true
+            }
         },
         {
-            "type": "addition",
-            "id": "projectslocationsdetectLanguage#alt",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "detectLanguage#alt"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
+            "type": "update",
+            "id": "DetectLanguageRequest",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "labels",
+                    "added": {
+                        "name": "labels",
+                        "type": {
+                            "optional": {
+                                "reference": "Empty"
                             }
-                        ]
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "json",
-                            "rawValue": "json",
-                            "context": {}
                         },
-                        {
-                            "name": "media",
-                            "rawValue": "media",
-                            "context": {}
-                        },
-                        {
-                            "name": "proto",
-                            "rawValue": "proto",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "Empty",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "Empty"
-                        }
+                        "context": {}
                     },
-                    "context": {}
+                    "breaking": false,
+                    "solvable": true
                 }
-            },
-            "breaking": false,
-            "solvable": true
+            }
         },
         {
-            "type": "addition",
-            "id": "InputConfig",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "InputConfig"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "gcsSource",
-                            "type": {
-                                "reference": "GcsSource"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "mimeType",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "WaitOperationRequest",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "WaitOperationRequest"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "timeout",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "DetectLanguageResponse",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "DetectLanguageResponse"
-                        }
-                    },
-                    "properties": [
-                        {
-                            "name": "languages",
-                            "type": {
-                                "optional": {
-                                    "repeated": {
-                                        "reference": "DetectedLanguage"
-                                    }
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "projectslocationsoperationscancel#_requestBody",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "defined-in": "translate",
-                        "rootComponent": {
-                            "name": "cancel#_requestBody"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "projects"
-                            },
-                            {
-                                "name": "locations"
-                            },
-                            {
-                                "name": "operations"
+            "type": "update",
+            "id": "DetectLanguageRequest",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "mimeType",
+                    "added": {
+                        "name": "mimeType",
+                        "type": {
+                            "optional": {
+                                "scalar": "String"
                             }
-                        ]
+                        },
+                        "context": {}
                     },
-                    "context": {}
+                    "breaking": false,
+                    "solvable": true
                 }
-            },
-            "breaking": false,
-            "solvable": true
+            }
         },
         {
-            "type": "addition",
-            "id": "GcsDestination",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "GcsDestination"
-                        }
+            "type": "update",
+            "id": "DetectLanguageRequest",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "model",
+                    "added": {
+                        "name": "model",
+                        "type": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "context": {}
                     },
-                    "properties": [
-                        {
-                            "name": "outputUriPrefix",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
+                    "breaking": false,
+                    "solvable": true
                 }
-            },
-            "breaking": false,
-            "solvable": true
+            }
         },
         {
             "type": "update",
@@ -2895,107 +2996,6 @@
                     "id": "mimeType",
                     "added": {
                         "name": "mimeType",
-                        "type": {
-                            "optional": {
-                                "scalar": "String"
-                            }
-                        },
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "DetectLanguageRequest",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "removal",
-                    "id": "q",
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "DetectLanguageRequest",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "addition",
-                    "id": "content",
-                    "added": {
-                        "name": "content",
-                        "type": {
-                            "optional": {
-                                "scalar": "String"
-                            }
-                        },
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "DetectLanguageRequest",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "addition",
-                    "id": "labels",
-                    "added": {
-                        "name": "labels",
-                        "type": {
-                            "optional": {
-                                "reference": "Empty"
-                            }
-                        },
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "DetectLanguageRequest",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "addition",
-                    "id": "mimeType",
-                    "added": {
-                        "name": "mimeType",
-                        "type": {
-                            "optional": {
-                                "scalar": "String"
-                            }
-                        },
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "DetectLanguageRequest",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "addition",
-                    "id": "model",
-                    "added": {
-                        "name": "model",
                         "type": {
                             "optional": {
                                 "scalar": "String"
