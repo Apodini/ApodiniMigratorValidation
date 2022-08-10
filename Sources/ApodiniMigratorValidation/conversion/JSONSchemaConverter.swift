@@ -119,7 +119,6 @@ public class JSONSchemaConverter {
         // refer to https://swagger.io/specification/#schema-object
         
         // TRADEOFF: Ignored properties of the `CoreContext`
-        //  - `nullable`
         //  - `permissions` (readOnly, writeOnly, readWrite)
         //  - `deprecated`
         //  - `title`

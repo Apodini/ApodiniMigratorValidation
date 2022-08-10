@@ -1,6 +1,6 @@
 {
     "summary": "A summary of what changed between versions",
-    "document-id": "204C8186-4A22-444F-8487-05DFB9D59F86",
+    "document-id": "7CEDCA93-E981-47B5-8136-C700ED9AFF4A",
     "version": "2.1.0",
     "from": "v_1.0.0",
     "to": "v_1.0.0",
@@ -16,7 +16,13 @@
     "modelChanges": [
         {
             "type": "removal",
-            "id": "k8sapinodev1alpha1RuntimeClass",
+            "id": "k8sapistoragev1alpha1CSIStorageCapacity",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "k8sapinodev1alpha1RuntimeClassSpec",
             "breaking": false,
             "solvable": false
         },
@@ -34,19 +40,13 @@
         },
         {
             "type": "removal",
+            "id": "k8sapinodev1alpha1RuntimeClass",
+            "breaking": false,
+            "solvable": false
+        },
+        {
+            "type": "removal",
             "id": "k8sapistoragev1alpha1CSIStorageCapacityList",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "k8sapistoragev1alpha1CSIStorageCapacity",
-            "breaking": false,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "k8sapinodev1alpha1RuntimeClassSpec",
             "breaking": false,
             "solvable": false
         },
@@ -55,73 +55,6 @@
             "id": "k8sapinodev1alpha1Overhead",
             "breaking": false,
             "solvable": false
-        },
-        {
-            "type": "addition",
-            "id": "k8sapistoragev1CSIStorageCapacityList",
-            "added": {
-                "object": {
-                    "typeName": {
-                        "defined-in": "io",
-                        "rootComponent": {
-                            "name": "CSIStorageCapacityList"
-                        },
-                        "nestedComponents": [
-                            {
-                                "name": "k8s"
-                            },
-                            {
-                                "name": "api"
-                            },
-                            {
-                                "name": "storage"
-                            },
-                            {
-                                "name": "v1"
-                            }
-                        ]
-                    },
-                    "properties": [
-                        {
-                            "name": "kind",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "apiVersion",
-                            "type": {
-                                "optional": {
-                                    "scalar": "String"
-                                }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "metadata",
-                            "type": {
-                                "reference": "k8s.apimachinery.pkg.apis.meta.v1.ListMeta"
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "items",
-                            "type": {
-                                "repeated": {
-                                    "reference": "k8s.api.storage.v1.CSIStorageCapacity"
-                                }
-                            },
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
         },
         {
             "type": "addition",
@@ -194,25 +127,11 @@
                     },
                     "properties": [
                         {
-                            "name": "metadata",
-                            "type": {
-                                "reference": "k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
-                            },
-                            "context": {}
-                        },
-                        {
                             "name": "kind",
                             "type": {
                                 "optional": {
                                     "scalar": "String"
                                 }
-                            },
-                            "context": {}
-                        },
-                        {
-                            "name": "capacity",
-                            "type": {
-                                "scalar": "String"
                             },
                             "context": {}
                         },
@@ -233,6 +152,13 @@
                             "context": {}
                         },
                         {
+                            "name": "nodeTopology",
+                            "type": {
+                                "reference": "k8s.apimachinery.pkg.apis.meta.v1.LabelSelector"
+                            },
+                            "context": {}
+                        },
+                        {
                             "name": "maximumVolumeSize",
                             "type": {
                                 "scalar": "String"
@@ -240,9 +166,83 @@
                             "context": {}
                         },
                         {
-                            "name": "nodeTopology",
+                            "name": "capacity",
                             "type": {
-                                "reference": "k8s.apimachinery.pkg.apis.meta.v1.LabelSelector"
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "metadata",
+                            "type": {
+                                "reference": "k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "k8sapistoragev1CSIStorageCapacityList",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "defined-in": "io",
+                        "rootComponent": {
+                            "name": "CSIStorageCapacityList"
+                        },
+                        "nestedComponents": [
+                            {
+                                "name": "k8s"
+                            },
+                            {
+                                "name": "api"
+                            },
+                            {
+                                "name": "storage"
+                            },
+                            {
+                                "name": "v1"
+                            }
+                        ]
+                    },
+                    "properties": [
+                        {
+                            "name": "items",
+                            "type": {
+                                "repeated": {
+                                    "reference": "k8s.api.storage.v1.CSIStorageCapacity"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "apiVersion",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "metadata",
+                            "type": {
+                                "reference": "k8s.apimachinery.pkg.apis.meta.v1.ListMeta"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "kind",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
                             },
                             "context": {}
                         }
@@ -255,22 +255,61 @@
         },
         {
             "type": "update",
-            "id": "k8sapibatchv1beta1CronJobSpec",
+            "id": "k8sapinetworkingv1NetworkPolicy",
             "updated": {
                 "type": "property",
                 "property": {
                     "type": "addition",
-                    "id": "timeZone",
+                    "id": "status",
                     "added": {
-                        "name": "timeZone",
+                        "name": "status",
                         "type": {
-                            "optional": {
-                                "scalar": "String"
-                            }
+                            "reference": "k8s.api.networking.v1.NetworkPolicyStatus"
                         },
                         "context": {}
                     },
-                    "breaking": false,
+                    "defaultValue": 0,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "k8sapiappsv1StatefulSetStatus",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "availableReplicas",
+                    "updated": {
+                        "type": "necessity",
+                        "from": "required",
+                        "to": "optional",
+                        "necessityMigration": 1
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "k8sapiappsv1RollingUpdateStatefulSetStrategy",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "maxUnavailable",
+                    "added": {
+                        "name": "maxUnavailable",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "context": {}
+                    },
+                    "defaultValue": 2,
+                    "breaking": true,
                     "solvable": true
                 }
             }
@@ -299,68 +338,29 @@
         },
         {
             "type": "update",
-            "id": "k8sapiappsv1RollingUpdateStatefulSetStrategy",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "addition",
-                    "id": "maxUnavailable",
-                    "added": {
-                        "name": "maxUnavailable",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "context": {}
-                    },
-                    "defaultValue": 0,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "k8sapinetworkingv1NetworkPolicy",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "addition",
-                    "id": "status",
-                    "added": {
-                        "name": "status",
-                        "type": {
-                            "reference": "k8s.api.networking.v1.NetworkPolicyStatus"
-                        },
-                        "context": {}
-                    },
-                    "defaultValue": 1,
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "k8sapiappsv1StatefulSetStatus",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "update",
-                    "id": "availableReplicas",
-                    "updated": {
-                        "type": "necessity",
-                        "from": "required",
-                        "to": "optional",
-                        "necessityMigration": 2
-                    },
-                    "breaking": true,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
             "id": "k8sapibatchv1CronJobSpec",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "timeZone",
+                    "added": {
+                        "name": "timeZone",
+                        "type": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "k8sapibatchv1beta1CronJobSpec",
             "updated": {
                 "type": "property",
                 "property": {
@@ -384,6 +384,18 @@
     "endpointChanges": [
         {
             "type": "removal",
+            "id": "watchNodeV1alpha1RuntimeClass",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "watchStorageV1alpha1NamespacedCSIStorageCapacityList",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "removal",
             "id": "listNodeV1alpha1RuntimeClass",
             "breaking": true,
             "solvable": false
@@ -402,37 +414,13 @@
         },
         {
             "type": "removal",
-            "id": "watchStorageV1alpha1NamespacedCSIStorageCapacity",
-            "breaking": true,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "readStorageV1alpha1NamespacedCSIStorageCapacity",
-            "breaking": true,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "replaceStorageV1alpha1NamespacedCSIStorageCapacity",
-            "breaking": true,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "deleteStorageV1alpha1NamespacedCSIStorageCapacity",
-            "breaking": true,
-            "solvable": false
-        },
-        {
-            "type": "removal",
-            "id": "watchNodeV1alpha1RuntimeClassList",
-            "breaking": true,
-            "solvable": false
-        },
-        {
-            "type": "removal",
             "id": "getStorageV1alpha1APIResources",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "getNodeV1alpha1APIResources",
             "breaking": true,
             "solvable": false
         },
@@ -444,7 +432,7 @@
         },
         {
             "type": "removal",
-            "id": "watchNodeV1alpha1RuntimeClass",
+            "id": "watchNodeV1alpha1RuntimeClassList",
             "breaking": true,
             "solvable": false
         },
@@ -456,7 +444,7 @@
         },
         {
             "type": "removal",
-            "id": "watchStorageV1alpha1NamespacedCSIStorageCapacityList",
+            "id": "watchStorageV1alpha1NamespacedCSIStorageCapacity",
             "breaking": true,
             "solvable": false
         },
@@ -498,9 +486,138 @@
         },
         {
             "type": "removal",
-            "id": "getNodeV1alpha1APIResources",
+            "id": "readStorageV1alpha1NamespacedCSIStorageCapacity",
             "breaking": true,
             "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "replaceStorageV1alpha1NamespacedCSIStorageCapacity",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "deleteStorageV1alpha1NamespacedCSIStorageCapacity",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "addition",
+            "id": "watchStorageV1NamespacedCSIStorageCapacity",
+            "added": {
+                "deltaIdentifier": "watchStorageV1NamespacedCSIStorageCapacity",
+                "identifiers": {
+                    "EndpointPath": "/apis/storage.k8s.io/v1/watch/namespaces/{namespace}/csistoragecapacities/{name}",
+                    "HandlerName": "watchStorageV1NamespacedCSIStorageCapacity",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "allowWatchBookmarks",
+                        "type": {
+                            "scalar": "Bool"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "continue",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "fieldSelector",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "labelSelector",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "limit",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "name",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "namespace",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "pretty",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "resourceVersion",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "resourceVersionMatch",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "timeoutSeconds",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "watch",
+                        "type": {
+                            "scalar": "Bool"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    }
+                ],
+                "response": {
+                    "reference": "k8s.apimachinery.pkg.apis.meta.v1.WatchEvent"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
         },
         {
             "type": "addition",
@@ -597,6 +714,314 @@
                 ],
                 "response": {
                     "reference": "k8s.apimachinery.pkg.apis.meta.v1.WatchEvent"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "readStorageV1NamespacedCSIStorageCapacity",
+            "added": {
+                "deltaIdentifier": "readStorageV1NamespacedCSIStorageCapacity",
+                "identifiers": {
+                    "EndpointPath": "/apis/storage.k8s.io/v1/namespaces/{namespace}/csistoragecapacities/{name}",
+                    "HandlerName": "readStorageV1NamespacedCSIStorageCapacity",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "namespace",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "pretty",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    }
+                ],
+                "response": {
+                    "reference": "k8s.api.storage.v1.CSIStorageCapacity"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "replaceStorageV1NamespacedCSIStorageCapacity",
+            "added": {
+                "deltaIdentifier": "replaceStorageV1NamespacedCSIStorageCapacity",
+                "identifiers": {
+                    "EndpointPath": "/apis/storage.k8s.io/v1/namespaces/{namespace}/csistoragecapacities/{name}",
+                    "HandlerName": "replaceStorageV1NamespacedCSIStorageCapacity",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "namespace",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "pretty",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "dryRun",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "fieldManager",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "fieldValidation",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "k8s.api.storage.v1.CSIStorageCapacity"
+                        },
+                        "kind": "content",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "k8s.api.storage.v1.CSIStorageCapacity"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "deleteStorageV1NamespacedCSIStorageCapacity",
+            "added": {
+                "deltaIdentifier": "deleteStorageV1NamespacedCSIStorageCapacity",
+                "identifiers": {
+                    "EndpointPath": "/apis/storage.k8s.io/v1/namespaces/{namespace}/csistoragecapacities/{name}",
+                    "HandlerName": "deleteStorageV1NamespacedCSIStorageCapacity",
+                    "Operation": "delete"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "namespace",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "pretty",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "dryRun",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "gracePeriodSeconds",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "orphanDependents",
+                        "type": {
+                            "scalar": "Bool"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "propagationPolicy",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "k8s.apimachinery.pkg.apis.meta.v1.DeleteOptions"
+                        },
+                        "kind": "content",
+                        "necessity": "optional"
+                    }
+                ],
+                "response": {
+                    "reference": "k8s.apimachinery.pkg.apis.meta.v1.Status"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "listStorageV1CSIStorageCapacityForAllNamespaces",
+            "added": {
+                "deltaIdentifier": "listStorageV1CSIStorageCapacityForAllNamespaces",
+                "identifiers": {
+                    "EndpointPath": "/apis/storage.k8s.io/v1/csistoragecapacities",
+                    "HandlerName": "listStorageV1CSIStorageCapacityForAllNamespaces",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "allowWatchBookmarks",
+                        "type": {
+                            "scalar": "Bool"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "continue",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "fieldSelector",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "labelSelector",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "limit",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "pretty",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "resourceVersion",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "resourceVersionMatch",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "timeoutSeconds",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "watch",
+                        "type": {
+                            "scalar": "Bool"
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    }
+                ],
+                "response": {
+                    "reference": "k8s.api.storage.v1.CSIStorageCapacityList"
                 },
                 "errors": []
             },
@@ -828,431 +1253,6 @@
                 ],
                 "response": {
                     "reference": "k8s.api.networking.v1.NetworkPolicy"
-                },
-                "errors": []
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "readStorageV1NamespacedCSIStorageCapacity",
-            "added": {
-                "deltaIdentifier": "readStorageV1NamespacedCSIStorageCapacity",
-                "identifiers": {
-                    "EndpointPath": "/apis/storage.k8s.io/v1/namespaces/{namespace}/csistoragecapacities/{name}",
-                    "HandlerName": "readStorageV1NamespacedCSIStorageCapacity",
-                    "Operation": "read"
-                },
-                "communicationPattern": "requestResponse",
-                "parameters": [
-                    {
-                        "name": "name",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "path",
-                        "necessity": "required"
-                    },
-                    {
-                        "name": "namespace",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "path",
-                        "necessity": "required"
-                    },
-                    {
-                        "name": "pretty",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    }
-                ],
-                "response": {
-                    "reference": "k8s.api.storage.v1.CSIStorageCapacity"
-                },
-                "errors": []
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "replaceStorageV1NamespacedCSIStorageCapacity",
-            "added": {
-                "deltaIdentifier": "replaceStorageV1NamespacedCSIStorageCapacity",
-                "identifiers": {
-                    "EndpointPath": "/apis/storage.k8s.io/v1/namespaces/{namespace}/csistoragecapacities/{name}",
-                    "HandlerName": "replaceStorageV1NamespacedCSIStorageCapacity",
-                    "Operation": "update"
-                },
-                "communicationPattern": "requestResponse",
-                "parameters": [
-                    {
-                        "name": "name",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "path",
-                        "necessity": "required"
-                    },
-                    {
-                        "name": "namespace",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "path",
-                        "necessity": "required"
-                    },
-                    {
-                        "name": "pretty",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "dryRun",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "fieldManager",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "fieldValidation",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "_requestBody",
-                        "type": {
-                            "reference": "k8s.api.storage.v1.CSIStorageCapacity"
-                        },
-                        "kind": "content",
-                        "necessity": "required"
-                    }
-                ],
-                "response": {
-                    "reference": "k8s.api.storage.v1.CSIStorageCapacity"
-                },
-                "errors": []
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "deleteStorageV1NamespacedCSIStorageCapacity",
-            "added": {
-                "deltaIdentifier": "deleteStorageV1NamespacedCSIStorageCapacity",
-                "identifiers": {
-                    "EndpointPath": "/apis/storage.k8s.io/v1/namespaces/{namespace}/csistoragecapacities/{name}",
-                    "HandlerName": "deleteStorageV1NamespacedCSIStorageCapacity",
-                    "Operation": "delete"
-                },
-                "communicationPattern": "requestResponse",
-                "parameters": [
-                    {
-                        "name": "name",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "path",
-                        "necessity": "required"
-                    },
-                    {
-                        "name": "namespace",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "path",
-                        "necessity": "required"
-                    },
-                    {
-                        "name": "pretty",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "dryRun",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "gracePeriodSeconds",
-                        "type": {
-                            "scalar": "Int"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "orphanDependents",
-                        "type": {
-                            "scalar": "Bool"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "propagationPolicy",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "_requestBody",
-                        "type": {
-                            "reference": "k8s.apimachinery.pkg.apis.meta.v1.DeleteOptions"
-                        },
-                        "kind": "content",
-                        "necessity": "optional"
-                    }
-                ],
-                "response": {
-                    "reference": "k8s.apimachinery.pkg.apis.meta.v1.Status"
-                },
-                "errors": []
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "watchStorageV1NamespacedCSIStorageCapacity",
-            "added": {
-                "deltaIdentifier": "watchStorageV1NamespacedCSIStorageCapacity",
-                "identifiers": {
-                    "EndpointPath": "/apis/storage.k8s.io/v1/watch/namespaces/{namespace}/csistoragecapacities/{name}",
-                    "HandlerName": "watchStorageV1NamespacedCSIStorageCapacity",
-                    "Operation": "read"
-                },
-                "communicationPattern": "requestResponse",
-                "parameters": [
-                    {
-                        "name": "allowWatchBookmarks",
-                        "type": {
-                            "scalar": "Bool"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "continue",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "fieldSelector",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "labelSelector",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "limit",
-                        "type": {
-                            "scalar": "Int"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "name",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "path",
-                        "necessity": "required"
-                    },
-                    {
-                        "name": "namespace",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "path",
-                        "necessity": "required"
-                    },
-                    {
-                        "name": "pretty",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "resourceVersion",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "resourceVersionMatch",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "timeoutSeconds",
-                        "type": {
-                            "scalar": "Int"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "watch",
-                        "type": {
-                            "scalar": "Bool"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    }
-                ],
-                "response": {
-                    "reference": "k8s.apimachinery.pkg.apis.meta.v1.WatchEvent"
-                },
-                "errors": []
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "listStorageV1CSIStorageCapacityForAllNamespaces",
-            "added": {
-                "deltaIdentifier": "listStorageV1CSIStorageCapacityForAllNamespaces",
-                "identifiers": {
-                    "EndpointPath": "/apis/storage.k8s.io/v1/csistoragecapacities",
-                    "HandlerName": "listStorageV1CSIStorageCapacityForAllNamespaces",
-                    "Operation": "read"
-                },
-                "communicationPattern": "requestResponse",
-                "parameters": [
-                    {
-                        "name": "allowWatchBookmarks",
-                        "type": {
-                            "scalar": "Bool"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "continue",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "fieldSelector",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "labelSelector",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "limit",
-                        "type": {
-                            "scalar": "Int"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "pretty",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "resourceVersion",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "resourceVersionMatch",
-                        "type": {
-                            "scalar": "String"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "timeoutSeconds",
-                        "type": {
-                            "scalar": "Int"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    },
-                    {
-                        "name": "watch",
-                        "type": {
-                            "scalar": "Bool"
-                        },
-                        "kind": "lightweight",
-                        "necessity": "optional"
-                    }
-                ],
-                "response": {
-                    "reference": "k8s.api.storage.v1.CSIStorageCapacityList"
                 },
                 "errors": []
             },
@@ -1573,13 +1573,13 @@
     ],
     "scripts": {},
     "json-values": {
-        "0": "\"\"",
-        "1": "{\n\"conditions\" : null\n}",
-        "2": "0"
+        "2": "\"\"",
+        "1": "0",
+        "0": "{\n\"conditions\" : null\n}"
     },
     "updated-json-representations": {
         "io.k8s.api.apps.v1.StatefulSetStatus": "{\n\"availableReplicas\" : null,\n\"collisionCount\" : null,\n\"conditions\" : null,\n\"currentReplicas\" : null,\n\"currentRevision\" : null,\n\"observedGeneration\" : null,\n\"readyReplicas\" : null,\n\"replicas\" : 0,\n\"updateRevision\" : null,\n\"updatedReplicas\" : null\n}",
         "io.k8s.api.apps.v1.RollingUpdateStatefulSetStrategy": "{\n\"maxUnavailable\" : \"\",\n\"partition\" : null\n}",
-        "io.k8s.api.networking.v1.NetworkPolicy": "{\n\"apiVersion\" : null,\n\"kind\" : null,\n\"metadata\" : {\n\"annotations\" : null,\n\"clusterName\" : null,\n\"creationTimestamp\" : 680608800,\n\"deletionGracePeriodSeconds\" : null,\n\"deletionTimestamp\" : 680608800,\n\"finalizers\" : null,\n\"generateName\" : null,\n\"generation\" : null,\n\"labels\" : null,\n\"managedFields\" : null,\n\"name\" : null,\n\"namespace\" : null,\n\"ownerReferences\" : null,\n\"resourceVersion\" : null,\n\"selfLink\" : null,\n\"uid\" : null\n},\n\"spec\" : {\n\"egress\" : null,\n\"ingress\" : null,\n\"podSelector\" : {\n\"matchExpressions\" : null,\n\"matchLabels\" : null\n},\n\"policyTypes\" : null\n},\n\"status\" : {\n\"conditions\" : null\n}\n}"
+        "io.k8s.api.networking.v1.NetworkPolicy": "{\n\"apiVersion\" : null,\n\"kind\" : null,\n\"metadata\" : {\n\"annotations\" : null,\n\"clusterName\" : null,\n\"creationTimestamp\" : 681818400,\n\"deletionGracePeriodSeconds\" : null,\n\"deletionTimestamp\" : 681818400,\n\"finalizers\" : null,\n\"generateName\" : null,\n\"generation\" : null,\n\"labels\" : null,\n\"managedFields\" : null,\n\"name\" : null,\n\"namespace\" : null,\n\"ownerReferences\" : null,\n\"resourceVersion\" : null,\n\"selfLink\" : null,\n\"uid\" : null\n},\n\"spec\" : {\n\"egress\" : null,\n\"ingress\" : null,\n\"podSelector\" : {\n\"matchExpressions\" : null,\n\"matchLabels\" : null\n},\n\"policyTypes\" : null\n},\n\"status\" : {\n\"conditions\" : null\n}\n}"
     }
 }

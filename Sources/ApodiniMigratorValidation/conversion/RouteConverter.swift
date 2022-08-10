@@ -60,6 +60,7 @@ public struct RouteConverter {
                 typeInfo = try schemaConverter.convert(fallbackNamingMaterial: namingMaterial)
             case let .b(contentMap):
                 // TRADEOFF: we only handle a single MimeType (trying `application/json` first, if available)
+                // TODO count other types!
                 if let schema = contentMap.jsonOrFirstContentSchema {
                     let schemaConverter = JSONSchemaConverter(from: schema, with: components)
                     typeInfo = try schemaConverter.convert(fallbackNamingMaterial: namingMaterial)
@@ -89,6 +90,7 @@ public struct RouteConverter {
         let fallbackName = "\(operationId)#\(name)"
     
         // TRADEOFF: we only handle a single MimeType (trying `application/json` first, if available)
+        // TODO count other types!
         if let schema = requestBody.content.jsonOrFirstContentSchema {
             let schemaConverter = JSONSchemaConverter(from: schema, with: components)
             typeInfo = try schemaConverter.convert(fallbackNamingMaterial: fallbackName)
@@ -118,6 +120,7 @@ public struct RouteConverter {
         named operationId: String
     ) throws -> TypeInformation {
         // TRADEOFF: we can only document a single response (we grab the first 2xx success code we find)
+        // TODO count other types!
         guard let responseEither = operation.responses.someSuccessfulResponse else {
             logger.warning("\(operationId) doesn't define a response for any 2xx success status code. Using 'Empty' type as fallback.")
             return JSONSchemaConverter.emptyObject
@@ -126,6 +129,7 @@ public struct RouteConverter {
         let response: OpenAPI.Response = try components.lookup(responseEither)
     
         // TRADEOFF: we only handle a single MimeType (trying `application/json` first, if available)
+        // TODO count other types!
         guard let responseSchema = response.content.jsonOrFirstContentSchema else {
             logger.warning("Response of \(operationId) doesn't define an appropriate content type. Using 'Empty' type as fallback.")
             return JSONSchemaConverter.emptyObject
