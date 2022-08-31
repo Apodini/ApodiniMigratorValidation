@@ -26,7 +26,7 @@ let package = Package(
         .package(url: "https://github.com/RougeWare/Swift-SemVer", from: "3.0.0-Beta.5"),
         
         // we use <1.0.0 argument parser as migrator (and Apodini) aren't updated yet (there are some issues to resolve)!
-        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.3.0"),
+        .package(url: "https://github.com/apple/swift-argument-parser", from: "0.4.0"),
         .package(url: "https://github.com/apple/swift-log.git", from: "1.4.2"),
     
         // testing runtime crashes

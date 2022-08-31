@@ -1,6 +1,6 @@
 {
     "summary": "A summary of what changed between versions",
-    "document-id": "A2653E56-04A0-40D3-A179-4504973EC0F9",
+    "document-id": "F0A5683E-B342-4898-8BE0-C362D6CB2F03",
     "version": "2.1.0",
     "from": "v_1.0.0",
     "to": "v_1.4.1",
@@ -29,12 +29,12 @@
     "modelChanges": [
         {
             "type": "addition",
-            "id": "AppInfo#relationships#ageRatingDeclaration#data#type",
+            "id": "AgeRatingDeclaration#attributes#contests",
             "added": {
                 "enum": {
                     "typeName": {
                         "rootComponent": {
-                            "name": "AppInfo#relationships#ageRatingDeclaration#data#type"
+                            "name": "AgeRatingDeclaration#attributes#contests"
                         }
                     },
                     "rawValueType": {
@@ -42,8 +42,18 @@
                     },
                     "cases": [
                         {
-                            "name": "ageRatingDeclarations",
-                            "rawValue": "ageRatingDeclarations",
+                            "name": "NONE",
+                            "rawValue": "NONE",
+                            "context": {}
+                        },
+                        {
+                            "name": "INFREQUENT_OR_MILD",
+                            "rawValue": "INFREQUENT_OR_MILD",
+                            "context": {}
+                        },
+                        {
+                            "name": "FREQUENT_OR_INTENSE",
+                            "rawValue": "FREQUENT_OR_INTENSE",
                             "context": {}
                         }
                     ],
@@ -55,12 +65,118 @@
         },
         {
             "type": "addition",
-            "id": "appInfos-get_instance#fields[ageRatingDeclarations]",
+            "id": "apps-appInfos-get_to_many_related#fields[ageRatingDeclarations]",
             "added": {
                 "enum": {
                     "typeName": {
                         "rootComponent": {
-                            "name": "appInfos-get_instance#fields[ageRatingDeclarations]"
+                            "name": "apps-appInfos-get_to_many_related#fields[ageRatingDeclarations]"
+                        }
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "alcoholTobaccoOrDrugUseOrReferences",
+                            "rawValue": "alcoholTobaccoOrDrugUseOrReferences",
+                            "context": {}
+                        },
+                        {
+                            "name": "contests",
+                            "rawValue": "contests",
+                            "context": {}
+                        },
+                        {
+                            "name": "gambling",
+                            "rawValue": "gambling",
+                            "context": {}
+                        },
+                        {
+                            "name": "gamblingAndContests",
+                            "rawValue": "gamblingAndContests",
+                            "context": {}
+                        },
+                        {
+                            "name": "gamblingSimulated",
+                            "rawValue": "gamblingSimulated",
+                            "context": {}
+                        },
+                        {
+                            "name": "horrorOrFearThemes",
+                            "rawValue": "horrorOrFearThemes",
+                            "context": {}
+                        },
+                        {
+                            "name": "kidsAgeBand",
+                            "rawValue": "kidsAgeBand",
+                            "context": {}
+                        },
+                        {
+                            "name": "matureOrSuggestiveThemes",
+                            "rawValue": "matureOrSuggestiveThemes",
+                            "context": {}
+                        },
+                        {
+                            "name": "medicalOrTreatmentInformation",
+                            "rawValue": "medicalOrTreatmentInformation",
+                            "context": {}
+                        },
+                        {
+                            "name": "profanityOrCrudeHumor",
+                            "rawValue": "profanityOrCrudeHumor",
+                            "context": {}
+                        },
+                        {
+                            "name": "seventeenPlus",
+                            "rawValue": "seventeenPlus",
+                            "context": {}
+                        },
+                        {
+                            "name": "sexualContentGraphicAndNudity",
+                            "rawValue": "sexualContentGraphicAndNudity",
+                            "context": {}
+                        },
+                        {
+                            "name": "sexualContentOrNudity",
+                            "rawValue": "sexualContentOrNudity",
+                            "context": {}
+                        },
+                        {
+                            "name": "unrestrictedWebAccess",
+                            "rawValue": "unrestrictedWebAccess",
+                            "context": {}
+                        },
+                        {
+                            "name": "violenceCartoonOrFantasy",
+                            "rawValue": "violenceCartoonOrFantasy",
+                            "context": {}
+                        },
+                        {
+                            "name": "violenceRealistic",
+                            "rawValue": "violenceRealistic",
+                            "context": {}
+                        },
+                        {
+                            "name": "violenceRealisticProlongedGraphicOrSadistic",
+                            "rawValue": "violenceRealisticProlongedGraphicOrSadistic",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "appInfos-ageRatingDeclaration-get_to_one_related#fields[ageRatingDeclarations]",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "appInfos-ageRatingDeclaration-get_to_one_related#fields[ageRatingDeclarations]"
                         }
                     },
                     "rawValueType": {
@@ -233,12 +349,12 @@
         },
         {
             "type": "addition",
-            "id": "appInfos-ageRatingDeclaration-get_to_one_related#fields[ageRatingDeclarations]",
+            "id": "appInfos-get_instance#fields[ageRatingDeclarations]",
             "added": {
                 "enum": {
                     "typeName": {
                         "rootComponent": {
-                            "name": "appInfos-ageRatingDeclaration-get_to_one_related#fields[ageRatingDeclarations]"
+                            "name": "appInfos-get_instance#fields[ageRatingDeclarations]"
                         }
                     },
                     "rawValueType": {
@@ -328,42 +444,6 @@
                         {
                             "name": "violenceRealisticProlongedGraphicOrSadistic",
                             "rawValue": "violenceRealisticProlongedGraphicOrSadistic",
-                            "context": {}
-                        }
-                    ],
-                    "context": {}
-                }
-            },
-            "breaking": false,
-            "solvable": true
-        },
-        {
-            "type": "addition",
-            "id": "AgeRatingDeclaration#attributes#contests",
-            "added": {
-                "enum": {
-                    "typeName": {
-                        "rootComponent": {
-                            "name": "AgeRatingDeclaration#attributes#contests"
-                        }
-                    },
-                    "rawValueType": {
-                        "scalar": "String"
-                    },
-                    "cases": [
-                        {
-                            "name": "NONE",
-                            "rawValue": "NONE",
-                            "context": {}
-                        },
-                        {
-                            "name": "INFREQUENT_OR_MILD",
-                            "rawValue": "INFREQUENT_OR_MILD",
-                            "context": {}
-                        },
-                        {
-                            "name": "FREQUENT_OR_INTENSE",
-                            "rawValue": "FREQUENT_OR_INTENSE",
                             "context": {}
                         }
                     ],
@@ -407,12 +487,12 @@
         },
         {
             "type": "addition",
-            "id": "apps-appInfos-get_to_many_related#fields[ageRatingDeclarations]",
+            "id": "AppInfo#relationships#ageRatingDeclaration#data#type",
             "added": {
                 "enum": {
                     "typeName": {
                         "rootComponent": {
-                            "name": "apps-appInfos-get_to_many_related#fields[ageRatingDeclarations]"
+                            "name": "AppInfo#relationships#ageRatingDeclaration#data#type"
                         }
                     },
                     "rawValueType": {
@@ -420,88 +500,8 @@
                     },
                     "cases": [
                         {
-                            "name": "alcoholTobaccoOrDrugUseOrReferences",
-                            "rawValue": "alcoholTobaccoOrDrugUseOrReferences",
-                            "context": {}
-                        },
-                        {
-                            "name": "contests",
-                            "rawValue": "contests",
-                            "context": {}
-                        },
-                        {
-                            "name": "gambling",
-                            "rawValue": "gambling",
-                            "context": {}
-                        },
-                        {
-                            "name": "gamblingAndContests",
-                            "rawValue": "gamblingAndContests",
-                            "context": {}
-                        },
-                        {
-                            "name": "gamblingSimulated",
-                            "rawValue": "gamblingSimulated",
-                            "context": {}
-                        },
-                        {
-                            "name": "horrorOrFearThemes",
-                            "rawValue": "horrorOrFearThemes",
-                            "context": {}
-                        },
-                        {
-                            "name": "kidsAgeBand",
-                            "rawValue": "kidsAgeBand",
-                            "context": {}
-                        },
-                        {
-                            "name": "matureOrSuggestiveThemes",
-                            "rawValue": "matureOrSuggestiveThemes",
-                            "context": {}
-                        },
-                        {
-                            "name": "medicalOrTreatmentInformation",
-                            "rawValue": "medicalOrTreatmentInformation",
-                            "context": {}
-                        },
-                        {
-                            "name": "profanityOrCrudeHumor",
-                            "rawValue": "profanityOrCrudeHumor",
-                            "context": {}
-                        },
-                        {
-                            "name": "seventeenPlus",
-                            "rawValue": "seventeenPlus",
-                            "context": {}
-                        },
-                        {
-                            "name": "sexualContentGraphicAndNudity",
-                            "rawValue": "sexualContentGraphicAndNudity",
-                            "context": {}
-                        },
-                        {
-                            "name": "sexualContentOrNudity",
-                            "rawValue": "sexualContentOrNudity",
-                            "context": {}
-                        },
-                        {
-                            "name": "unrestrictedWebAccess",
-                            "rawValue": "unrestrictedWebAccess",
-                            "context": {}
-                        },
-                        {
-                            "name": "violenceCartoonOrFantasy",
-                            "rawValue": "violenceCartoonOrFantasy",
-                            "context": {}
-                        },
-                        {
-                            "name": "violenceRealistic",
-                            "rawValue": "violenceRealistic",
-                            "context": {}
-                        },
-                        {
-                            "name": "violenceRealisticProlongedGraphicOrSadistic",
-                            "rawValue": "violenceRealisticProlongedGraphicOrSadistic",
+                            "name": "ageRatingDeclarations",
+                            "rawValue": "ageRatingDeclarations",
                             "context": {}
                         }
                     ],
@@ -513,25 +513,7 @@
         },
         {
             "type": "update",
-            "id": "apps-get_collection#fields[appInfos]",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "addition",
-                    "id": "ageRatingDeclaration",
-                    "added": {
-                        "name": "ageRatingDeclaration",
-                        "rawValue": "ageRatingDeclaration",
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "builds-perfPowerMetrics-get_to_many_related#filter[metricType]",
+            "id": "PerfPowerMetric#attributes#metricType",
             "updated": {
                 "type": "case",
                 "case": {
@@ -549,7 +531,25 @@
         },
         {
             "type": "update",
-            "id": "users-get_collection#filter[roles]",
+            "id": "apps-perfPowerMetrics-get_to_many_related#filter[metricType]",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "addition",
+                    "id": "TERMINATION",
+                    "added": {
+                        "name": "TERMINATION",
+                        "rawValue": "TERMINATION",
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "UserRole",
             "updated": {
                 "type": "case",
                 "case": {
@@ -567,7 +567,7 @@
         },
         {
             "type": "update",
-            "id": "users-get_collection#filter[roles]",
+            "id": "UserRole",
             "updated": {
                 "type": "case",
                 "case": {
@@ -585,7 +585,7 @@
         },
         {
             "type": "update",
-            "id": "users-get_collection#filter[roles]",
+            "id": "UserRole",
             "updated": {
                 "type": "case",
                 "case": {
@@ -621,15 +621,15 @@
         },
         {
             "type": "update",
-            "id": "userInvitations-get_collection#filter[roles]",
+            "id": "appInfos-get_instance#include",
             "updated": {
                 "type": "case",
                 "case": {
                     "type": "addition",
-                    "id": "CREATE_APPS",
+                    "id": "ageRatingDeclaration",
                     "added": {
-                        "name": "CREATE_APPS",
-                        "rawValue": "CREATE_APPS",
+                        "name": "ageRatingDeclaration",
+                        "rawValue": "ageRatingDeclaration",
                         "context": {}
                     },
                     "breaking": false,
@@ -639,15 +639,15 @@
         },
         {
             "type": "update",
-            "id": "userInvitations-get_collection#filter[roles]",
+            "id": "appInfos-appInfoLocalizations-get_to_many_related#fields[appInfos]",
             "updated": {
                 "type": "case",
                 "case": {
                     "type": "addition",
-                    "id": "CLOUD_MANAGED_DEVELOPER_ID",
+                    "id": "ageRatingDeclaration",
                     "added": {
-                        "name": "CLOUD_MANAGED_DEVELOPER_ID",
-                        "rawValue": "CLOUD_MANAGED_DEVELOPER_ID",
+                        "name": "ageRatingDeclaration",
+                        "rawValue": "ageRatingDeclaration",
                         "context": {}
                     },
                     "breaking": false,
@@ -657,15 +657,73 @@
         },
         {
             "type": "update",
-            "id": "userInvitations-get_collection#filter[roles]",
+            "id": "apps-get_collection#fields[appInfos]",
             "updated": {
                 "type": "case",
                 "case": {
                     "type": "addition",
-                    "id": "CLOUD_MANAGED_APP_DISTRIBUTION",
+                    "id": "ageRatingDeclaration",
                     "added": {
-                        "name": "CLOUD_MANAGED_APP_DISTRIBUTION",
-                        "rawValue": "CLOUD_MANAGED_APP_DISTRIBUTION",
+                        "name": "ageRatingDeclaration",
+                        "rawValue": "ageRatingDeclaration",
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "AppInfo#relationships",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "ageRatingDeclaration",
+                    "added": {
+                        "name": "ageRatingDeclaration",
+                        "type": {
+                            "optional": {
+                                "reference": "AppInfo#relationships#ageRatingDeclaration"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "apps-get_instance#fields[appInfos]",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "addition",
+                    "id": "ageRatingDeclaration",
+                    "added": {
+                        "name": "ageRatingDeclaration",
+                        "rawValue": "ageRatingDeclaration",
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "appInfos-get_instance#fields[appInfos]",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "addition",
+                    "id": "ageRatingDeclaration",
+                    "added": {
+                        "name": "ageRatingDeclaration",
+                        "rawValue": "ageRatingDeclaration",
                         "context": {}
                     },
                     "breaking": false,
@@ -741,65 +799,7 @@
         },
         {
             "type": "update",
-            "id": "apps-perfPowerMetrics-get_to_many_related#filter[metricType]",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "addition",
-                    "id": "TERMINATION",
-                    "added": {
-                        "name": "TERMINATION",
-                        "rawValue": "TERMINATION",
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "AppInfo#relationships",
-            "updated": {
-                "type": "property",
-                "property": {
-                    "type": "addition",
-                    "id": "ageRatingDeclaration",
-                    "added": {
-                        "name": "ageRatingDeclaration",
-                        "type": {
-                            "optional": {
-                                "reference": "AppInfo#relationships#ageRatingDeclaration"
-                            }
-                        },
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "apps-get_instance#fields[appInfos]",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "addition",
-                    "id": "ageRatingDeclaration",
-                    "added": {
-                        "name": "ageRatingDeclaration",
-                        "rawValue": "ageRatingDeclaration",
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "UserRole",
+            "id": "users-get_collection#filter[roles]",
             "updated": {
                 "type": "case",
                 "case": {
@@ -817,7 +817,7 @@
         },
         {
             "type": "update",
-            "id": "UserRole",
+            "id": "users-get_collection#filter[roles]",
             "updated": {
                 "type": "case",
                 "case": {
@@ -835,7 +835,7 @@
         },
         {
             "type": "update",
-            "id": "UserRole",
+            "id": "users-get_collection#filter[roles]",
             "updated": {
                 "type": "case",
                 "case": {
@@ -853,7 +853,61 @@
         },
         {
             "type": "update",
-            "id": "PerfPowerMetric#attributes#metricType",
+            "id": "userInvitations-get_collection#filter[roles]",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "addition",
+                    "id": "CREATE_APPS",
+                    "added": {
+                        "name": "CREATE_APPS",
+                        "rawValue": "CREATE_APPS",
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "userInvitations-get_collection#filter[roles]",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "addition",
+                    "id": "CLOUD_MANAGED_DEVELOPER_ID",
+                    "added": {
+                        "name": "CLOUD_MANAGED_DEVELOPER_ID",
+                        "rawValue": "CLOUD_MANAGED_DEVELOPER_ID",
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "userInvitations-get_collection#filter[roles]",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "addition",
+                    "id": "CLOUD_MANAGED_APP_DISTRIBUTION",
+                    "added": {
+                        "name": "CLOUD_MANAGED_APP_DISTRIBUTION",
+                        "rawValue": "CLOUD_MANAGED_APP_DISTRIBUTION",
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "builds-perfPowerMetrics-get_to_many_related#filter[metricType]",
             "updated": {
                 "type": "case",
                 "case": {
@@ -862,60 +916,6 @@
                     "added": {
                         "name": "TERMINATION",
                         "rawValue": "TERMINATION",
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "appInfos-get_instance#include",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "addition",
-                    "id": "ageRatingDeclaration",
-                    "added": {
-                        "name": "ageRatingDeclaration",
-                        "rawValue": "ageRatingDeclaration",
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "appInfos-appInfoLocalizations-get_to_many_related#fields[appInfos]",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "addition",
-                    "id": "ageRatingDeclaration",
-                    "added": {
-                        "name": "ageRatingDeclaration",
-                        "rawValue": "ageRatingDeclaration",
-                        "context": {}
-                    },
-                    "breaking": false,
-                    "solvable": true
-                }
-            }
-        },
-        {
-            "type": "update",
-            "id": "appInfos-get_instance#fields[appInfos]",
-            "updated": {
-                "type": "case",
-                "case": {
-                    "type": "addition",
-                    "id": "ageRatingDeclaration",
-                    "added": {
-                        "name": "ageRatingDeclaration",
-                        "rawValue": "ageRatingDeclaration",
                         "context": {}
                     },
                     "breaking": false,
@@ -966,7 +966,7 @@
         },
         {
             "type": "update",
-            "id": "apps-appInfos-get_to_many_related",
+            "id": "appInfos-get_instance",
             "updated": {
                 "type": "parameter",
                 "parameter": {
@@ -976,7 +976,7 @@
                         "name": "fields[ageRatingDeclarations]",
                         "type": {
                             "repeated": {
-                                "reference": "apps-appInfos-get_to_many_related#fields[ageRatingDeclarations]"
+                                "reference": "appInfos-get_instance#fields[ageRatingDeclarations]"
                             }
                         },
                         "kind": "lightweight",
@@ -989,7 +989,7 @@
         },
         {
             "type": "update",
-            "id": "appInfos-get_instance",
+            "id": "apps-appInfos-get_to_many_related",
             "updated": {
                 "type": "parameter",
                 "parameter": {
@@ -999,7 +999,7 @@
                         "name": "fields[ageRatingDeclarations]",
                         "type": {
                             "repeated": {
-                                "reference": "appInfos-get_instance#fields[ageRatingDeclarations]"
+                                "reference": "apps-appInfos-get_to_many_related#fields[ageRatingDeclarations]"
                             }
                         },
                         "kind": "lightweight",
