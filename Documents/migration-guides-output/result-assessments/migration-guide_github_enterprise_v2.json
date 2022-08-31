@@ -1,0 +1,3107 @@
+{
+    "summary": "A summary of what changed between versions",
+    "document-id": "93AA17D9-F813-4B48-B39F-F56273F0B94D",
+    "version": "2.1.0",
+    "from": "v_1.1.4",
+    "to": "v_1.1.4",
+    "compare-config": {
+        "include-provider-support": false,
+        "allowed-endpoint-id-update": false,
+        "allowed-type-rename": false,
+        "encoderConfiguration": {
+            "dateEncodingStrategy": "deferredToDate",
+            "dataEncodingStrategy": "base64"
+        }
+    },
+    "modelChanges": [
+        {
+            "type": "removal",
+            "id": "installation-ghes-2#repository_selection",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "runner-no-labels",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "branch-protection#required_status_checks",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "installation-ghes-2#permissions",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "commit#files",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "removal",
+            "id": "installation-ghes-2",
+            "breaking": true,
+            "solvable": false
+        },
+        {
+            "type": "addition",
+            "id": "runner",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "runner"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "busy",
+                            "type": {
+                                "scalar": "Bool"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "os",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "id",
+                            "type": {
+                                "scalar": "Int"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "name",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "labels",
+                            "type": {
+                                "repeated": {
+                                    "reference": "runner-label"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "status",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/list-selected-repositories-enabled-github-actions-organization#_Response",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "actions/list-selected-repositories-enabled-github-actions-organization#_Response"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "repositories",
+                            "type": {
+                                "repeated": {
+                                    "reference": "repository"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "total_count",
+                            "type": {
+                                "scalar": "Double"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "repos/update-branch-protection#_requestBody#required_status_checks#checks",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "repos/update-branch-protection#_requestBody#required_status_checks#checks"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "app_id",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Int"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "context",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/list-selected-organizations-enabled-github-actions-enterprise#_Response",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "enterprise-admin/list-selected-organizations-enabled-github-actions-enterprise#_Response"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "organizations",
+                            "type": {
+                                "repeated": {
+                                    "reference": "organization-simple"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "total_count",
+                            "type": {
+                                "scalar": "Double"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "apps/scope-token#_requestBody",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "apps/scope-token#_requestBody"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "target",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "repositories",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "scalar": "String"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "permissions",
+                            "type": {
+                                "reference": "app-permissions"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "access_token",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "repository_ids",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "scalar": "Int"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "target_id",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Int"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "selected-actions",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "selected-actions"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "patterns_allowed",
+                            "type": {
+                                "repeated": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "github_owned_allowed",
+                            "type": {
+                                "scalar": "Bool"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/set-github-actions-permissions-repository#_requestBody",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "actions/set-github-actions-permissions-repository#_requestBody"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "allowed_actions",
+                            "type": {
+                                "reference": "allowed-actions"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "enabled",
+                            "type": {
+                                "scalar": "Bool"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/set-github-actions-permissions-organization#_requestBody",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "actions/set-github-actions-permissions-organization#_requestBody"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "allowed_actions",
+                            "type": {
+                                "reference": "allowed-actions"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "enabled_repositories",
+                            "type": {
+                                "reference": "enabled-repositories"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "announcement",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "announcement"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "expires_at",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Date"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "announcement",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "allowed-actions",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "allowed-actions"
+                        }
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "all",
+                            "rawValue": "all",
+                            "context": {}
+                        },
+                        {
+                            "name": "local_only",
+                            "rawValue": "local_only",
+                            "context": {}
+                        },
+                        {
+                            "name": "selected",
+                            "rawValue": "selected",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/set-selected-repositories-enabled-github-actions-organization#_requestBody",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "actions/set-selected-repositories-enabled-github-actions-organization#_requestBody"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "selected_repository_ids",
+                            "type": {
+                                "repeated": {
+                                    "scalar": "Int"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions-enterprise-permissions",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "actions-enterprise-permissions"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "allowed_actions",
+                            "type": {
+                                "reference": "allowed-actions"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "enabled_organizations",
+                            "type": {
+                                "reference": "enabled-organizations"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "selected_actions_url",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "selected_organizations_url",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions-repository-permissions",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "actions-repository-permissions"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "enabled",
+                            "type": {
+                                "scalar": "Bool"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "allowed_actions",
+                            "type": {
+                                "reference": "allowed-actions"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "selected_actions_url",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "protected-branch-required-status-check",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "protected-branch-required-status-check"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "enforcement_level",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "contexts_url",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "strict",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Bool"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "url",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "contexts",
+                            "type": {
+                                "repeated": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "runner-label#type",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "runner-label#type"
+                        }
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "read-only",
+                            "rawValue": "read-only",
+                            "context": {}
+                        },
+                        {
+                            "name": "custom",
+                            "rawValue": "custom",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "installation#repository_selection",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "installation#repository_selection"
+                        }
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "all",
+                            "rawValue": "all",
+                            "context": {}
+                        },
+                        {
+                            "name": "selected",
+                            "rawValue": "selected",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/set-github-actions-permissions-enterprise#_requestBody",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "enterprise-admin/set-github-actions-permissions-enterprise#_requestBody"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "enabled_organizations",
+                            "type": {
+                                "reference": "enabled-organizations"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "allowed_actions",
+                            "type": {
+                                "reference": "allowed-actions"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "webhook-config",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "webhook-config"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "secret",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "content_type",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "insecure_ssl",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "url",
+                            "type": {
+                                "scalar": "URL"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "installation",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "installation"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "target_id",
+                            "type": {
+                                "scalar": "Int"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "app_id",
+                            "type": {
+                                "scalar": "Int"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "contact_email",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "repository_selection",
+                            "type": {
+                                "reference": "installation#repository_selection"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "events",
+                            "type": {
+                                "repeated": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "single_file_name",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "id",
+                            "type": {
+                                "scalar": "Int"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "account",
+                            "type": {
+                                "optional": {
+                                    "reference": "simple-user"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "updated_at",
+                            "type": {
+                                "scalar": "Date"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "permissions",
+                            "type": {
+                                "reference": "app-permissions"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "access_tokens_url",
+                            "type": {
+                                "scalar": "URL"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "html_url",
+                            "type": {
+                                "scalar": "URL"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "has_multiple_single_files",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Bool"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "suspended_by",
+                            "type": {
+                                "optional": {
+                                    "reference": "nullable-simple-user"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "single_file_paths",
+                            "type": {
+                                "optional": {
+                                    "repeated": {
+                                        "scalar": "String"
+                                    }
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "app_slug",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "created_at",
+                            "type": {
+                                "scalar": "Date"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "target_type",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "suspended_at",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Date"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "repositories_url",
+                            "type": {
+                                "scalar": "URL"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions-organization-permissions",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "actions-organization-permissions"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "selected_repositories_url",
+                            "type": {
+                                "optional": {
+                                    "scalar": "String"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "allowed_actions",
+                            "type": {
+                                "reference": "allowed-actions"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "enabled_repositories",
+                            "type": {
+                                "reference": "enabled-repositories"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "selected_actions_url",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enabled-organizations",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "enabled-organizations"
+                        }
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "all",
+                            "rawValue": "all",
+                            "context": {}
+                        },
+                        {
+                            "name": "none",
+                            "rawValue": "none",
+                            "context": {}
+                        },
+                        {
+                            "name": "selected",
+                            "rawValue": "selected",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "runner-label",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "runner-label"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "name",
+                            "type": {
+                                "scalar": "String"
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "id",
+                            "type": {
+                                "optional": {
+                                    "scalar": "Int"
+                                }
+                            },
+                            "context": {}
+                        },
+                        {
+                            "name": "type",
+                            "type": {
+                                "optional": {
+                                    "reference": "runner-label#type"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/set-selected-organizations-enabled-github-actions-enterprise#_requestBody",
+            "added": {
+                "object": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "enterprise-admin/set-selected-organizations-enabled-github-actions-enterprise#_requestBody"
+                        }
+                    },
+                    "properties": [
+                        {
+                            "name": "selected_organization_ids",
+                            "type": {
+                                "repeated": {
+                                    "scalar": "Int"
+                                }
+                            },
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enabled-repositories",
+            "added": {
+                "enum": {
+                    "typeName": {
+                        "rootComponent": {
+                            "name": "enabled-repositories"
+                        }
+                    },
+                    "rawValueType": {
+                        "scalar": "String"
+                    },
+                    "cases": [
+                        {
+                            "name": "all",
+                            "rawValue": "all",
+                            "context": {}
+                        },
+                        {
+                            "name": "none",
+                            "rawValue": "none",
+                            "context": {}
+                        },
+                        {
+                            "name": "selected",
+                            "rawValue": "selected",
+                            "context": {}
+                        }
+                    ],
+                    "context": {}
+                }
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "update",
+            "id": "nullable-issue",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "draft",
+                    "added": {
+                        "name": "draft",
+                        "type": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "nullable-repository#template_repository",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "allow_update_branch",
+                    "added": {
+                        "name": "allow_update_branch",
+                        "type": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "enterprise-admin/list-self-hosted-runners-in-group-for-enterprise#_Response",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "runners",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "repeated": {
+                                "reference": "runner-no-labels"
+                            }
+                        },
+                        "to": {
+                            "repeated": {
+                                "reference": "runner"
+                            }
+                        },
+                        "forwardMigration": 0,
+                        "backwardMigration": 1,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "organization-full",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "members_can_fork_private_repositories",
+                    "added": {
+                        "name": "members_can_fork_private_repositories",
+                        "type": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "code-scanning-alert",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "most_recent_instance",
+                    "added": {
+                        "name": "most_recent_instance",
+                        "type": {
+                            "reference": "code-scanning-alert-instance"
+                        },
+                        "context": {}
+                    },
+                    "defaultValue": 0,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "code-scanning-alert",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "instances_url",
+                    "added": {
+                        "name": "instances_url",
+                        "type": {
+                            "scalar": "URL"
+                        },
+                        "context": {}
+                    },
+                    "defaultValue": 1,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "check-suite",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "runs_rerequestable",
+                    "added": {
+                        "name": "runs_rerequestable",
+                        "type": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "check-suite",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "rerequestable",
+                    "added": {
+                        "name": "rerequestable",
+                        "type": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "actions/list-self-hosted-runners-in-group-for-org#_Response",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "runners",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "repeated": {
+                                "reference": "runner-no-labels"
+                            }
+                        },
+                        "to": {
+                            "repeated": {
+                                "reference": "runner"
+                            }
+                        },
+                        "forwardMigration": 2,
+                        "backwardMigration": 3,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "rate-limit-overview#resources",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "scim",
+                    "added": {
+                        "name": "scim",
+                        "type": {
+                            "reference": "rate-limit"
+                        },
+                        "context": {}
+                    },
+                    "defaultValue": 2,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "repos/update-branch-protection#_requestBody",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "contexts",
+                    "added": {
+                        "name": "contexts",
+                        "type": {
+                            "optional": {
+                                "repeated": {
+                                    "scalar": "String"
+                                }
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "repository#template_repository",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "allow_update_branch",
+                    "added": {
+                        "name": "allow_update_branch",
+                        "type": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "actions/list-self-hosted-runners-for-repo#_Response",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "runners",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "repeated": {
+                                "reference": "runner-no-labels"
+                            }
+                        },
+                        "to": {
+                            "repeated": {
+                                "reference": "runner"
+                            }
+                        },
+                        "forwardMigration": 4,
+                        "backwardMigration": 5,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "actions/list-self-hosted-runners-for-repo#_Response",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "total_count",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "scalar": "Double"
+                        },
+                        "to": {
+                            "scalar": "Int"
+                        },
+                        "forwardMigration": 6,
+                        "backwardMigration": 7
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "commit",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "files",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "repeated": {
+                                    "reference": "commit#files"
+                                }
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "repeated": {
+                                    "reference": "diff-entry"
+                                }
+                            }
+                        },
+                        "forwardMigration": 8,
+                        "backwardMigration": 9,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "teams/create#_requestBody",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "ldap_dn",
+                    "added": {
+                        "name": "ldap_dn",
+                        "type": {
+                            "optional": {
+                                "scalar": "String"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "repos/update-branch-protection#_requestBody#required_status_checks",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "checks",
+                    "added": {
+                        "name": "checks",
+                        "type": {
+                            "optional": {
+                                "repeated": {
+                                    "reference": "repos/update-branch-protection#_requestBody#required_status_checks#checks"
+                                }
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "apps/list-installations-for-authenticated-user#_Response",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "installations",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "repeated": {
+                                "reference": "installation-ghes-2"
+                            }
+                        },
+                        "to": {
+                            "repeated": {
+                                "reference": "installation"
+                            }
+                        },
+                        "forwardMigration": 10,
+                        "backwardMigration": 11,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "actions/create-self-hosted-runner-group-for-org#_requestBody",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "allows_public_repositories",
+                    "added": {
+                        "name": "allows_public_repositories",
+                        "type": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "app-permissions#vulnerability_alerts",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "addition",
+                    "id": "write",
+                    "added": {
+                        "name": "write",
+                        "rawValue": "write",
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "teams/create#_requestBody#permission",
+            "updated": {
+                "type": "case",
+                "case": {
+                    "type": "removal",
+                    "id": "admin",
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "code-scanning-alert-items",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "instance",
+                    "to": "instances_url",
+                    "similarity": 0.898077,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "code-scanning-alert-items",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "instance",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "reference": "code-scanning-alert-instance"
+                        },
+                        "to": {
+                            "scalar": "URL"
+                        },
+                        "forwardMigration": 12,
+                        "backwardMigration": 13,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "code-scanning-alert-items",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "idChange",
+                    "from": "classification",
+                    "to": "most_recent_instance",
+                    "similarity": 0.604762,
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "code-scanning-alert-items",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "classification",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "reference": "code-scanning-alert-classification"
+                            }
+                        },
+                        "to": {
+                            "reference": "code-scanning-alert-instance"
+                        },
+                        "forwardMigration": 14,
+                        "backwardMigration": 15,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "enterprise-admin/list-self-hosted-runners-for-enterprise#_Response",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "runners",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "repeated": {
+                                    "reference": "runner-no-labels"
+                                }
+                            }
+                        },
+                        "to": {
+                            "optional": {
+                                "repeated": {
+                                    "reference": "runner"
+                                }
+                            }
+                        },
+                        "forwardMigration": 16,
+                        "backwardMigration": 17,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "actions/list-self-hosted-runners-for-org#_Response",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "runners",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "repeated": {
+                                "reference": "runner-no-labels"
+                            }
+                        },
+                        "to": {
+                            "repeated": {
+                                "reference": "runner"
+                            }
+                        },
+                        "forwardMigration": 18,
+                        "backwardMigration": 19,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "actions/list-self-hosted-runners-for-org#_Response",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "total_count",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "scalar": "Double"
+                        },
+                        "to": {
+                            "scalar": "Int"
+                        },
+                        "forwardMigration": 20,
+                        "backwardMigration": 21
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "branch-protection",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "required_status_checks",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "optional": {
+                                "reference": "branch-protection#required_status_checks"
+                            }
+                        },
+                        "to": {
+                            "reference": "protected-branch-required-status-check"
+                        },
+                        "forwardMigration": 22,
+                        "backwardMigration": 23,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "enterprise-admin/create-self-hosted-runner-group-for-enterprise#_requestBody",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "allows_public_repositories",
+                    "added": {
+                        "name": "allows_public_repositories",
+                        "type": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "orgs/list-app-installations#_Response",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "update",
+                    "id": "installations",
+                    "updated": {
+                        "type": "type",
+                        "from": {
+                            "repeated": {
+                                "reference": "installation-ghes-2"
+                            }
+                        },
+                        "to": {
+                            "repeated": {
+                                "reference": "installation"
+                            }
+                        },
+                        "forwardMigration": 24,
+                        "backwardMigration": 25,
+                        "conversionWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            }
+        },
+        {
+            "type": "update",
+            "id": "issue",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "addition",
+                    "id": "draft",
+                    "added": {
+                        "name": "draft",
+                        "type": {
+                            "optional": {
+                                "scalar": "Bool"
+                            }
+                        },
+                        "context": {}
+                    },
+                    "breaking": false,
+                    "solvable": true
+                }
+            }
+        }
+    ],
+    "endpointChanges": [
+        {
+            "type": "addition",
+            "id": "repos/get-webhook-config-for-repo",
+            "added": {
+                "deltaIdentifier": "repos/get-webhook-config-for-repo",
+                "identifiers": {
+                    "EndpointPath": "/repos/{owner}/{repo}/hooks/{hook_id}/config",
+                    "HandlerName": "repos/get-webhook-config-for-repo",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "repo",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "hook_id",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "webhook-config"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/list-selected-repositories-enabled-github-actions-organization",
+            "added": {
+                "deltaIdentifier": "actions/list-selected-repositories-enabled-github-actions-organization",
+                "identifiers": {
+                    "EndpointPath": "/orgs/{org}/actions/permissions/repositories",
+                    "HandlerName": "actions/list-selected-repositories-enabled-github-actions-organization",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "org",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "per_page",
+                        "type": {
+                            "optional": {
+                                "scalar": "Int"
+                            }
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "page",
+                        "type": {
+                            "optional": {
+                                "scalar": "Int"
+                            }
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    }
+                ],
+                "response": {
+                    "reference": "actions/list-selected-repositories-enabled-github-actions-organization#_Response"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/set-selected-repositories-enabled-github-actions-organization",
+            "added": {
+                "deltaIdentifier": "actions/set-selected-repositories-enabled-github-actions-organization",
+                "identifiers": {
+                    "EndpointPath": "/orgs/{org}/actions/permissions/repositories",
+                    "HandlerName": "actions/set-selected-repositories-enabled-github-actions-organization",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "org",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "actions/set-selected-repositories-enabled-github-actions-organization#_requestBody"
+                        },
+                        "kind": "content",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "apps/get-webhook-config-for-app",
+            "added": {
+                "deltaIdentifier": "apps/get-webhook-config-for-app",
+                "identifiers": {
+                    "EndpointPath": "/app/hook/config",
+                    "HandlerName": "apps/get-webhook-config-for-app",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [],
+                "response": {
+                    "reference": "webhook-config"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/enable-workflow",
+            "added": {
+                "deltaIdentifier": "actions/enable-workflow",
+                "identifiers": {
+                    "EndpointPath": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/enable",
+                    "HandlerName": "actions/enable-workflow",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "repo",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "workflow_id",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/enable-selected-organization-github-actions-enterprise",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/enable-selected-organization-github-actions-enterprise",
+                "identifiers": {
+                    "EndpointPath": "/enterprises/{enterprise}/actions/permissions/organizations/{org_id}",
+                    "HandlerName": "enterprise-admin/enable-selected-organization-github-actions-enterprise",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "enterprise",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "org_id",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/disable-selected-organization-github-actions-enterprise",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/disable-selected-organization-github-actions-enterprise",
+                "identifiers": {
+                    "EndpointPath": "/enterprises/{enterprise}/actions/permissions/organizations/{org_id}",
+                    "HandlerName": "enterprise-admin/disable-selected-organization-github-actions-enterprise",
+                    "Operation": "delete"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "enterprise",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "org_id",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/get-allowed-actions-organization",
+            "added": {
+                "deltaIdentifier": "actions/get-allowed-actions-organization",
+                "identifiers": {
+                    "EndpointPath": "/orgs/{org}/actions/permissions/selected-actions",
+                    "HandlerName": "actions/get-allowed-actions-organization",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "org",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "selected-actions"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/set-allowed-actions-organization",
+            "added": {
+                "deltaIdentifier": "actions/set-allowed-actions-organization",
+                "identifiers": {
+                    "EndpointPath": "/orgs/{org}/actions/permissions/selected-actions",
+                    "HandlerName": "actions/set-allowed-actions-organization",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "org",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "selected-actions"
+                        },
+                        "kind": "content",
+                        "necessity": "optional"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/get-allowed-actions-enterprise",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/get-allowed-actions-enterprise",
+                "identifiers": {
+                    "EndpointPath": "/enterprises/{enterprise}/actions/permissions/selected-actions",
+                    "HandlerName": "enterprise-admin/get-allowed-actions-enterprise",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "enterprise",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "selected-actions"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/set-allowed-actions-enterprise",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/set-allowed-actions-enterprise",
+                "identifiers": {
+                    "EndpointPath": "/enterprises/{enterprise}/actions/permissions/selected-actions",
+                    "HandlerName": "enterprise-admin/set-allowed-actions-enterprise",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "enterprise",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "selected-actions"
+                        },
+                        "kind": "content",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/get-allowed-actions-repository",
+            "added": {
+                "deltaIdentifier": "actions/get-allowed-actions-repository",
+                "identifiers": {
+                    "EndpointPath": "/repos/{owner}/{repo}/actions/permissions/selected-actions",
+                    "HandlerName": "actions/get-allowed-actions-repository",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "repo",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "selected-actions"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/set-allowed-actions-repository",
+            "added": {
+                "deltaIdentifier": "actions/set-allowed-actions-repository",
+                "identifiers": {
+                    "EndpointPath": "/repos/{owner}/{repo}/actions/permissions/selected-actions",
+                    "HandlerName": "actions/set-allowed-actions-repository",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "repo",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "selected-actions"
+                        },
+                        "kind": "content",
+                        "necessity": "optional"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/disable-workflow",
+            "added": {
+                "deltaIdentifier": "actions/disable-workflow",
+                "identifiers": {
+                    "EndpointPath": "/repos/{owner}/{repo}/actions/workflows/{workflow_id}/disable",
+                    "HandlerName": "actions/disable-workflow",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "repo",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "workflow_id",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/get-github-actions-permissions-organization",
+            "added": {
+                "deltaIdentifier": "actions/get-github-actions-permissions-organization",
+                "identifiers": {
+                    "EndpointPath": "/orgs/{org}/actions/permissions",
+                    "HandlerName": "actions/get-github-actions-permissions-organization",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "org",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "actions-organization-permissions"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/set-github-actions-permissions-organization",
+            "added": {
+                "deltaIdentifier": "actions/set-github-actions-permissions-organization",
+                "identifiers": {
+                    "EndpointPath": "/orgs/{org}/actions/permissions",
+                    "HandlerName": "actions/set-github-actions-permissions-organization",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "org",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "actions/set-github-actions-permissions-organization#_requestBody"
+                        },
+                        "kind": "content",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "apps/scope-token",
+            "added": {
+                "deltaIdentifier": "apps/scope-token",
+                "identifiers": {
+                    "EndpointPath": "/applications/{client_id}/token/scoped",
+                    "HandlerName": "apps/scope-token",
+                    "Operation": "create"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "client_id",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "apps/scope-token#_requestBody"
+                        },
+                        "kind": "content",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "authorization"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/get-announcement",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/get-announcement",
+                "identifiers": {
+                    "EndpointPath": "/enterprise/announcement",
+                    "HandlerName": "enterprise-admin/get-announcement",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [],
+                "response": {
+                    "reference": "announcement"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/remove-announcement",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/remove-announcement",
+                "identifiers": {
+                    "EndpointPath": "/enterprise/announcement",
+                    "HandlerName": "enterprise-admin/remove-announcement",
+                    "Operation": "delete"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "orgs/get-webhook-config-for-org",
+            "added": {
+                "deltaIdentifier": "orgs/get-webhook-config-for-org",
+                "identifiers": {
+                    "EndpointPath": "/orgs/{org}/hooks/{hook_id}/config",
+                    "HandlerName": "orgs/get-webhook-config-for-org",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "org",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "hook_id",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "webhook-config"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/get-github-actions-permissions-repository",
+            "added": {
+                "deltaIdentifier": "actions/get-github-actions-permissions-repository",
+                "identifiers": {
+                    "EndpointPath": "/repos/{owner}/{repo}/actions/permissions",
+                    "HandlerName": "actions/get-github-actions-permissions-repository",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "repo",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "actions-repository-permissions"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/set-github-actions-permissions-repository",
+            "added": {
+                "deltaIdentifier": "actions/set-github-actions-permissions-repository",
+                "identifiers": {
+                    "EndpointPath": "/repos/{owner}/{repo}/actions/permissions",
+                    "HandlerName": "actions/set-github-actions-permissions-repository",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "owner",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "repo",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "actions/set-github-actions-permissions-repository#_requestBody"
+                        },
+                        "kind": "content",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/enable-selected-repository-github-actions-organization",
+            "added": {
+                "deltaIdentifier": "actions/enable-selected-repository-github-actions-organization",
+                "identifiers": {
+                    "EndpointPath": "/orgs/{org}/actions/permissions/repositories/{repository_id}",
+                    "HandlerName": "actions/enable-selected-repository-github-actions-organization",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "org",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "repository_id",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "actions/disable-selected-repository-github-actions-organization",
+            "added": {
+                "deltaIdentifier": "actions/disable-selected-repository-github-actions-organization",
+                "identifiers": {
+                    "EndpointPath": "/orgs/{org}/actions/permissions/repositories/{repository_id}",
+                    "HandlerName": "actions/disable-selected-repository-github-actions-organization",
+                    "Operation": "delete"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "org",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "repository_id",
+                        "type": {
+                            "scalar": "Int"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/list-selected-organizations-enabled-github-actions-enterprise",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/list-selected-organizations-enabled-github-actions-enterprise",
+                "identifiers": {
+                    "EndpointPath": "/enterprises/{enterprise}/actions/permissions/organizations",
+                    "HandlerName": "enterprise-admin/list-selected-organizations-enabled-github-actions-enterprise",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "enterprise",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "per_page",
+                        "type": {
+                            "optional": {
+                                "scalar": "Int"
+                            }
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    },
+                    {
+                        "name": "page",
+                        "type": {
+                            "optional": {
+                                "scalar": "Int"
+                            }
+                        },
+                        "kind": "lightweight",
+                        "necessity": "optional"
+                    }
+                ],
+                "response": {
+                    "reference": "enterprise-admin/list-selected-organizations-enabled-github-actions-enterprise#_Response"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/set-selected-organizations-enabled-github-actions-enterprise",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/set-selected-organizations-enabled-github-actions-enterprise",
+                "identifiers": {
+                    "EndpointPath": "/enterprises/{enterprise}/actions/permissions/organizations",
+                    "HandlerName": "enterprise-admin/set-selected-organizations-enabled-github-actions-enterprise",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "enterprise",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "enterprise-admin/set-selected-organizations-enabled-github-actions-enterprise#_requestBody"
+                        },
+                        "kind": "content",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/get-github-actions-permissions-enterprise",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/get-github-actions-permissions-enterprise",
+                "identifiers": {
+                    "EndpointPath": "/enterprises/{enterprise}/actions/permissions",
+                    "HandlerName": "enterprise-admin/get-github-actions-permissions-enterprise",
+                    "Operation": "read"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "enterprise",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "actions-enterprise-permissions"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "addition",
+            "id": "enterprise-admin/set-github-actions-permissions-enterprise",
+            "added": {
+                "deltaIdentifier": "enterprise-admin/set-github-actions-permissions-enterprise",
+                "identifiers": {
+                    "EndpointPath": "/enterprises/{enterprise}/actions/permissions",
+                    "HandlerName": "enterprise-admin/set-github-actions-permissions-enterprise",
+                    "Operation": "update"
+                },
+                "communicationPattern": "requestResponse",
+                "parameters": [
+                    {
+                        "name": "enterprise",
+                        "type": {
+                            "scalar": "String"
+                        },
+                        "kind": "path",
+                        "necessity": "required"
+                    },
+                    {
+                        "name": "_requestBody",
+                        "type": {
+                            "reference": "enterprise-admin/set-github-actions-permissions-enterprise#_requestBody"
+                        },
+                        "kind": "content",
+                        "necessity": "required"
+                    }
+                ],
+                "response": {
+                    "reference": "Empty"
+                },
+                "errors": []
+            },
+            "breaking": false,
+            "solvable": true
+        },
+        {
+            "type": "update",
+            "id": "actions/get-self-hosted-runner-for-repo",
+            "updated": {
+                "type": "response",
+                "from": {
+                    "reference": "runner-no-labels"
+                },
+                "to": {
+                    "reference": "runner"
+                },
+                "backwardsMigration": 26
+            },
+            "breaking": true,
+            "solvable": true
+        },
+        {
+            "type": "update",
+            "id": "apps/get-installation",
+            "updated": {
+                "type": "response",
+                "from": {
+                    "reference": "installation-ghes-2"
+                },
+                "to": {
+                    "reference": "installation"
+                },
+                "backwardsMigration": 27
+            },
+            "breaking": true,
+            "solvable": true
+        },
+        {
+            "type": "update",
+            "id": "apps/get-repo-installation",
+            "updated": {
+                "type": "response",
+                "from": {
+                    "reference": "installation-ghes-2"
+                },
+                "to": {
+                    "reference": "installation"
+                },
+                "backwardsMigration": 28
+            },
+            "breaking": true,
+            "solvable": true
+        },
+        {
+            "type": "update",
+            "id": "actions/get-self-hosted-runner-for-org",
+            "updated": {
+                "type": "response",
+                "from": {
+                    "reference": "runner-no-labels"
+                },
+                "to": {
+                    "reference": "runner"
+                },
+                "backwardsMigration": 29
+            },
+            "breaking": true,
+            "solvable": true
+        },
+        {
+            "type": "update",
+            "id": "apps/list-installations",
+            "updated": {
+                "type": "response",
+                "from": {
+                    "repeated": {
+                        "reference": "installation-ghes-2"
+                    }
+                },
+                "to": {
+                    "repeated": {
+                        "reference": "installation"
+                    }
+                },
+                "backwardsMigration": 30,
+                "migrationWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
+            },
+            "breaking": true,
+            "solvable": true
+        },
+        {
+            "type": "update",
+            "id": "apps/get-org-installation",
+            "updated": {
+                "type": "response",
+                "from": {
+                    "reference": "installation-ghes-2"
+                },
+                "to": {
+                    "reference": "installation"
+                },
+                "backwardsMigration": 31
+            },
+            "breaking": true,
+            "solvable": true
+        },
+        {
+            "type": "update",
+            "id": "enterprise-admin/get-self-hosted-runner-for-enterprise",
+            "updated": {
+                "type": "response",
+                "from": {
+                    "reference": "runner-no-labels"
+                },
+                "to": {
+                    "reference": "runner"
+                },
+                "backwardsMigration": 32
+            },
+            "breaking": true,
+            "solvable": true
+        },
+        {
+            "type": "update",
+            "id": "apps/get-user-installation",
+            "updated": {
+                "type": "response",
+                "from": {
+                    "reference": "installation-ghes-2"
+                },
+                "to": {
+                    "reference": "installation"
+                },
+                "backwardsMigration": 33
+            },
+            "breaking": true,
+            "solvable": true
+        }
+    ],
+    "scripts": {
+        "28": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'repository_selection': \"all\", 'suspended_at': parsedTo.suspended_at, 'suspended_by': parsedTo.suspended_by, 'target_id': parsedTo.target_id, 'account': parsedTo.account, 'repositories_url': parsedTo.repositories_url, 'app_slug': parsedTo.app_slug, 'updated_at': parsedTo.updated_at, 'created_at': parsedTo.created_at, 'events': parsedTo.events, 'html_url': parsedTo.html_url, 'single_file_name': parsedTo.single_file_name, 'access_tokens_url': parsedTo.access_tokens_url, 'app_id': parsedTo.app_id, 'permissions': {\n\"checks\" : null,\n\"contents\" : null,\n\"deployments\" : null,\n\"issues\" : null,\n\"metadata\" : null,\n\"organization_administration\" : null,\n\"pull_requests\" : null,\n\"statuses\" : null\n}, 'id': parsedTo.id, 'contact_email': parsedTo.contact_email, 'target_type': parsedTo.target_type})\n}",
+        "33": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'repository_selection': \"all\", 'suspended_at': parsedTo.suspended_at, 'suspended_by': parsedTo.suspended_by, 'target_id': parsedTo.target_id, 'account': parsedTo.account, 'repositories_url': parsedTo.repositories_url, 'app_slug': parsedTo.app_slug, 'updated_at': parsedTo.updated_at, 'created_at': parsedTo.created_at, 'events': parsedTo.events, 'html_url': parsedTo.html_url, 'single_file_name': parsedTo.single_file_name, 'access_tokens_url': parsedTo.access_tokens_url, 'app_id': parsedTo.app_id, 'permissions': {\n\"checks\" : null,\n\"contents\" : null,\n\"deployments\" : null,\n\"issues\" : null,\n\"metadata\" : null,\n\"organization_administration\" : null,\n\"pull_requests\" : null,\n\"statuses\" : null\n}, 'id': parsedTo.id, 'contact_email': parsedTo.contact_email, 'target_type': parsedTo.target_type})\n}",
+        "11": "function convert(ignoredTo) {\n    return JSON.stringify([])\n}",
+        "24": "function convert(ignoredFrom) {\n    return JSON.stringify([])\n}",
+        "19": "function convert(ignoredTo) {\n    return JSON.stringify([])\n}",
+        "16": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "20": "function convert(float) {\n    let parsed = JSON.parse(float)\n    return Math.round(parsed)\n}",
+        "2": "function convert(ignoredFrom) {\n    return JSON.stringify([])\n}",
+        "8": "function convert(ignoredFrom) {\n    return JSON.stringify(null)\n}",
+        "29": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'id': null, 'status': parsedTo.status, 'os': parsedTo.os, 'name': parsedTo.name, 'busy': parsedTo.busy})\n}",
+        "10": "function convert(ignoredFrom) {\n    return JSON.stringify([])\n}",
+        "27": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'repository_selection': \"all\", 'suspended_at': parsedTo.suspended_at, 'suspended_by': parsedTo.suspended_by, 'target_id': parsedTo.target_id, 'account': parsedTo.account, 'repositories_url': parsedTo.repositories_url, 'app_slug': parsedTo.app_slug, 'updated_at': parsedTo.updated_at, 'created_at': parsedTo.created_at, 'events': parsedTo.events, 'html_url': parsedTo.html_url, 'single_file_name': parsedTo.single_file_name, 'access_tokens_url': parsedTo.access_tokens_url, 'app_id': parsedTo.app_id, 'permissions': {\n\"checks\" : null,\n\"contents\" : null,\n\"deployments\" : null,\n\"issues\" : null,\n\"metadata\" : null,\n\"organization_administration\" : null,\n\"pull_requests\" : null,\n\"statuses\" : null\n}, 'id': parsedTo.id, 'contact_email': parsedTo.contact_email, 'target_type': parsedTo.target_type})\n}",
+        "32": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'id': null, 'status': parsedTo.status, 'os': parsedTo.os, 'name': parsedTo.name, 'busy': parsedTo.busy})\n}",
+        "31": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'repository_selection': \"all\", 'suspended_at': parsedTo.suspended_at, 'suspended_by': parsedTo.suspended_by, 'target_id': parsedTo.target_id, 'account': parsedTo.account, 'repositories_url': parsedTo.repositories_url, 'app_slug': parsedTo.app_slug, 'updated_at': parsedTo.updated_at, 'created_at': parsedTo.created_at, 'events': parsedTo.events, 'html_url': parsedTo.html_url, 'single_file_name': parsedTo.single_file_name, 'access_tokens_url': parsedTo.access_tokens_url, 'app_id': parsedTo.app_id, 'permissions': {\n\"checks\" : null,\n\"contents\" : null,\n\"deployments\" : null,\n\"issues\" : null,\n\"metadata\" : null,\n\"organization_administration\" : null,\n\"pull_requests\" : null,\n\"statuses\" : null\n}, 'id': parsedTo.id, 'contact_email': parsedTo.contact_email, 'target_type': parsedTo.target_type})\n}",
+        "22": "function convert(ignoredFrom) {\n    return JSON.stringify({\n\"contexts\" : [],\n\"contexts_url\" : null,\n\"enforcement_level\" : null,\n\"strict\" : null,\n\"url\" : null\n})\n}",
+        "21": "function convert(int) {\n    let parsed = JSON.parse(int)\n    return parsed.toFixed(1)\n}",
+        "6": "function convert(float) {\n    let parsed = JSON.parse(float)\n    return Math.round(parsed)\n}",
+        "13": "function convert(ignoredTo) {\n    return JSON.stringify({\n\"analysis_key\" : \"\",\n\"category\" : \"\",\n\"classifications\" : null,\n\"commit_sha\" : null,\n\"environment\" : \"\",\n\"html_url\" : null,\n\"location\" : {\n\"end_column\" : null,\n\"end_line\" : null,\n\"path\" : null,\n\"start_column\" : null,\n\"start_line\" : null\n},\n\"message\" : null,\n\"ref\" : \"\",\n\"state\" : \"open\"\n})\n}",
+        "30": "function convert(ignoredTo) {\n    return JSON.stringify([])\n}",
+        "26": "function convert(to) {\n    let parsedTo = JSON.parse(to)\n    return JSON.stringify({'id': null, 'status': parsedTo.status, 'os': parsedTo.os, 'name': parsedTo.name, 'busy': parsedTo.busy})\n}",
+        "17": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "5": "function convert(ignoredTo) {\n    return JSON.stringify([])\n}",
+        "9": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "12": "function convert(ignoredFrom) {\n    return JSON.stringify(\"https://github.com/Apodini/Apodini\")\n}",
+        "0": "function convert(ignoredFrom) {\n    return JSON.stringify([])\n}",
+        "14": "function convert(ignoredFrom) {\n    return JSON.stringify({\n\"analysis_key\" : \"\",\n\"category\" : \"\",\n\"classifications\" : null,\n\"commit_sha\" : null,\n\"environment\" : \"\",\n\"html_url\" : null,\n\"location\" : {\n\"end_column\" : null,\n\"end_line\" : null,\n\"path\" : null,\n\"start_column\" : null,\n\"start_line\" : null\n},\n\"message\" : null,\n\"ref\" : \"\",\n\"state\" : \"open\"\n})\n}",
+        "3": "function convert(ignoredTo) {\n    return JSON.stringify([])\n}",
+        "23": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "7": "function convert(int) {\n    let parsed = JSON.parse(int)\n    return parsed.toFixed(1)\n}",
+        "18": "function convert(ignoredFrom) {\n    return JSON.stringify([])\n}",
+        "15": "function convert(ignoredTo) {\n    return JSON.stringify(null)\n}",
+        "4": "function convert(ignoredFrom) {\n    return JSON.stringify([])\n}",
+        "25": "function convert(ignoredTo) {\n    return JSON.stringify([])\n}",
+        "1": "function convert(ignoredTo) {\n    return JSON.stringify([])\n}"
+    },
+    "json-values": {
+        "2": "{\n\"limit\" : 0,\n\"remaining\" : 0,\n\"reset\" : 0,\n\"used\" : 0\n}",
+        "0": "{\n\"analysis_key\" : \"\",\n\"category\" : \"\",\n\"classifications\" : null,\n\"commit_sha\" : null,\n\"environment\" : \"\",\n\"html_url\" : null,\n\"location\" : {\n\"end_column\" : null,\n\"end_line\" : null,\n\"path\" : null,\n\"start_column\" : null,\n\"start_line\" : null\n},\n\"message\" : null,\n\"ref\" : \"\",\n\"state\" : \"open\"\n}",
+        "1": "\"https://github.com/Apodini/Apodini\""
+    },
+    "updated-json-representations": {
+        "commit": "{\n\"author\" : null,\n\"comments_url\" : \"https://github.com/Apodini/Apodini\",\n\"commit\" : {\n\"author\" : null,\n\"comment_count\" : 0,\n\"committer\" : null,\n\"message\" : \"\",\n\"tree\" : {\n\"sha\" : \"\",\n\"url\" : \"https://github.com/Apodini/Apodini\"\n},\n\"url\" : \"https://github.com/Apodini/Apodini\",\n\"verification\" : {\n\"payload\" : null,\n\"reason\" : \"\",\n\"signature\" : null,\n\"verified\" : false\n}\n},\n\"committer\" : null,\n\"files\" : null,\n\"html_url\" : \"https://github.com/Apodini/Apodini\",\n\"node_id\" : \"\",\n\"parents\" : [],\n\"sha\" : \"\",\n\"stats\" : null,\n\"url\" : \"https://github.com/Apodini/Apodini\"\n}",
+        "rate-limit-overview#resources": "{\n\"actions_runner_registration\" : {\n\"limit\" : 0,\n\"remaining\" : 0,\n\"reset\" : 0,\n\"used\" : 0\n},\n\"code_scanning_upload\" : {\n\"limit\" : 0,\n\"remaining\" : 0,\n\"reset\" : 0,\n\"used\" : 0\n},\n\"core\" : {\n\"limit\" : 0,\n\"remaining\" : 0,\n\"reset\" : 0,\n\"used\" : 0\n},\n\"graphql\" : {\n\"limit\" : 0,\n\"remaining\" : 0,\n\"reset\" : 0,\n\"used\" : 0\n},\n\"integration_manifest\" : {\n\"limit\" : 0,\n\"remaining\" : 0,\n\"reset\" : 0,\n\"used\" : 0\n},\n\"scim\" : {\n\"limit\" : 0,\n\"remaining\" : 0,\n\"reset\" : 0,\n\"used\" : 0\n},\n\"search\" : {\n\"limit\" : 0,\n\"remaining\" : 0,\n\"reset\" : 0,\n\"used\" : 0\n},\n\"source_import\" : {\n\"limit\" : 0,\n\"remaining\" : 0,\n\"reset\" : 0,\n\"used\" : 0\n}\n}",
+        "apps/list-installations-for-authenticated-user#_Response": "{\n\"installations\" : [],\n\"total_count\" : 0\n}",
+        "code-scanning-alert-items": "{\n\"created_at\" : 683607600,\n\"dismissed_at\" : null,\n\"dismissed_by\" : null,\n\"dismissed_reason\" : null,\n\"html_url\" : \"https://github.com/Apodini/Apodini\",\n\"instances_url\" : \"https://github.com/Apodini/Apodini\",\n\"most_recent_instance\" : {\n\"analysis_key\" : \"\",\n\"category\" : \"\",\n\"classifications\" : null,\n\"commit_sha\" : null,\n\"environment\" : \"\",\n\"html_url\" : null,\n\"location\" : {\n\"end_column\" : null,\n\"end_line\" : null,\n\"path\" : null,\n\"start_column\" : null,\n\"start_line\" : null\n},\n\"message\" : null,\n\"ref\" : \"\",\n\"state\" : \"open\"\n},\n\"number\" : 0,\n\"rule\" : {\n\"description\" : null,\n\"id\" : null,\n\"name\" : null,\n\"severity\" : null\n},\n\"state\" : \"open\",\n\"tool\" : {\n\"guid\" : null,\n\"name\" : \"\",\n\"version\" : null\n},\n\"url\" : \"https://github.com/Apodini/Apodini\"\n}",
+        "enterprise-admin/list-self-hosted-runners-for-enterprise#_Response": "{\n\"runners\" : null,\n\"total_count\" : null\n}",
+        "orgs/list-app-installations#_Response": "{\n\"installations\" : [],\n\"total_count\" : 0\n}",
+        "branch-protection": "{\n\"allow_deletions\" : null,\n\"allow_force_pushes\" : null,\n\"enabled\" : null,\n\"enforce_admins\" : {\n\"enabled\" : false,\n\"url\" : \"https://github.com/Apodini/Apodini\"\n},\n\"name\" : null,\n\"protection_url\" : null,\n\"required_conversation_resolution\" : null,\n\"required_linear_history\" : null,\n\"required_pull_request_reviews\" : {\n\"dismiss_stale_reviews\" : false,\n\"dismissal_restrictions\" : null,\n\"require_code_owner_reviews\" : false,\n\"required_approving_review_count\" : null,\n\"url\" : null\n},\n\"required_signatures\" : null,\n\"required_status_checks\" : {\n\"contexts\" : [],\n\"contexts_url\" : null,\n\"enforcement_level\" : null,\n\"strict\" : null,\n\"url\" : null\n},\n\"restrictions\" : {\n\"apps\" : [],\n\"apps_url\" : \"https://github.com/Apodini/Apodini\",\n\"teams\" : [],\n\"teams_url\" : \"https://github.com/Apodini/Apodini\",\n\"url\" : \"https://github.com/Apodini/Apodini\",\n\"users\" : [],\n\"users_url\" : \"https://github.com/Apodini/Apodini\"\n},\n\"url\" : null\n}",
+        "code-scanning-alert": "{\n\"created_at\" : 683607600,\n\"dismissed_at\" : null,\n\"dismissed_by\" : null,\n\"dismissed_reason\" : null,\n\"html_url\" : \"https://github.com/Apodini/Apodini\",\n\"instances\" : null,\n\"instances_url\" : \"https://github.com/Apodini/Apodini\",\n\"most_recent_instance\" : {\n\"analysis_key\" : \"\",\n\"category\" : \"\",\n\"classifications\" : null,\n\"commit_sha\" : null,\n\"environment\" : \"\",\n\"html_url\" : null,\n\"location\" : {\n\"end_column\" : null,\n\"end_line\" : null,\n\"path\" : null,\n\"start_column\" : null,\n\"start_line\" : null\n},\n\"message\" : null,\n\"ref\" : \"\",\n\"state\" : \"open\"\n},\n\"number\" : 0,\n\"rule\" : {\n\"description\" : null,\n\"full_description\" : null,\n\"help\" : null,\n\"id\" : null,\n\"name\" : null,\n\"severity\" : null,\n\"tags\" : null\n},\n\"state\" : \"open\",\n\"tool\" : {\n\"guid\" : null,\n\"name\" : \"\",\n\"version\" : null\n},\n\"url\" : \"https://github.com/Apodini/Apodini\"\n}",
+        "enterprise-admin/list-self-hosted-runners-in-group-for-enterprise#_Response": "{\n\"runners\" : [],\n\"total_count\" : 0\n}",
+        "actions/list-self-hosted-runners-for-org#_Response": "{\n\"runners\" : [],\n\"total_count\" : 0\n}",
+        "actions/list-self-hosted-runners-in-group-for-org#_Response": "{\n\"runners\" : [],\n\"total_count\" : 0\n}",
+        "actions/list-self-hosted-runners-for-repo#_Response": "{\n\"runners\" : [],\n\"total_count\" : 0\n}"
+    }
+}
