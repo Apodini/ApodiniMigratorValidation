@@ -25,7 +25,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -38,7 +39,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -51,7 +53,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -64,7 +67,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "endpointChanges": [
@@ -91,7 +95,8 @@
                 }
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "update",
@@ -116,7 +121,8 @@
                 }
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         }
     ],
     "scripts": {},

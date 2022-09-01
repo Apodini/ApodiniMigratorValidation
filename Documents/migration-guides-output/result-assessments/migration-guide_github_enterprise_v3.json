@@ -43,7 +43,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -74,7 +75,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -115,7 +117,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -204,7 +207,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -235,7 +239,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -266,7 +271,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success-duplicate"
         },
         {
             "type": "addition",
@@ -297,7 +303,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success-duplicate"
         },
         {
             "type": "addition",
@@ -328,7 +335,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success-duplicate"
         },
         {
             "type": "addition",
@@ -359,7 +367,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success-duplicate"
         },
         {
             "type": "addition",
@@ -405,7 +414,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "update",
@@ -427,7 +437,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -449,7 +460,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -471,7 +483,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -493,7 +506,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -515,7 +529,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -537,7 +552,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -559,7 +575,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -581,7 +598,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -605,7 +623,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -626,7 +645,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -648,7 +668,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -670,7 +691,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -692,7 +714,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -714,7 +737,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -736,7 +760,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -758,7 +783,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -780,7 +806,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -801,7 +828,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -823,7 +851,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -845,7 +874,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -867,7 +897,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -889,7 +920,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -911,7 +943,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "endpointChanges": [
@@ -942,7 +975,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -979,7 +1013,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1034,7 +1069,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1071,7 +1107,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1116,7 +1153,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "update",
@@ -1137,7 +1175,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1160,7 +1199,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1183,7 +1223,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1206,7 +1247,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1229,7 +1271,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1252,7 +1295,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1275,7 +1319,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1296,7 +1341,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "scripts": {},

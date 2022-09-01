@@ -23,7 +23,8 @@
                 "to": "v_1.4.1"
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         }
     ],
     "modelChanges": [
@@ -61,7 +62,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -167,7 +169,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -273,7 +276,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success-duplicate"
         },
         {
             "type": "addition",
@@ -309,7 +313,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -345,7 +350,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -451,7 +457,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success-duplicate"
         },
         {
             "type": "addition",
@@ -483,7 +490,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -509,7 +517,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "update",
@@ -527,7 +536,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -545,7 +555,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -563,7 +574,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -581,7 +593,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -599,7 +612,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -617,7 +631,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -635,7 +650,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -653,7 +669,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -671,7 +688,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -693,7 +711,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -711,7 +730,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -729,7 +749,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -751,7 +772,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -773,7 +795,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -795,7 +818,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -813,7 +837,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -831,7 +856,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -849,7 +875,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -867,7 +894,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -885,7 +913,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -903,7 +932,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         },
         {
             "type": "update",
@@ -921,7 +951,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success-duplicate"
         }
     ],
     "endpointChanges": [
@@ -962,7 +993,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "update",
@@ -985,7 +1017,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1008,7 +1041,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "scripts": {},

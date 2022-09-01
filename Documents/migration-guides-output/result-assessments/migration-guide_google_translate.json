@@ -31,7 +31,8 @@
                 }
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         }
     ],
     "modelChanges": [
@@ -39,103 +40,120 @@
             "type": "removal",
             "id": "LanguagesResource",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "detectionsdetect#$xgafv",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "translationslist#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "TranslationsResource",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "languageslist#$xgafv",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "TranslationsListResponse",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "DetectionsListResponse",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "DetectionsResource",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "translationslist#$xgafv",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "translationslist#format",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "detectionslist#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "detectionsdetect#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "LanguagesListResponse",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "languageslist#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "translationstranslate#$xgafv",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "translationstranslate#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "detectionslist#$xgafv",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -181,7 +199,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -227,7 +246,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -273,7 +293,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -316,7 +337,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -391,7 +413,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -474,7 +497,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -521,7 +545,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -566,7 +591,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -649,7 +675,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -678,7 +705,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -726,7 +754,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -801,7 +830,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -847,7 +877,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -874,7 +905,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -922,7 +954,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -951,7 +984,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -967,7 +1001,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -995,7 +1030,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1041,7 +1077,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1070,7 +1107,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1104,7 +1142,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1131,7 +1170,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1174,7 +1214,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1222,7 +1263,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1256,7 +1298,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1301,7 +1344,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1355,7 +1399,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1398,7 +1443,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1450,7 +1496,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1488,7 +1535,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1531,7 +1579,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1576,7 +1625,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1603,7 +1653,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1646,7 +1697,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1684,7 +1736,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1732,7 +1785,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1779,7 +1833,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1804,7 +1859,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1850,7 +1906,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1886,7 +1943,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1934,7 +1992,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -1979,7 +2038,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2027,7 +2087,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2052,7 +2113,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2090,7 +2152,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2135,7 +2198,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2171,7 +2235,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2196,7 +2261,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2232,7 +2298,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2280,7 +2347,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2320,7 +2388,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2383,7 +2452,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2408,7 +2478,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2456,7 +2527,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2517,7 +2589,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2562,7 +2635,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2607,7 +2681,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2650,7 +2725,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2693,7 +2769,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2736,7 +2813,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -2782,7 +2860,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "update",
@@ -2797,7 +2876,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2812,7 +2892,9 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange",
+            "description": "Proper match would have been the sourceLanguageCode property from above!"
         },
         {
             "type": "update",
@@ -2827,7 +2909,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2840,7 +2923,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2861,7 +2945,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2883,7 +2968,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2905,7 +2991,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2918,7 +3005,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2940,7 +3028,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2962,7 +3051,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2984,7 +3074,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3006,7 +3097,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "endpointChanges": [
@@ -3014,31 +3106,36 @@
             "type": "removal",
             "id": "language.translations.list",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "language.translations.translate",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "language.detections.list",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "language.detections.detect",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "language.languages.list",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -3155,7 +3252,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -3272,7 +3370,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -3413,7 +3512,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -3554,7 +3654,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -3679,7 +3780,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -3804,7 +3906,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -3945,7 +4048,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -4070,7 +4174,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -4203,7 +4308,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -4328,7 +4434,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -4453,7 +4560,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -4578,7 +4686,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -4703,7 +4812,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "addition",
@@ -4828,7 +4938,8 @@
                 "errors": []
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         }
     ],
     "scripts": {},
