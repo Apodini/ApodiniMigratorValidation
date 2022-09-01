@@ -40,339 +40,396 @@
             "type": "removal",
             "id": "adunitsgetAdCode#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "AdStyle",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "savedadstylesget#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "accountssavedadstyleslist#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "accountssavedadstylesget#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "SavedReports",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "Accounts",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "ApodiniRecursionTerminator",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "AdUnit#contentAdsSettings#backupOption",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "adunitslist#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "CustomChannels",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "AdCode",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "accountsadclientsgetAdCode#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "AdsenseReportsGenerateResponse",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
             "type": "removal",
             "id": "accountsurlchannelslist#alt",
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "success"
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "accountsadunitslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "accountsadunitsgetAdCode#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "adunitscustomchannelslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AdUnit#contentAdsSettings",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AdClients",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "accountsadunitsget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "accountsalertsdelete#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "metadatadimensionslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "accountscustomchannelsadunitslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ReportingMetadataEntry",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "Payments",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "accountsget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "UrlChannels",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "accountscustomchannelslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "alertslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "customchannelsadunitslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "metadatametricslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "Alerts",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "Metadata",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "alertsdelete#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "SavedAdStyles",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AdStyle#colors",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "customchannelslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "accountsadunitscustomchannelslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "reportsgenerate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "SavedAdStyle",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "accountscustomchannelsget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AdUnits",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "CustomChannel#targetingInfo",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AdUnit#feedAdsSettings",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "adunitsget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "customchannelsget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "paymentslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AdUnit#mobileContentAdsSettings",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "reportssavedlist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "reportssavedgenerate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "adclientslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AdStyle#font",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AdsenseReportsGenerateResponse#headers",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "urlchannelslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "savedadstyleslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerate#reportingTimeZone",
             "added": {
@@ -418,6 +475,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientsadunitslist#alt",
             "added": {
@@ -466,6 +524,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListAlertsResponse",
             "added": {
@@ -495,6 +554,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "HttpBody",
             "added": {
@@ -542,6 +602,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListUrlChannelsResponse",
             "added": {
@@ -580,6 +641,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AdUnit#state",
             "added": {
@@ -616,6 +678,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Row",
             "added": {
@@ -645,6 +708,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ContentAdsSettings#type",
             "added": {
@@ -696,6 +760,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Alert#severity",
             "added": {
@@ -737,6 +802,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientsurlchannelslist#alt",
             "added": {
@@ -785,6 +851,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Date",
             "added": {
@@ -830,6 +897,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportssavedgenerateCsv#alt",
             "added": {
@@ -878,6 +946,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientsadunitsgetAdcode#alt",
             "added": {
@@ -926,6 +995,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Header",
             "added": {
@@ -971,6 +1041,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerate#$xgafv",
             "added": {
@@ -1014,6 +1085,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerateCsv#reportingTimeZone",
             "added": {
@@ -1059,6 +1131,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerate#metrics",
             "added": {
@@ -1254,6 +1327,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientsadunitsgetAdcode#$xgafv",
             "added": {
@@ -1300,6 +1374,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportssavedlist#$xgafv",
             "added": {
@@ -1346,6 +1421,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Header#type",
             "added": {
@@ -1402,6 +1478,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListSitesResponse",
             "added": {
@@ -1440,6 +1517,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountssitesget#alt",
             "added": {
@@ -1485,6 +1563,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountspaymentslist#$xgafv",
             "added": {
@@ -1528,6 +1607,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Site#state",
             "added": {
@@ -1574,6 +1654,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientscustomchannelslistLinkedAdUnits#$xgafv",
             "added": {
@@ -1620,6 +1701,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListAdClientsResponse",
             "added": {
@@ -1658,6 +1740,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportssavedgenerate#$xgafv",
             "added": {
@@ -1704,6 +1787,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsalertslist#$xgafv",
             "added": {
@@ -1747,6 +1831,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountssiteslist#alt",
             "added": {
@@ -1792,6 +1877,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientscustomchannelslistLinkedAdUnits#alt",
             "added": {
@@ -1840,6 +1926,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ContentAdsSettings",
             "added": {
@@ -1876,6 +1963,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountssitesget#$xgafv",
             "added": {
@@ -1919,6 +2007,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientslist#$xgafv",
             "added": {
@@ -1962,6 +2051,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportssavedgenerateCsv#$xgafv",
             "added": {
@@ -2008,6 +2098,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListLinkedAdUnitsResponse",
             "added": {
@@ -2046,6 +2137,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgetSaved#$xgafv",
             "added": {
@@ -2089,6 +2181,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListChildAccountsResponse",
             "added": {
@@ -2127,6 +2220,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "TimeZone",
             "added": {
@@ -2163,6 +2257,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgetSaved#alt",
             "added": {
@@ -2208,6 +2303,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerate#dimensions",
             "added": {
@@ -2468,6 +2564,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListAdUnitsResponse",
             "added": {
@@ -2506,6 +2603,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientsadunitslist#$xgafv",
             "added": {
@@ -2552,6 +2650,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientscustomchannelslist#alt",
             "added": {
@@ -2600,6 +2699,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientsurlchannelslist#$xgafv",
             "added": {
@@ -2646,6 +2746,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslistChildAccounts#alt",
             "added": {
@@ -2688,6 +2789,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListCustomChannelsResponse",
             "added": {
@@ -2726,6 +2828,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientsadunitslistLinkedCustomChannels#alt",
             "added": {
@@ -2774,6 +2877,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientscustomchannelslist#$xgafv",
             "added": {
@@ -2820,6 +2924,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsadclientsadunitslistLinkedCustomChannels#$xgafv",
             "added": {
@@ -2866,6 +2971,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportssavedgenerateCsv#reportingTimeZone",
             "added": {
@@ -2914,6 +3020,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportssavedgenerate#dateRange",
             "added": {
@@ -2987,6 +3094,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListLinkedCustomChannelsResponse",
             "added": {
@@ -3025,6 +3133,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListPaymentsResponse",
             "added": {
@@ -3054,6 +3163,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslist#$xgafv",
             "added": {
@@ -3094,6 +3204,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportssavedgenerate#reportingTimeZone",
             "added": {
@@ -3142,6 +3253,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListAccountsResponse",
             "added": {
@@ -3180,6 +3292,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslistChildAccounts#$xgafv",
             "added": {
@@ -3220,6 +3333,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerateCsv#alt",
             "added": {
@@ -3265,6 +3379,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AdClient#state",
             "added": {
@@ -3306,6 +3421,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReportResult",
             "added": {
@@ -3394,6 +3510,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerateCsv#metrics",
             "added": {
@@ -3589,6 +3706,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerateCsv#dateRange",
             "added": {
@@ -3659,6 +3777,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerateCsv#$xgafv",
             "added": {
@@ -3702,6 +3821,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListSavedReportsResponse",
             "added": {
@@ -3740,6 +3860,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountssiteslist#$xgafv",
             "added": {
@@ -3783,6 +3904,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerateCsv#dimensions",
             "added": {
@@ -4043,6 +4165,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Site",
             "added": {
@@ -4106,6 +4229,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AdUnitAdCode",
             "added": {
@@ -4133,6 +4257,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Cell",
             "added": {
@@ -4160,6 +4285,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportssavedgenerateCsv#dateRange",
             "added": {
@@ -4233,6 +4359,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreportsgenerate#dateRange",
             "added": {
@@ -4303,6 +4430,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Account#state",
             "added": {
@@ -4354,7 +4482,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4372,7 +4501,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4390,7 +4520,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4405,7 +4536,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4418,7 +4550,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4433,7 +4566,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4448,7 +4582,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4463,7 +4598,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4478,7 +4614,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4493,7 +4630,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4508,7 +4646,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4523,7 +4662,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4550,7 +4690,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -4563,7 +4704,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4585,7 +4727,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4600,7 +4743,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4613,7 +4757,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4626,7 +4771,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4655,7 +4801,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -4670,7 +4817,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4697,7 +4845,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -4712,7 +4861,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4727,7 +4877,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4740,7 +4891,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4753,7 +4905,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4768,7 +4921,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4797,7 +4951,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -4812,7 +4967,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4827,7 +4983,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4856,7 +5013,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -4869,7 +5027,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4882,7 +5041,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4900,7 +5060,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4918,7 +5079,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4933,7 +5095,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4948,7 +5111,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4961,7 +5125,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4974,7 +5139,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4987,7 +5153,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5005,7 +5172,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5023,7 +5191,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5038,7 +5207,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -5065,7 +5235,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -5080,7 +5251,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -5109,7 +5281,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -5124,7 +5297,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -5137,7 +5311,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5150,7 +5325,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5163,7 +5339,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5176,7 +5353,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5189,7 +5367,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5216,7 +5395,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -5229,7 +5409,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5247,7 +5428,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5265,7 +5447,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5278,7 +5461,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5296,7 +5480,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5314,7 +5499,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5327,7 +5513,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5345,7 +5532,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5363,7 +5551,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5376,7 +5565,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5394,7 +5584,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -5412,7 +5603,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "endpointChanges": [
