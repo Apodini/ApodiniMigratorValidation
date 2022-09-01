@@ -1,0 +1,131 @@
+{
+    "summary": "A summary of what changed between versions",
+    "document-id": "9E193C9B-273B-4EF2-84FD-DFB9224AF071",
+    "version": "2.1.0",
+    "from": "v_1.0.0",
+    "to": "v_1.0.0",
+    "compare-config": {
+        "include-provider-support": false,
+        "allowed-endpoint-id-update": false,
+        "allowed-type-rename": false,
+        "encoderConfiguration": {
+            "dateEncodingStrategy": "deferredToDate",
+            "dataEncodingStrategy": "base64"
+        }
+    },
+    "modelChanges": [
+        {
+            "type": "update",
+            "id": "Tokeninfo",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "email_verified",
+                    "breaking": false,
+                    "solvable": true
+                }
+            },
+            "result": "success"
+        },
+        {
+            "type": "update",
+            "id": "Tokeninfo",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "issued_at",
+                    "breaking": false,
+                    "solvable": true
+                }
+            },
+            "result": "success"
+        },
+        {
+            "type": "update",
+            "id": "Tokeninfo",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "issuer",
+                    "breaking": false,
+                    "solvable": true
+                }
+            },
+            "result": "success"
+        },
+        {
+            "type": "update",
+            "id": "Tokeninfo",
+            "updated": {
+                "type": "property",
+                "property": {
+                    "type": "removal",
+                    "id": "nonce",
+                    "breaking": false,
+                    "solvable": true
+                }
+            },
+            "result": "success"
+        }
+    ],
+    "endpointChanges": [
+        {
+            "type": "update",
+            "id": "oauth2.tokeninfo",
+            "updated": {
+                "type": "identifier",
+                "identifier": {
+                    "type": "update",
+                    "id": "EndpointPath",
+                    "updated": {
+                        "from": {
+                            "id": "EndpointPath",
+                            "value": "/oauth2/v1/tokeninfo"
+                        },
+                        "to": {
+                            "id": "EndpointPath",
+                            "value": "/oauth2/v2/tokeninfo"
+                        }
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            },
+            "breaking": true,
+            "solvable": true,
+            "result": "success"
+        },
+        {
+            "type": "update",
+            "id": "oauth2.userinfo.get",
+            "updated": {
+                "type": "identifier",
+                "identifier": {
+                    "type": "update",
+                    "id": "EndpointPath",
+                    "updated": {
+                        "from": {
+                            "id": "EndpointPath",
+                            "value": "/oauth2/v1/userinfo"
+                        },
+                        "to": {
+                            "id": "EndpointPath",
+                            "value": "/oauth2/v2/userinfo"
+                        }
+                    },
+                    "breaking": true,
+                    "solvable": true
+                }
+            },
+            "breaking": true,
+            "solvable": true,
+            "result": "success"
+        }
+    ],
+    "scripts": {},
+    "json-values": {},
+    "updated-json-representations": {}
+}
