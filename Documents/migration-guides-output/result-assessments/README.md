@@ -23,3 +23,6 @@ We consider the following result classification types:
 - `ill-classified-idchange`: A change which was wrongfully classified as a 'rename' change.
 - `ill-classified-idchange-caused`: This result classification annotates changes which are the result of an ill-classified
   `idChange` (e.g., type changes, necessity change, ...).
+
+This folder contains a `count.js` script file (to be executed with Node.js) which can be used to count all the stats
+and output a latex table formatting to standard output. 

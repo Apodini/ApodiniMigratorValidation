@@ -18584,7 +18584,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18606,7 +18607,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18627,7 +18629,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18649,7 +18652,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18701,7 +18705,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18730,7 +18735,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -18754,7 +18760,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -18769,7 +18776,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -18796,7 +18804,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",

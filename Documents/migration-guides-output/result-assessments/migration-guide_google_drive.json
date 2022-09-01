@@ -1927,7 +1927,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1957,7 +1958,7 @@
                     "solvable": true
                 }
             },
-            "result": "conversion-manual-adjustments"
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -3448,7 +3449,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",

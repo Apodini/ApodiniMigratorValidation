@@ -1069,7 +1069,8 @@
                 }
             },
             "breaking": false,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         },
         {
             "type": "update",

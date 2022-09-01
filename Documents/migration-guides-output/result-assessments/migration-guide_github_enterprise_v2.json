@@ -1934,7 +1934,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
