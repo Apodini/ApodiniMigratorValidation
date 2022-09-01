@@ -31,239 +31,279 @@
                 }
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         }
     ],
     "modelChanges": [
         {
+            "result": "success",
             "type": "removal",
             "id": "AccountStatusDataQualityIssue",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AccountAdwordsLink",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ordersreturnlineitem#$xgafv",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ProductStatusDataQualityIssue",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "TestOrderCustomerMarketingRightsInfo",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchResponse",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "orderscustombatch#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryReturnLineItem",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryCancel",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryReturnRefundLineItem",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "TestOrderCustomer",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ordersrefund#$xgafv",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ProductDestination",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrderLegacyPromotionBenefit",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryRejectReturnLineItem",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "CustomGroup",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "TestOrderPaymentMethod",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrderPaymentMethod",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrderLegacyPromotion",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "orderscustombatch#$xgafv",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntrySetLineItemMetadata",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryShipLineItems",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryUpdateShipment",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryInStoreRefundLineItem",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersRefundRequest",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersRefundResponse",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ordersrefund#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ProductAspect",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersReturnLineItemResponse",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryRefund",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersReturnLineItemRequest",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchResponseEntry",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequest",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntryCancelLineItem",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AccountStatusExampleItem",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ordersreturnlineitem#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OrdersCustomBatchRequestEntry",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "FreeListingsProgramStatusRegionStatus#eligibilityStatus",
             "added": {
@@ -320,6 +360,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnsprocess#alt",
             "added": {
@@ -362,6 +403,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnline",
             "added": {
@@ -474,6 +516,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ShoppingAdsProgramStatusReviewIneligibilityReasonDetails",
             "added": {
@@ -501,6 +544,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ProductWeight",
             "added": {
@@ -537,6 +581,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountCredentials#purpose",
             "added": {
@@ -573,6 +618,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "settlementreportsget#$xgafv",
             "added": {
@@ -613,6 +659,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderscaptureOrder#alt",
             "added": {
@@ -655,6 +702,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "TimeZone",
             "added": {
@@ -691,6 +739,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleRestrictionBoundary",
             "added": {
@@ -727,6 +776,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnAddressAddress",
             "added": {
@@ -801,6 +851,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountsUpdateLabelsRequest",
             "added": {
@@ -830,6 +881,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountCredentials",
             "added": {
@@ -875,6 +927,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Date",
             "added": {
@@ -920,6 +973,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Segments",
             "added": {
@@ -1141,6 +1195,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "settlementtransactionslist#$xgafv",
             "added": {
@@ -1181,6 +1236,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ShoppingAdsProgramStatusRegionStatus",
             "added": {
@@ -1284,6 +1340,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsRejectOperation",
             "added": {
@@ -1320,6 +1377,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddressinsert#alt",
             "added": {
@@ -1362,6 +1420,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddressdelete#$xgafv",
             "added": {
@@ -1402,6 +1461,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "settlementreportsget#alt",
             "added": {
@@ -1444,6 +1504,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "VerifyPhoneNumberRequest",
             "added": {
@@ -1489,6 +1550,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "localinventorycustombatch#alt",
             "added": {
@@ -1531,6 +1593,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreturncarrierdelete#alt",
             "added": {
@@ -1576,6 +1639,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionscreate#alt",
             "added": {
@@ -1618,6 +1682,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ProductDeliveryTimeAreaDeliveryTimeDeliveryTime",
             "added": {
@@ -1672,6 +1737,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionsdelete#$xgafv",
             "added": {
@@ -1712,6 +1778,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnslabelscreate#alt",
             "added": {
@@ -1757,6 +1824,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Segments#program",
             "added": {
@@ -1803,6 +1871,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslistlinks#$xgafv",
             "added": {
@@ -1843,6 +1912,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionstatusesget#$xgafv",
             "added": {
@@ -1883,6 +1953,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SettlementTransaction",
             "added": {
@@ -1931,6 +2002,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionsdelete#alt",
             "added": {
@@ -1973,6 +2045,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderscaptureOrder#$xgafv",
             "added": {
@@ -2013,6 +2086,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RequestPhoneVerificationRequest",
             "added": {
@@ -2067,6 +2141,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnaddressCustomBatchResponse",
             "added": {
@@ -2105,6 +2180,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingProductReport",
             "added": {
@@ -2207,6 +2283,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ProductId",
             "added": {
@@ -2234,6 +2311,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Css",
             "added": {
@@ -2308,6 +2386,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnslist#shipmentStatus",
             "added": {
@@ -2350,6 +2429,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingrulesrepricingreportslist#$xgafv",
             "added": {
@@ -2393,6 +2473,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyonlinecreate#$xgafv",
             "added": {
@@ -2433,6 +2514,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "localinventorycustombatch#$xgafv",
             "added": {
@@ -2473,6 +2555,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SettlementTransactionTransaction",
             "added": {
@@ -2509,6 +2592,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "PubsubNotificationSettings",
             "added": {
@@ -2556,6 +2640,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ProductDeliveryTime",
             "added": {
@@ -2592,6 +2677,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramspause#alt",
             "added": {
@@ -2634,6 +2720,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountscredentialscreate#$xgafv",
             "added": {
@@ -2677,6 +2764,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "FreeListingsProgramStatusRegionStatus",
             "added": {
@@ -2780,6 +2868,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddressget#alt",
             "added": {
@@ -2822,6 +2911,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ShoppingAdsProgramStatusRegionStatus#reviewEligibilityStatus",
             "added": {
@@ -2858,6 +2948,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsonboard#$xgafv",
             "added": {
@@ -2898,6 +2989,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrdersCustomBatchRequestEntryRefundItemShipping",
             "added": {
@@ -2932,6 +3024,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionsget#alt",
             "added": {
@@ -2974,6 +3067,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrdersRefundItemRequest",
             "added": {
@@ -3037,6 +3131,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "LocalinventoryCustomBatchRequest",
             "added": {
@@ -3066,6 +3161,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsProcessRequest",
             "added": {
@@ -3120,6 +3216,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddressget#$xgafv",
             "added": {
@@ -3160,6 +3257,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreturncarrierdelete#$xgafv",
             "added": {
@@ -3203,6 +3301,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingrulescreate#alt",
             "added": {
@@ -3245,6 +3344,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Promotion#redemptionChannel",
             "added": {
@@ -3281,6 +3381,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderCustomerLoyaltyInfo",
             "added": {
@@ -3317,6 +3418,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleEligibleOfferMatcher#matcherOption",
             "added": {
@@ -3358,6 +3460,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnpolicyListResponse",
             "added": {
@@ -3396,6 +3499,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RequestPhoneVerificationResponse",
             "added": {
@@ -3423,6 +3527,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountImageImprovementsSettings",
             "added": {
@@ -3450,6 +3555,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionalinventoryinsert#alt",
             "added": {
@@ -3492,6 +3598,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyonlineget#alt",
             "added": {
@@ -3534,6 +3641,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramspause#_requestBody",
             "added": {
@@ -3556,6 +3664,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "LocalinventoryCustomBatchRequestEntry",
             "added": {
@@ -3617,6 +3726,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslabelscreate#$xgafv",
             "added": {
@@ -3660,6 +3770,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderTrackingSignal",
             "added": {
@@ -3770,6 +3881,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramspause#$xgafv",
             "added": {
@@ -3810,6 +3922,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderTrackingSignalShippingInfo#shippingStatus",
             "added": {
@@ -3846,6 +3959,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "DeliveryArea",
             "added": {
@@ -3889,6 +4003,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "freelistingsprogramget#alt",
             "added": {
@@ -3931,6 +4046,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyonlinelist#alt",
             "added": {
@@ -3973,6 +4089,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SettlementTransactionAmount",
             "added": {
@@ -4023,6 +4140,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnpolicyCustomBatchRequestEntry",
             "added": {
@@ -4084,6 +4202,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyonlinelist#$xgafv",
             "added": {
@@ -4124,6 +4243,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionslist#alt",
             "added": {
@@ -4166,6 +4286,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "TestOrderAddress",
             "added": {
@@ -4260,6 +4381,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RegionalinventoryCustomBatchResponse",
             "added": {
@@ -4298,6 +4420,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleReportBuyboxWinningRuleStats",
             "added": {
@@ -4325,6 +4448,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Promotion#productApplicability",
             "added": {
@@ -4361,6 +4485,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionalinventorycustombatch#$xgafv",
             "added": {
@@ -4401,6 +4526,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productdeliverytimecreate#alt",
             "added": {
@@ -4443,6 +4569,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsrequestreview#_requestBody",
             "added": {
@@ -4465,6 +4592,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsget#$xgafv",
             "added": {
@@ -4505,6 +4633,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "localinventoryinsert#$xgafv",
             "added": {
@@ -4545,6 +4674,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionslist#$xgafv",
             "added": {
@@ -4585,6 +4715,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingrulesget#$xgafv",
             "added": {
@@ -4625,6 +4756,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingrulesdelete#$xgafv",
             "added": {
@@ -4665,6 +4797,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionscreate#$xgafv",
             "added": {
@@ -4705,6 +4838,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionsget#alt",
             "added": {
@@ -4747,6 +4881,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsupdatelabels#alt",
             "added": {
@@ -4789,6 +4924,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsCreateOrderReturnRequest",
             "added": {
@@ -4845,6 +4981,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListAccountReturnCarrierResponse",
             "added": {
@@ -4874,6 +5011,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsReturnItem",
             "added": {
@@ -4915,6 +5053,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "promotionsget#$xgafv",
             "added": {
@@ -4955,6 +5094,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "settlementreportslist#$xgafv",
             "added": {
@@ -4995,6 +5135,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingProductReportBuyboxWinningProductStats",
             "added": {
@@ -5022,6 +5163,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionscreate#alt",
             "added": {
@@ -5064,6 +5206,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsRefundOperation",
             "added": {
@@ -5125,6 +5268,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListRepricingProductReportsResponse",
             "added": {
@@ -5163,6 +5307,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "cssesget#$xgafv",
             "added": {
@@ -5203,6 +5348,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingrulescreate#$xgafv",
             "added": {
@@ -5243,6 +5389,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListCollectionsResponse",
             "added": {
@@ -5281,6 +5428,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "FreeListingsProgramStatusRegionStatus#reviewIneligibilityReason",
             "added": {
@@ -5347,6 +5495,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountsListLinksResponse",
             "added": {
@@ -5394,6 +5543,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddressinsert#$xgafv",
             "added": {
@@ -5434,6 +5584,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderLineItemAdjustment",
             "added": {
@@ -5475,6 +5626,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ShoppingAdsProgramStatus",
             "added": {
@@ -5513,6 +5665,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionsdelete#alt",
             "added": {
@@ -5555,6 +5708,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionstatuseslist#$xgafv",
             "added": {
@@ -5595,6 +5749,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "cssesupdatelabels#$xgafv",
             "added": {
@@ -5635,6 +5790,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRule#type",
             "added": {
@@ -5681,6 +5837,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ShoppingAdsProgramStatusRegionStatus#eligibilityStatus",
             "added": {
@@ -5737,6 +5894,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsactivate#$xgafv",
             "added": {
@@ -5777,6 +5935,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsrequestreview#alt",
             "added": {
@@ -5819,6 +5978,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "FreeListingsProgramStatus",
             "added": {
@@ -5857,6 +6017,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionalinventoryinsert#$xgafv",
             "added": {
@@ -5897,6 +6058,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderTrackingSignalShippingInfo",
             "added": {
@@ -6006,6 +6168,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "pubsubnotificationsettingsget#alt",
             "added": {
@@ -6048,6 +6211,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyonlinecreate#alt",
             "added": {
@@ -6090,6 +6254,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnslabelscreate#$xgafv",
             "added": {
@@ -6133,6 +6298,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "BuyOnGoogleProgramStatus",
             "added": {
@@ -6234,6 +6400,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RegionalinventoryCustomBatchRequestEntry",
             "added": {
@@ -6295,6 +6462,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "FreeListingsProgramStatusReviewIneligibilityReasonDetails",
             "added": {
@@ -6322,6 +6490,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "freelistingsprogramrequestreview#alt",
             "added": {
@@ -6364,6 +6533,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "reportssearch#alt",
             "added": {
@@ -6406,6 +6576,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnsacknowledge#alt",
             "added": {
@@ -6448,6 +6619,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ordersrefundorder#$xgafv",
             "added": {
@@ -6488,6 +6660,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsrequestphoneverification#alt",
             "added": {
@@ -6530,6 +6703,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountShippingImprovements",
             "added": {
@@ -6557,6 +6731,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "promotionscreate#alt",
             "added": {
@@ -6599,6 +6774,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListRepricingRulesResponse",
             "added": {
@@ -6637,6 +6813,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountLabel",
             "added": {
@@ -6700,6 +6877,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionsdelete#$xgafv",
             "added": {
@@ -6740,6 +6918,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListRegionsResponse",
             "added": {
@@ -6778,6 +6957,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "settlementtransactionslist#alt",
             "added": {
@@ -6820,6 +7000,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "InapplicabilityDetails#inapplicableReason",
             "added": {
@@ -6886,6 +7067,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicylist#alt",
             "added": {
@@ -6928,6 +7110,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsrequestreview#$xgafv",
             "added": {
@@ -6968,6 +7151,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "MerchantRejectionReason",
             "added": {
@@ -7004,6 +7188,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrdersCustomBatchRequestEntryUpdateShipmentScheduledDeliveryDetails",
             "added": {
@@ -7040,6 +7225,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnscreateorderreturn#$xgafv",
             "added": {
@@ -7080,6 +7266,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountImageImprovements",
             "added": {
@@ -7114,6 +7301,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyinsert#$xgafv",
             "added": {
@@ -7154,6 +7342,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsonboard#alt",
             "added": {
@@ -7196,6 +7385,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslabelslist#alt",
             "added": {
@@ -7241,6 +7431,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsCreateOrderReturnResponse",
             "added": {
@@ -7284,6 +7475,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsupdatelabels#$xgafv",
             "added": {
@@ -7324,6 +7516,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrdersRefundOrderRequest",
             "added": {
@@ -7385,6 +7578,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnscreateorderreturn#alt",
             "added": {
@@ -7427,6 +7621,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountAutomaticImprovements",
             "added": {
@@ -7466,6 +7661,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "shoppingadsprogramget#alt",
             "added": {
@@ -7508,6 +7704,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountItemUpdatesSettings",
             "added": {
@@ -7562,6 +7759,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRule",
             "added": {
@@ -7678,6 +7876,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicydelete#alt",
             "added": {
@@ -7720,6 +7919,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ShoppingAdsProgramStatusRegionStatus#reviewIneligibilityReason",
             "added": {
@@ -7786,6 +7986,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnShippingLabel",
             "added": {
@@ -7831,6 +8032,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "FreeListingsProgramStatus#globalState",
             "added": {
@@ -7872,6 +8074,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SettlementTransactionIdentifiers",
             "added": {
@@ -7946,6 +8149,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnaddressCustomBatchResponseEntry",
             "added": {
@@ -7996,6 +8200,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "BuyOnGoogleProgramStatus#onlineSalesChannel",
             "added": {
@@ -8032,6 +8237,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ordertrackingsignalscreate#$xgafv",
             "added": {
@@ -8072,6 +8278,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "LocalinventoryCustomBatchResponse",
             "added": {
@@ -8110,6 +8317,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddressdelete#alt",
             "added": {
@@ -8152,6 +8360,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionstatusesget#alt",
             "added": {
@@ -8194,6 +8403,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountsUpdateLabelsResponse",
             "added": {
@@ -8221,6 +8431,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddresslist#$xgafv",
             "added": {
@@ -8261,6 +8472,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SettlementtransactionsListResponse",
             "added": {
@@ -8308,6 +8520,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnline#returnMethods",
             "added": {
@@ -8349,6 +8562,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ECommercePlatformLinkInfo",
             "added": {
@@ -8376,6 +8590,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "LinkService",
             "added": {
@@ -8412,6 +8627,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ProductSubscriptionCost",
             "added": {
@@ -8455,6 +8671,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListCssesResponse",
             "added": {
@@ -8493,6 +8710,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreturncarrierlist#alt",
             "added": {
@@ -8538,6 +8756,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ordersrefunditem#$xgafv",
             "added": {
@@ -8578,6 +8797,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "PriceAmount",
             "added": {
@@ -8614,6 +8834,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "promotionsget#alt",
             "added": {
@@ -8656,6 +8877,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "InapplicabilityDetails",
             "added": {
@@ -8692,6 +8914,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderOrderAnnotation",
             "added": {
@@ -8728,6 +8951,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionalinventorycustombatch#alt",
             "added": {
@@ -8770,6 +8994,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnline#itemConditions",
             "added": {
@@ -8806,6 +9031,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyonlinedelete#$xgafv",
             "added": {
@@ -8846,6 +9072,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnpolicyCustomBatchResponse",
             "added": {
@@ -8884,6 +9111,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "freelistingsprogramrequestreview#$xgafv",
             "added": {
@@ -8924,6 +9152,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsProcessResponse",
             "added": {
@@ -8960,6 +9189,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslabelsdelete#alt",
             "added": {
@@ -9005,6 +9235,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "promotionscreate#$xgafv",
             "added": {
@@ -9045,6 +9276,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RegionPostalCodeArea",
             "added": {
@@ -9083,6 +9315,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddresslist#alt",
             "added": {
@@ -9125,6 +9358,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "localinventoryinsert#alt",
             "added": {
@@ -9167,6 +9401,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsverifyphonenumber#$xgafv",
             "added": {
@@ -9207,6 +9442,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsLineItem",
             "added": {
@@ -9252,6 +9488,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SearchResponse",
             "added": {
@@ -9290,6 +9527,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SettlementreportsListResponse",
             "added": {
@@ -9337,6 +9575,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountscredentialscreate#alt",
             "added": {
@@ -9382,6 +9621,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreturncarriercreate#$xgafv",
             "added": {
@@ -9425,6 +9665,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicycustombatch#alt",
             "added": {
@@ -9467,6 +9708,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ordertrackingsignalscreate#alt",
             "added": {
@@ -9509,6 +9751,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productdeliverytimeget#$xgafv",
             "added": {
@@ -9549,6 +9792,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleRestriction",
             "added": {
@@ -9583,6 +9827,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnlineReturnReasonCategoryInfo",
             "added": {
@@ -9626,6 +9871,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "shoppingadsprogramget#$xgafv",
             "added": {
@@ -9666,6 +9912,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsAcknowledgeResponse",
             "added": {
@@ -9702,6 +9949,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SettlementReport",
             "added": {
@@ -9790,6 +10038,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyonlinedelete#alt",
             "added": {
@@ -9832,6 +10081,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnlineReturnReasonCategoryInfo#returnReasonCategory",
             "added": {
@@ -9868,6 +10118,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnAddress",
             "added": {
@@ -9938,6 +10189,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingruleslist#alt",
             "added": {
@@ -9980,6 +10232,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddresscustombatch#alt",
             "added": {
@@ -10022,6 +10275,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleEligibleOfferMatcher",
             "added": {
@@ -10079,6 +10333,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "shoppingadsprogramrequestreview#alt",
             "added": {
@@ -10121,6 +10376,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "PaymentServiceProviderLinkInfo",
             "added": {
@@ -10157,6 +10413,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "CollectionFeaturedProduct",
             "added": {
@@ -10202,6 +10459,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrdersRefundOrderResponse",
             "added": {
@@ -10238,6 +10496,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnlineReturnReasonCategoryInfo#returnLabelSource",
             "added": {
@@ -10279,6 +10538,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListCollectionStatusesResponse",
             "added": {
@@ -10317,6 +10577,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountItemUpdates",
             "added": {
@@ -10378,6 +10639,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionsget#$xgafv",
             "added": {
@@ -10418,6 +10680,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ShoppingAdsProgramStatus#globalState",
             "added": {
@@ -10459,6 +10722,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingrulesrepricingreportslist#alt",
             "added": {
@@ -10504,6 +10768,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "VerifyPhoneNumberResponse",
             "added": {
@@ -10531,6 +10796,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "freelistingsprogramget#$xgafv",
             "added": {
@@ -10571,6 +10837,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productstatusesrepricingreportslist#alt",
             "added": {
@@ -10616,6 +10883,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleReport#type",
             "added": {
@@ -10662,6 +10930,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyonlineget#$xgafv",
             "added": {
@@ -10702,6 +10971,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsactivate#_requestBody",
             "added": {
@@ -10724,6 +10994,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RegionPostalCodeAreaPostalCodeRange",
             "added": {
@@ -10760,6 +11031,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RequestReviewShoppingAdsRequest",
             "added": {
@@ -10787,6 +11059,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsget#view",
             "added": {
@@ -10824,6 +11097,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "TestOrderDeliveryDetails",
             "added": {
@@ -10867,6 +11141,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnaddressCustomBatchRequest",
             "added": {
@@ -10896,6 +11171,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyPolicy",
             "added": {
@@ -10941,6 +11217,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "MonetaryAmount",
             "added": {
@@ -10973,6 +11250,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ProductDeliveryTimeAreaDeliveryTime",
             "added": {
@@ -11005,6 +11283,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicycustombatch#$xgafv",
             "added": {
@@ -11045,6 +11324,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "CollectionStatusItemLevelIssue",
             "added": {
@@ -11135,6 +11415,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ApodiniRecursionTerminator",
             "added": {
@@ -11151,6 +11432,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsget#alt",
             "added": {
@@ -11193,6 +11475,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "TimePeriod",
             "added": {
@@ -11229,6 +11512,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ProductDimension",
             "added": {
@@ -11265,6 +11549,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "LocalInventory",
             "added": {
@@ -11369,6 +11654,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "BuyOnGoogleProgramStatus#participationStage",
             "added": {
@@ -11435,6 +11721,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productdeliverytimeget#alt",
             "added": {
@@ -11477,6 +11764,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsrequestphoneverification#$xgafv",
             "added": {
@@ -11517,6 +11805,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RegionalinventoryCustomBatchRequest",
             "added": {
@@ -11546,6 +11835,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleEligibleOfferMatcherStringMatcher",
             "added": {
@@ -11575,6 +11865,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnlinePolicy#type",
             "added": {
@@ -11616,6 +11907,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "shoppingadsprogramrequestreview#$xgafv",
             "added": {
@@ -11656,6 +11948,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountAdsLink",
             "added": {
@@ -11692,6 +11985,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderPromotionItem",
             "added": {
@@ -11746,6 +12040,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreturncarrierlist#$xgafv",
             "added": {
@@ -11789,6 +12084,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Promotion#couponValueType",
             "added": {
@@ -11875,6 +12171,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Region",
             "added": {
@@ -11952,6 +12249,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleEffectiveTimeFixedTimePeriod",
             "added": {
@@ -11988,6 +12286,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountReturnCarrier#carrierCode",
             "added": {
@@ -12024,6 +12323,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productdeliverytimedelete#$xgafv",
             "added": {
@@ -12064,6 +12364,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "TestOrderPickupDetailsPickupPerson",
             "added": {
@@ -12100,6 +12401,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountLabel#labelType",
             "added": {
@@ -12136,6 +12438,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productdeliverytimedelete#alt",
             "added": {
@@ -12178,6 +12481,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReportRow",
             "added": {
@@ -12210,6 +12514,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslabelslist#$xgafv",
             "added": {
@@ -12253,6 +12558,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicy",
             "added": {
@@ -12352,6 +12658,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyget#$xgafv",
             "added": {
@@ -12392,6 +12699,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPricingInfo",
             "added": {
@@ -12447,6 +12755,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderPromotion",
             "added": {
@@ -12573,6 +12882,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnpolicyCustomBatchResponseEntry",
             "added": {
@@ -12623,6 +12933,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnslist#shipmentTypes",
             "added": {
@@ -12665,6 +12976,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderTrackingSignalShipmentLineItemMapping",
             "added": {
@@ -12710,6 +13022,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productdeliverytimecreate#$xgafv",
             "added": {
@@ -12750,6 +13063,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RegionalInventory",
             "added": {
@@ -12829,6 +13143,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnpolicyCustomBatchRequest",
             "added": {
@@ -12858,6 +13173,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionscreate#$xgafv",
             "added": {
@@ -12898,6 +13214,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnlinePolicy",
             "added": {
@@ -12934,6 +13251,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsAcknowledgeRequest",
             "added": {
@@ -12961,6 +13279,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnaddressCustomBatchRequestEntry",
             "added": {
@@ -13022,6 +13341,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicylist#$xgafv",
             "added": {
@@ -13062,6 +13382,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicydelete#$xgafv",
             "added": {
@@ -13102,6 +13423,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionsget#$xgafv",
             "added": {
@@ -13142,6 +13464,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslabelscreate#alt",
             "added": {
@@ -13187,6 +13510,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderTrackingSignalLineItemDetails",
             "added": {
@@ -13295,6 +13619,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Promotion#offerType",
             "added": {
@@ -13331,6 +13656,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListRepricingRuleReportsResponse",
             "added": {
@@ -13369,6 +13695,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "CollectionStatus",
             "added": {
@@ -13436,6 +13763,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnaddressListResponse",
             "added": {
@@ -13483,6 +13811,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RegionGeoTargetArea",
             "added": {
@@ -13512,6 +13841,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsverifyphonenumber#alt",
             "added": {
@@ -13554,6 +13884,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ordersrefunditem#alt",
             "added": {
@@ -13596,6 +13927,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "VerifyPhoneNumberRequest#phoneVerificationMethod",
             "added": {
@@ -13632,6 +13964,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslist#view",
             "added": {
@@ -13669,6 +14002,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrdersCustomBatchRequestEntryRefundItemItem",
             "added": {
@@ -13730,6 +14064,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "cssesupdatelabels#alt",
             "added": {
@@ -13772,6 +14107,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Metrics",
             "added": {
@@ -13997,6 +14333,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountsreturncarriercreate#alt",
             "added": {
@@ -14042,6 +14379,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SearchRequest",
             "added": {
@@ -14087,6 +14425,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleCostOfGoodsSaleRule",
             "added": {
@@ -14123,6 +14462,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnlineReturnShippingFee",
             "added": {
@@ -14157,6 +14497,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnsprocess#$xgafv",
             "added": {
@@ -14197,6 +14538,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ProductProductDetail",
             "added": {
@@ -14242,6 +14584,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionslist#$xgafv",
             "added": {
@@ -14282,6 +14625,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "collectionstatuseslist#alt",
             "added": {
@@ -14324,6 +14668,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "CollectionStatusDestinationStatus",
             "added": {
@@ -14360,6 +14705,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "pubsubnotificationsettingsget#$xgafv",
             "added": {
@@ -14400,6 +14746,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyinsert#alt",
             "added": {
@@ -14442,6 +14789,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "LocalinventoryCustomBatchResponseEntry",
             "added": {
@@ -14485,6 +14833,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListReturnPolicyOnlineResponse",
             "added": {
@@ -14514,6 +14863,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingruleslist#$xgafv",
             "added": {
@@ -14554,6 +14904,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "LabelIds",
             "added": {
@@ -14583,6 +14934,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnslist#shipmentStates",
             "added": {
@@ -14635,6 +14987,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "buyongoogleprogramsactivate#alt",
             "added": {
@@ -14677,6 +15030,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ListAccountLabelsResponse",
             "added": {
@@ -14715,6 +15069,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslabelsdelete#$xgafv",
             "added": {
@@ -14758,6 +15113,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrdersRefundItemResponse",
             "added": {
@@ -14794,6 +15150,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingrulesdelete#alt",
             "added": {
@@ -14836,6 +15193,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "BuyOnGoogleProgramStatus#businessModel",
             "added": {
@@ -14882,6 +15240,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "cssesget#alt",
             "added": {
@@ -14924,6 +15283,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingProductReport#type",
             "added": {
@@ -14970,6 +15330,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleReport",
             "added": {
@@ -15069,6 +15430,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderscaptureOrder#_requestBody",
             "added": {
@@ -15091,6 +15453,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ordersrefundorder#alt",
             "added": {
@@ -15133,6 +15496,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnaddresscustombatch#$xgafv",
             "added": {
@@ -15173,6 +15537,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "accountslistlinks#alt",
             "added": {
@@ -15215,6 +15580,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "regionslist#alt",
             "added": {
@@ -15257,6 +15623,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Collection",
             "added": {
@@ -15398,6 +15765,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repricingrulesget#alt",
             "added": {
@@ -15440,6 +15808,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RegionalinventoryCustomBatchResponseEntry",
             "added": {
@@ -15490,6 +15859,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RequestPhoneVerificationRequest#phoneVerificationMethod",
             "added": {
@@ -15526,6 +15896,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleStatsBasedRule",
             "added": {
@@ -15562,6 +15933,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RequestReviewFreeListingsRequest",
             "added": {
@@ -15589,6 +15961,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "RepricingRuleEffectiveTime",
             "added": {
@@ -15618,6 +15991,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "LinkedAccount",
             "added": {
@@ -15656,6 +16030,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "settlementreportslist#alt",
             "added": {
@@ -15698,6 +16073,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicySeasonalOverride",
             "added": {
@@ -15750,6 +16126,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "DeliveryAreaPostalCodeRange",
             "added": {
@@ -15786,6 +16163,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "CaptureOrderResponse",
             "added": {
@@ -15813,6 +16191,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OnboardBuyOnGoogleProgramRequest",
             "added": {
@@ -15840,6 +16219,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "FreeListingsProgramStatusRegionStatus#reviewEligibilityStatus",
             "added": {
@@ -15876,6 +16256,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "csseslist#alt",
             "added": {
@@ -15918,6 +16299,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "SettlementTransactionAmountCommission",
             "added": {
@@ -15954,6 +16336,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productstatusesrepricingreportslist#$xgafv",
             "added": {
@@ -15997,6 +16380,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "csseslist#$xgafv",
             "added": {
@@ -16037,6 +16421,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "returnpolicyget#alt",
             "added": {
@@ -16079,6 +16464,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "DateTime",
             "added": {
@@ -16176,6 +16562,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnlineReturnShippingFee#type",
             "added": {
@@ -16212,6 +16599,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "CaptureOrderResponse#executionStatus",
             "added": {
@@ -16248,6 +16636,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OrderreturnsPartialRefund",
             "added": {
@@ -16280,6 +16669,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "pubsubnotificationsettingsupdate#$xgafv",
             "added": {
@@ -16320,6 +16710,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReturnPolicyOnlineRestockingFee",
             "added": {
@@ -16354,6 +16745,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "pubsubnotificationsettingsupdate#alt",
             "added": {
@@ -16396,6 +16788,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "orderreturnsacknowledge#$xgafv",
             "added": {
@@ -16436,6 +16829,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "TestOrderPickupDetails",
             "added": {
@@ -16490,6 +16884,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "AccountReturnCarrier",
             "added": {
@@ -16544,6 +16939,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "reportssearch#$xgafv",
             "added": {
@@ -16603,7 +16999,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16624,7 +17021,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16645,7 +17043,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16666,7 +17065,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16690,7 +17090,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16704,7 +17105,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16718,7 +17120,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16732,7 +17135,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16745,7 +17149,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16758,7 +17163,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16771,7 +17177,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16786,7 +17193,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16799,7 +17207,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16812,7 +17221,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16834,7 +17244,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16856,7 +17267,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16878,7 +17290,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16900,7 +17313,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16922,7 +17336,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16944,7 +17359,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16957,7 +17373,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16971,7 +17388,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -16986,7 +17404,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17000,7 +17419,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17021,7 +17441,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17043,7 +17464,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17065,7 +17487,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17087,7 +17510,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17102,7 +17526,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17133,7 +17558,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -17147,7 +17573,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17171,7 +17598,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -17195,7 +17623,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17210,7 +17639,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17224,7 +17654,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17245,7 +17676,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17269,7 +17701,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17284,7 +17717,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17315,7 +17749,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -17330,7 +17765,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17345,7 +17781,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17367,7 +17804,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17389,7 +17827,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17402,7 +17841,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17415,7 +17855,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17428,7 +17869,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17443,7 +17885,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17458,7 +17901,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17473,7 +17917,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17488,7 +17933,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17503,7 +17949,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17534,7 +17981,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -17549,7 +17997,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17582,7 +18031,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -17597,7 +18047,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17630,7 +18081,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -17645,7 +18097,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17674,7 +18127,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -17689,7 +18143,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17716,7 +18171,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -17731,7 +18187,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17746,7 +18203,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -17777,7 +18235,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -17799,7 +18258,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17821,7 +18281,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17843,7 +18304,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17865,7 +18327,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17889,7 +18352,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17913,7 +18377,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17934,7 +18399,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17955,7 +18421,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -17976,7 +18443,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18000,7 +18468,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18021,7 +18490,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18043,7 +18513,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18067,7 +18538,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18089,7 +18561,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18189,7 +18662,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18202,7 +18676,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18239,7 +18714,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18334,7 +18810,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18355,7 +18832,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18377,7 +18855,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18410,7 +18889,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18431,7 +18911,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18452,7 +18933,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18474,7 +18956,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18496,7 +18979,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18518,7 +19002,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18533,7 +19018,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -18560,7 +19046,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -18584,7 +19071,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18608,7 +19096,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18630,7 +19119,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18652,7 +19142,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18674,7 +19165,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18696,7 +19188,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18717,7 +19210,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18739,7 +19233,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18761,7 +19256,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18783,7 +19279,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18807,7 +19304,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18831,7 +19329,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18855,7 +19354,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18879,7 +19379,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18901,7 +19402,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18922,7 +19424,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18944,7 +19447,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18965,7 +19469,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -18987,7 +19492,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19008,7 +19514,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19029,7 +19536,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19051,7 +19559,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19073,7 +19582,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19095,7 +19605,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19117,7 +19628,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19141,7 +19653,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19165,7 +19678,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19189,7 +19703,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19210,7 +19725,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19232,7 +19748,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19253,7 +19770,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19277,7 +19795,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19301,7 +19820,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19323,7 +19843,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19337,7 +19858,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19351,7 +19873,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19365,7 +19888,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19378,7 +19902,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19391,7 +19916,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19406,7 +19932,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -19433,7 +19960,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -19446,7 +19974,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19461,7 +19990,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19494,7 +20024,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -19507,7 +20038,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19529,7 +20061,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19550,7 +20083,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19574,7 +20108,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19596,7 +20131,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19620,7 +20156,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19638,7 +20175,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19653,7 +20191,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -19680,7 +20219,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -19695,7 +20235,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19710,7 +20251,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -19739,7 +20281,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -19754,7 +20297,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -19781,7 +20325,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -19814,7 +20359,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -19828,7 +20374,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19841,7 +20388,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19863,7 +20411,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19885,7 +20434,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -19900,7 +20450,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -19915,29 +20466,34 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "endpointChanges": [
         {
+            "result": "success",
             "type": "removal",
             "id": "content.orders.custombatch",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "content.orders.refund",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "content.orders.returnlineitem",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.credentials.create",
             "added": {
@@ -20063,6 +20619,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.labels.list",
             "added": {
@@ -20196,6 +20753,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.labels.create",
             "added": {
@@ -20321,6 +20879,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.labels.delete",
             "added": {
@@ -20446,6 +21005,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.returncarrier.list",
             "added": {
@@ -20563,6 +21123,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.returncarrier.create",
             "added": {
@@ -20688,6 +21249,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.returncarrier.delete",
             "added": {
@@ -20813,6 +21375,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.localinventory.custombatch",
             "added": {
@@ -20930,6 +21493,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.regionalinventory.custombatch",
             "added": {
@@ -21047,6 +21611,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnaddress.custombatch",
             "added": {
@@ -21164,6 +21729,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnpolicy.custombatch",
             "added": {
@@ -21281,6 +21847,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.csses.list",
             "added": {
@@ -21414,6 +21981,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.csses.get",
             "added": {
@@ -21539,6 +22107,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.csses.updatelabels",
             "added": {
@@ -21672,6 +22241,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.listlinks",
             "added": {
@@ -21813,6 +22383,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.requestphoneverification",
             "added": {
@@ -21946,6 +22517,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.updatelabels",
             "added": {
@@ -22079,6 +22651,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.accounts.verifyphonenumber",
             "added": {
@@ -22212,6 +22785,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.buyongoogleprograms.get",
             "added": {
@@ -22337,6 +22911,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.buyongoogleprograms.activate",
             "added": {
@@ -22470,6 +23045,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.buyongoogleprograms.onboard",
             "added": {
@@ -22603,6 +23179,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.buyongoogleprograms.pause",
             "added": {
@@ -22736,6 +23313,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.buyongoogleprograms.requestreview",
             "added": {
@@ -22869,6 +23447,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.collections.list",
             "added": {
@@ -23002,6 +23581,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.collections.create",
             "added": {
@@ -23127,6 +23707,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.collections.get",
             "added": {
@@ -23252,6 +23833,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.collections.delete",
             "added": {
@@ -23377,6 +23959,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.collectionstatuses.list",
             "added": {
@@ -23510,6 +24093,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.collectionstatuses.get",
             "added": {
@@ -23635,6 +24219,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.freelistingsprogram.get",
             "added": {
@@ -23752,6 +24337,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.freelistingsprogram.requestreview",
             "added": {
@@ -23877,6 +24463,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.orderreturns.createorderreturn",
             "added": {
@@ -24002,6 +24589,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.orderreturns.acknowledge",
             "added": {
@@ -24135,6 +24723,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.orderreturns.labels.create",
             "added": {
@@ -24268,6 +24857,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.orderreturns.process",
             "added": {
@@ -24401,6 +24991,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.orders.captureOrder",
             "added": {
@@ -24534,6 +25125,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.orders.refunditem",
             "added": {
@@ -24667,6 +25259,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.orders.refundorder",
             "added": {
@@ -24800,6 +25393,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.ordertrackingsignals.create",
             "added": {
@@ -24925,6 +25519,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.productdeliverytime.create",
             "added": {
@@ -25050,6 +25645,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.productdeliverytime.get",
             "added": {
@@ -25175,6 +25771,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.productdeliverytime.delete",
             "added": {
@@ -25300,6 +25897,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.localinventory.insert",
             "added": {
@@ -25433,6 +26031,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.regionalinventory.insert",
             "added": {
@@ -25566,6 +26165,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.productstatuses.repricingreports.list",
             "added": {
@@ -25731,6 +26331,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.promotions.create",
             "added": {
@@ -25856,6 +26457,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.promotions.get",
             "added": {
@@ -25981,6 +26583,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.pubsubnotificationsettings.get",
             "added": {
@@ -26098,6 +26701,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.pubsubnotificationsettings.update",
             "added": {
@@ -26223,6 +26827,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.regions.list",
             "added": {
@@ -26356,6 +26961,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.regions.create",
             "added": {
@@ -26489,6 +27095,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.regions.get",
             "added": {
@@ -26614,6 +27221,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.regions.delete",
             "added": {
@@ -26739,6 +27347,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.reports.search",
             "added": {
@@ -26864,6 +27473,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.repricingrules.list",
             "added": {
@@ -27013,6 +27623,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.repricingrules.create",
             "added": {
@@ -27146,6 +27757,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.repricingrules.get",
             "added": {
@@ -27271,6 +27883,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.repricingrules.delete",
             "added": {
@@ -27396,6 +28009,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.repricingrules.repricingreports.list",
             "added": {
@@ -27553,6 +28167,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnaddress.list",
             "added": {
@@ -27694,6 +28309,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnaddress.insert",
             "added": {
@@ -27819,6 +28435,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnaddress.get",
             "added": {
@@ -27944,6 +28561,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnaddress.delete",
             "added": {
@@ -28069,6 +28687,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnpolicy.list",
             "added": {
@@ -28186,6 +28805,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnpolicy.insert",
             "added": {
@@ -28311,6 +28931,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnpolicy.get",
             "added": {
@@ -28436,6 +29057,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnpolicy.delete",
             "added": {
@@ -28561,6 +29183,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnpolicyonline.list",
             "added": {
@@ -28678,6 +29301,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnpolicyonline.create",
             "added": {
@@ -28803,6 +29427,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnpolicyonline.get",
             "added": {
@@ -28928,6 +29553,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.returnpolicyonline.delete",
             "added": {
@@ -29053,6 +29679,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.settlementreports.list",
             "added": {
@@ -29202,6 +29829,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.settlementreports.get",
             "added": {
@@ -29327,6 +29955,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.settlementtransactions.list",
             "added": {
@@ -29478,6 +30107,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.shoppingadsprogram.get",
             "added": {
@@ -29595,6 +30225,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "content.shoppingadsprogram.requestreview",
             "added": {
@@ -29730,7 +30361,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29743,7 +30375,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29756,7 +30389,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29769,7 +30403,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29790,7 +30425,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29813,7 +30449,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29836,7 +30473,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29859,7 +30497,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29882,7 +30521,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29905,7 +30545,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29918,7 +30559,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29931,7 +30573,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29952,7 +30595,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29965,7 +30609,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29978,7 +30623,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -29991,7 +30637,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30004,7 +30651,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30025,7 +30673,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30046,7 +30695,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30067,7 +30717,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30088,7 +30739,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30101,7 +30753,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30114,7 +30767,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30127,7 +30781,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30140,7 +30795,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30153,7 +30809,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30166,7 +30823,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30179,7 +30837,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30192,7 +30851,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30205,7 +30865,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30218,7 +30879,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30239,7 +30901,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30252,7 +30915,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30265,7 +30929,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30278,7 +30943,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30291,7 +30957,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30304,7 +30971,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30325,7 +30993,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30338,7 +31007,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30351,7 +31021,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -30364,7 +31035,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "scripts": {

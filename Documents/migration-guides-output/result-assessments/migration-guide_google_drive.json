@@ -31,389 +31,454 @@
                 }
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "success"
         }
     ],
     "modelChanges": [
         {
+            "result": "success",
             "type": "removal",
             "id": "CommentReply",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "Comment#context",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ChildList",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "filestrash#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "File#labels",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "PropertyList",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "repliesinsert#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "About#importFormats",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ParentList",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "propertiesinsert#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "File#thumbnail",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "propertieslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ChildReference",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "childrenlist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "About#features",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drivesupdate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "About#maxUploadSizes",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "childrendelete#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "filesupdate#modifiedDateBehavior",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "PermissionId",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "childreninsert#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "commentsupdate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "About#quotaBytesByService",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "filesupdate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "CommentReplyList",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "parentsget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "commentsinsert#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "permissionsupdate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "permissionsinsert#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "filestouch#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "Property",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "About#additionalRoleInfo",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "childrenget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drivesinsert#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "File#indexableText",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "filesget#projection",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "App#icons",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "appslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "filesinsert#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "parentsdelete#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "About#exportFormats",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "propertiesget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "teamdrivesupdate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "filesuntrash#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "User#picture",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "propertiesdelete#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "AppList",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "changesget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "parentslist#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "filesinsert#visibility",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "parentsinsert#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "repliesupdate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "About#additionalRoleInfo#roleSets",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "permissionsgetIdForEmail#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "revisionsupdate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "appsget#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "teamdrivesinsert#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "fileslist#projection",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "filescopy#visibility",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "propertiesupdate#alt",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "fileswatch#projection",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ParentReference",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "App",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "commentscreate#alt",
             "added": {
@@ -446,6 +511,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "repliescreate#alt",
             "added": {
@@ -478,6 +544,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "File#contentHints#thumbnail",
             "added": {
@@ -514,6 +581,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "teamdrivescreate#alt",
             "added": {
@@ -546,6 +614,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "filescreate#alt",
             "added": {
@@ -578,6 +647,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Comment#quotedFileContent",
             "added": {
@@ -614,6 +684,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "drivescreate#alt",
             "added": {
@@ -646,6 +717,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ReplyList",
             "added": {
@@ -693,6 +765,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "permissionscreate#alt",
             "added": {
@@ -725,6 +798,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "File#contentHints",
             "added": {
@@ -761,6 +835,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "About#storageQuota",
             "added": {
@@ -815,6 +890,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Reply",
             "added": {
@@ -924,7 +1000,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -939,7 +1016,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -954,7 +1032,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -983,7 +1062,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -998,7 +1078,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1027,7 +1108,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1042,7 +1124,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1071,7 +1154,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1086,7 +1170,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1115,7 +1200,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1130,7 +1216,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1145,7 +1232,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1160,7 +1248,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1189,7 +1278,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1204,7 +1294,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1219,7 +1310,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1248,7 +1340,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1263,7 +1356,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1292,7 +1386,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1307,7 +1402,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1322,7 +1418,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1351,7 +1448,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1366,7 +1464,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1395,7 +1494,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1410,7 +1510,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1439,7 +1540,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1454,7 +1556,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1467,7 +1570,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1480,7 +1584,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1493,7 +1598,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1506,7 +1612,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1519,7 +1626,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1532,7 +1640,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1545,7 +1654,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1558,7 +1668,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1571,7 +1682,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1584,7 +1696,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1597,7 +1710,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1610,7 +1724,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1624,7 +1739,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1655,7 +1771,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1688,7 +1805,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1703,7 +1821,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1718,7 +1837,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1733,7 +1853,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1762,7 +1883,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1775,7 +1897,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1788,7 +1911,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1832,7 +1956,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1847,7 +1972,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1876,7 +2002,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1891,7 +2018,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1920,7 +2048,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1935,7 +2064,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1950,7 +2080,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -1979,7 +2110,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -1992,7 +2124,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2005,7 +2138,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2018,7 +2152,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2051,7 +2186,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2066,7 +2202,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2081,7 +2218,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2094,7 +2232,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2107,7 +2246,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2122,7 +2262,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2135,7 +2276,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2148,7 +2290,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2163,7 +2306,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2194,7 +2338,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -2209,7 +2354,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2238,7 +2384,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -2253,7 +2400,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2282,7 +2430,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -2295,7 +2444,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2308,7 +2458,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2321,7 +2472,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2334,7 +2486,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2347,7 +2500,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2360,7 +2514,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2375,7 +2530,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2388,7 +2544,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2401,7 +2558,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2416,7 +2574,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2429,7 +2588,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2444,7 +2604,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2475,7 +2636,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -2488,7 +2650,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2501,7 +2664,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2514,7 +2678,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2527,7 +2692,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2540,7 +2706,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2553,7 +2720,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2571,7 +2739,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2589,7 +2758,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2604,7 +2774,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2633,7 +2804,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -2648,7 +2820,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2663,7 +2836,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2692,7 +2866,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -2705,7 +2880,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2718,7 +2894,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2731,7 +2908,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2744,7 +2922,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2759,7 +2938,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2774,7 +2954,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2803,7 +2984,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2818,7 +3000,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2833,7 +3016,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2864,7 +3048,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -2879,7 +3064,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2908,7 +3094,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -2923,7 +3110,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2954,7 +3142,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange-caused"
         },
         {
             "type": "update",
@@ -2969,7 +3158,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -2982,7 +3172,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2995,7 +3186,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3008,7 +3200,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3021,7 +3214,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3034,7 +3228,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3047,7 +3242,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3060,7 +3256,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3073,7 +3270,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3086,7 +3284,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3099,7 +3298,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3112,7 +3312,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3125,7 +3326,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3138,7 +3340,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3151,7 +3354,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3164,7 +3368,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3195,7 +3400,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -3226,7 +3432,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -3254,7 +3461,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3267,7 +3475,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3280,7 +3489,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3295,7 +3505,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3310,209 +3521,244 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "endpointChanges": [
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.apps.list",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.apps.get",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.changes.get",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.drives.insert",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.drives.update",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.files.insert",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.files.update",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.comments.insert",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.comments.update",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.replies.insert",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.replies.update",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.parents.list",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.parents.insert",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.parents.get",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.parents.delete",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.permissions.insert",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.permissions.update",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.properties.list",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.properties.insert",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.properties.get",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.properties.update",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.properties.delete",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.revisions.update",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.files.touch",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.files.trash",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.files.untrash",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.children.list",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.children.insert",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.children.get",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.children.delete",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.permissions.getIdForEmail",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.teamdrives.insert",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "drive.teamdrives.update",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "drive.drives.create",
             "added": {
@@ -3606,6 +3852,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "drive.files.create",
             "added": {
@@ -3763,6 +4010,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "drive.comments.create",
             "added": {
@@ -3856,6 +4104,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "drive.replies.create",
             "added": {
@@ -3957,6 +4206,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "drive.permissions.create",
             "added": {
@@ -4114,6 +4364,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "drive.teamdrives.create",
             "added": {
@@ -4220,7 +4471,8 @@
                 "backwardsMigration": 60
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -4235,7 +4487,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4248,7 +4501,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4261,7 +4515,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4274,7 +4529,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4289,7 +4545,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4304,7 +4561,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4320,7 +4578,8 @@
                 "backwardsMigration": 61
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -4335,7 +4594,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4348,7 +4608,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4363,7 +4624,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4378,7 +4640,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4393,7 +4656,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4408,7 +4672,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4421,7 +4686,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4434,7 +4700,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4447,7 +4714,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4462,7 +4730,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4477,7 +4746,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4492,7 +4762,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4507,7 +4778,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4520,7 +4792,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4539,7 +4812,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -4552,7 +4826,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4565,7 +4840,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4578,7 +4854,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4593,7 +4870,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4608,7 +4886,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4623,7 +4902,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4636,7 +4916,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4655,7 +4936,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -4670,7 +4952,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4685,7 +4968,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "ill-classified-idchange"
         },
         {
             "type": "update",
@@ -4698,7 +4982,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4711,7 +4996,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4724,7 +5010,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4737,7 +5024,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -4758,7 +5046,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         }
     ],
     "scripts": {

@@ -21,8 +21,6 @@ function countChangeFailures(changes, results) {
     }
 }
 
-// TODO count total lines
-
 for (const file of fs.readdirSync(dir)) {
     if (!file.endsWith(".json")) {
         continue;
@@ -54,7 +52,7 @@ for (const file of fs.readdirSync(dir)) {
 
 for (const [file, results] of Object.entries(files)) {
     console.log("--------------- " + file + " ---------------");
-    console.log("Service Change Failures: " + JSON.stringify(results.serviceResults, null, 4));
-    console.log("Model Change Failures: " + JSON.stringify(results.modelResults, null, 4));
-    console.log("Endpoint Change Failures: " + JSON.stringify(results.endpointResults, null, 4));
+    console.log("Service Change Results: " + JSON.stringify(results.serviceResults, null, 4));
+    console.log("Model Change Results: " + JSON.stringify(results.modelResults, null, 4));
+    console.log("Endpoint Change Results: " + JSON.stringify(results.endpointResults, null, 4));
 }

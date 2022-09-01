@@ -15,42 +15,49 @@
     },
     "modelChanges": [
         {
+            "result": "success",
             "type": "removal",
             "id": "HRef",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "WltpAmount",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "NedcAmount",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "ProductGroupsPerMarket",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "OnlineCodeResponseBody",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "removal",
             "id": "VehicleComponentId",
             "breaking": true,
             "solvable": false
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ActiveDriveCycle",
             "added": {
@@ -92,6 +99,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "LuggageSpace",
             "added": {
@@ -131,6 +139,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "WltpElectricRange",
             "added": {
@@ -163,6 +172,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Tyres",
             "added": {
@@ -253,6 +263,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "VehicleImage",
             "added": {
@@ -299,6 +310,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Dimensions",
             "added": {
@@ -373,6 +385,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "VehicleComponent#images",
             "added": {
@@ -398,6 +411,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "getVehicles#views",
             "added": {
@@ -439,6 +453,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "WltpRange",
             "added": {
@@ -492,6 +507,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productGroupResponse",
             "added": {
@@ -535,6 +551,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "EnergyEfficiencyCategory",
             "added": {
@@ -574,6 +591,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "DriveCycleAmount",
             "added": {
@@ -613,6 +631,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "WltpCertification",
             "added": {
@@ -694,6 +713,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Weights",
             "added": {
@@ -747,6 +767,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "VehicleComponentTree#vehicleComponents",
             "added": {
@@ -772,6 +793,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "Vehicle",
             "added": {
@@ -818,6 +840,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "ChargeTime",
             "added": {
@@ -857,6 +880,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "VehicleComponentImage",
             "added": {
@@ -898,6 +922,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "DataSupply",
             "added": {
@@ -923,6 +948,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "OnlineCode",
             "added": {
@@ -948,6 +974,7 @@
             "solvable": true
         },
         {
+            "result": "success",
             "type": "addition",
             "id": "productGroupResponse#productGroups",
             "added": {
@@ -1067,7 +1094,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1092,7 +1120,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1117,7 +1146,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1142,7 +1172,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1167,7 +1198,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1191,7 +1223,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1215,7 +1248,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1229,7 +1263,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1243,7 +1278,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1264,7 +1300,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1286,7 +1323,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1304,7 +1342,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1322,7 +1361,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1340,7 +1380,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1364,7 +1405,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1385,7 +1427,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1406,7 +1449,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1425,7 +1469,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1450,7 +1495,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1468,7 +1514,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1486,7 +1533,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1504,7 +1552,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1525,7 +1574,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1546,7 +1596,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1567,7 +1618,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1588,7 +1640,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1609,7 +1662,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1630,7 +1684,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1651,7 +1706,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1672,7 +1728,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1693,7 +1750,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1717,7 +1775,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1741,7 +1800,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1763,7 +1823,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1784,7 +1845,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1803,7 +1865,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1824,7 +1887,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1849,7 +1913,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1874,7 +1939,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -1895,7 +1961,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1917,7 +1984,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -1938,7 +2006,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1959,7 +2028,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -1980,7 +2050,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2001,7 +2072,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2022,7 +2094,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2043,7 +2116,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2064,7 +2138,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2085,7 +2160,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2106,7 +2182,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2127,7 +2204,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2148,7 +2226,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2169,7 +2248,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2190,7 +2270,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2211,7 +2292,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2232,7 +2314,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2253,7 +2336,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2275,7 +2359,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2304,7 +2389,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2322,7 +2408,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2340,7 +2427,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2358,7 +2446,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2382,7 +2471,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2403,7 +2493,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2424,7 +2515,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2449,7 +2541,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2463,7 +2556,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2484,7 +2578,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2509,7 +2604,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2534,7 +2630,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2559,7 +2656,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2583,7 +2681,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2607,7 +2706,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2631,7 +2731,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2656,7 +2757,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2681,7 +2783,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2737,7 +2840,8 @@
                 }
             },
             "breaking": true,
-            "solvable": false
+            "solvable": false,
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -2758,7 +2862,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2779,7 +2884,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2800,7 +2906,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2821,7 +2928,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2842,7 +2950,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2863,7 +2972,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2884,7 +2994,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2905,7 +3016,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2927,7 +3039,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -2948,7 +3061,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2969,7 +3083,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -2990,7 +3105,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -3011,7 +3127,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -3032,7 +3149,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -3053,7 +3171,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -3074,7 +3193,8 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         },
         {
             "type": "update",
@@ -3095,11 +3215,13 @@
                     "breaking": true,
                     "solvable": true
                 }
-            }
+            },
+            "result": "property-breaking-classification-inaccuracy"
         }
     ],
     "endpointChanges": [
         {
+            "result": "success",
             "type": "addition",
             "id": "getVehicles",
             "added": {
@@ -3157,7 +3279,8 @@
                 "migrationWarning": "'ApodiniMigrator' is not able to automatically generate convert scripts between two types with different cardinalities or root types. Convert methods must be provided by the developer of the web service. Otherwise, the respective types in the client applications that will consume this Migration Guide, will be initialized with these default scripts."
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -3178,7 +3301,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3199,7 +3323,8 @@
                     "breaking": false,
                     "solvable": true
                 }
-            }
+            },
+            "result": "success"
         },
         {
             "type": "update",
@@ -3215,7 +3340,8 @@
                 "backwardsMigration": 47
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "conversion-manual-adjustments"
         },
         {
             "type": "update",
@@ -3231,7 +3357,8 @@
                 "backwardsMigration": 48
             },
             "breaking": true,
-            "solvable": true
+            "solvable": true,
+            "result": "conversion-manual-adjustments"
         }
     ],
     "scripts": {
