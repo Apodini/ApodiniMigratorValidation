@@ -2,7 +2,7 @@
 
 The documents in this folder are used to assess the results of the validation.
 Particularly, we want to assess the failure/success rate of the resulting Migration Guides.
-To do so, we add inline annotations to the Migration Guide denoting result quality classifications.
+To do so, we add inline annotations to the Migration Guides located in this folder denoting result quality classifications.
 As this is a manual process, we created copies of those migration guides in this folder to prevent them 
 being overwritten from our automated validation util.
 

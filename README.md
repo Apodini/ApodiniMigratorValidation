@@ -14,13 +14,17 @@ SPDX-License-Identifier: MIT
 [![codecov](https://codecov.io/gh/Apodini/ApodiniMigratorValidation/branch/develop/graph/badge.svg?token=5MMKMPO5NR)](https://codecov.io/gh/Apodini/ApodiniMigratorValidation)
 
 This project contains some utilities used within the validation of [ApodiniMigrator](https://github.com/Apodini/ApodiniMigrator).
+While the tool can be applied to any set of OAS or Migration Guide documents, the [Documents](./Documents) folder of the repository
+contains those documents used within our validation of the Apodini Migrator.
+The [Migration Guide Results Assessments](./Documents/migration-guides-output/result-assessments/README.md) guide
+provides detailed information about our approach of assessing the quality of the those Migration Guides.
 
 It contains a command line utility to:
 * Convert an OpenAPI Specification (3.x) document to an ApodiniMigrator APIDocument.
 * Calculate statistics of a ApodiniMigrator MigrationGuide document.
 * Generate a MigrationGuide from two OAS documents and print stats in latex table format.
   This may be done for individual pairs of documents or in bulk for all documents collected in the
-  [Documents](https://github.com/Apodini/ApodiniMigratorValidation/tree/develop/Documents) folder.
+  [Documents](./Documents) folder.
 
 ## Installation
 
